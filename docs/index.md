@@ -1,7 +1,7 @@
 ---
 layout: "default"
-title: "Tonttijakosuunnitelman tietomalli"
-description: "Tonttijakosuunnitelman kansallinen tietomalli täydentää aiempia kaavatietomalleja"
+title: "Rakentamisrajoitteiden tietomallit"
+description: "Rakentamisrajoitteiden tietomallit"
 page: "main"
 ---
 # Rakentamisrajoitteiden tietomallit

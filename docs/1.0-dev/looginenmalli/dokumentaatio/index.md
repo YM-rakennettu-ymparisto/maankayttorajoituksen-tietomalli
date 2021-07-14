@@ -1,10 +1,10 @@
 ---
 layout: "default"
-title: "Looginen tietomalli - looginen tietomalli - dokumentaatio"
+title: "Looginen tietomalli - dokumentaatio"
 description: ""
 page: "dokumentaatio"
 modelversion: "1.0-dev"
-status: "Luonnos"
+status: "Keskeneräinen"
 ---
 # Loogisen tason tonttijakosuunnitelma
 {:.no_toc}

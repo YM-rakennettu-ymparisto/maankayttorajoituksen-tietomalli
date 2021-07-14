@@ -1,10 +1,10 @@
 ---
 layout: "default"
-title: "Tonttijakosuunnitelma - soveltamisprofiili"
+title: "Soveltamisohjeet"
 description: ""
-page: "soveltamisohje-tjs"
+page: "soveltamisohjeet"
 modelversion: "1.0-dev"
-status: "Luonnos"
+status: "Keskeneräinen"
 ---
 # Soveltamisprofiili
 

@@ -1,21 +1,21 @@
 ---
 layout: "default"
-title: "Tonttijakosuunnitelman tietomallin projektitiimi"
+title: "Projektitiimi"
 description: ""
 page: "projektitiimi"
 ---
 
 # Projektitiimi
 
-Ubigulta työhön osallistuivat:
+Ubigulta työhön osallistuvat:
 - Marko Kauppi
 - Ville Koivisto
 
 # Sidosryhmät
 
-Työtä on käsitelty semanttisen yhteentoimivuuden työryhmässä ja sitä on ohjannut ympäristöministeriö.
+Työtä tullaan käsittelemään semanttisen yhteentoimivuuden työryhmässä ja sitä ohjaa ympäristöministeriö.
 
-Ympäristöministeriöstä työn ohjaukseen osallistuivat:
+Ympäristöministeriöstä työn ohjaukseen osallistuvat:
 - Anssi Hänninen
 - Jari Vaarma
 

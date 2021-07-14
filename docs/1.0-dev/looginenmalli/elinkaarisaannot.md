@@ -1,10 +1,10 @@
 ---
 layout: "default"
-title: "Ralkentamisrajoitteet - looginen tietomalli - Elinkaarisäännöt"
+title: "Elinkaarisäännöt"
 description: ""
 page: "elinkaarisaannot"
 modelversion: "1.0-dev"
-status: "Luonnos"
+status: "Keskeneräinen"
 ---
 
 # Elinkaarisäännöt

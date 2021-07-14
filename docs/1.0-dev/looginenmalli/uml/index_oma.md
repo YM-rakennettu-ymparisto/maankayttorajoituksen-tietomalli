@@ -1,6 +1,6 @@
 ---
 layout: "default"
-title: "Tonttijakosuunnitelma - looginen tietomalli - UML"
+title: "Looginen tietomalli - UML"
 description: ""
 page: "uml"
 modelversion: "1.0-dev"

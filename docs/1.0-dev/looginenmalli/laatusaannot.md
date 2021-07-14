@@ -1,10 +1,10 @@
 ---
 layout: "default"
-title: "Tonttijakosuunnitelma - looginen tietomalli -Laatusäännöt"
+title: "Laatusäännöt"
 description: ""
 page: "laatusaannot"
 modelversion: "1.0-dev"
-status: "Luonnos"
+status: "Keskeneräinen"
 ---
 # Laatusäännöt
 {:.no_toc}

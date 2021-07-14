@@ -1,9 +1,9 @@
 ---
 layout: "default"
-title: "Tonttijakosuunnitelman jatkokehitys"
+title: "Jatkokehitys"
 description: ""
 page: "jatkokehitys"
-status: "Luonnos"
+status: "Keskeneräinen"
 ---
 # Jatkokehitys
 
