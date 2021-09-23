@@ -1,7 +1,7 @@
-# Maankäyttörajoitukset -tietomalli
+# Maankäyttörajoitukset –tietomalli
 
 ## Projektista
-Ympäristöministeriön Ryhti-hankkeen *Rakentamisrajoituksen, rakennuskiellon, toimenpidekiellon ja erityisharkinta-alueen tietomallit* –projektissa määriteltiin kansallinen tietomalli tonttijakosuunnitelmalle. Tietomalli on esitelty tähän repositorioon pohjautuvilla internetsivuilla. Tonttijakosuunnitelman tietomallin on kehittänyt Ubigu Oy. Projekti oli käynnissä aikavälillä xx.xx.2021-xx.xx.2021. Tietomallin nykyinen versio on x.x. 
+Ympäristöministeriön Ryhti-hankkeen *Rakentamisrajoituksen, rakennuskiellon, toimenpidekiellon ja erityisharkinta-alueen tietomallit* –projektissa määriteltiin kansallinen tietomalli maankäyttörajoituksille. Maankäyttörajoitukset -tietomallin on kehittänyt Ubigu Oy. Projekti oli käynnissä aikavälillä xx.xx.2021-xx.xx.2021. Tietomallin nykyinen versio on x.x. 
 
 Tietomallit ja sivusto pohjaavat saman Ryhti-hankkeen aiempiin projekteihin, joissa määriteltiin kansallinen [kaavatietomalli](https://kaavatietomalli.fi) ja tonttijakosuunnitelman [tietomalli](https://www.tonttijakosuunnitelma.fi/). Kaavatietomallin ovat toteuttaneet [Spatineo Oy](https://www.spatineo.com/) yhdessä Asiantuntijat n+1 Oy:n kanssa ja tonttijakosuunnitelman on toteuttanut Ubigu Oy. Ryhti-hankkeessa toteutetut tietomallit ovat suunniteltu yhteensopiviksi keskenään. 
 
