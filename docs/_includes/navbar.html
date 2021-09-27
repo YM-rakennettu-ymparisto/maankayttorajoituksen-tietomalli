@@ -1,6 +1,6 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color:rgb(41, 55, 69);">
-  <a class="navbar-brand short" href="{{ site.url }}/">Rakentamisrajoitteiden tietomallit</a>
-  <a class="navbar-brand long" href="{{ site.url }}/">Rakentamisrajoitteiden tietomallit</a>
+  <a class="navbar-brand short" href="{{ site.url }}/">Maankäyttörajoitusten tietomalli</a>
+  <a class="navbar-brand long" href="{{ site.url }}/">Maankäyttörajoitusten tietomallit</a>
   <div id="betatag"><span title="Sivustoa ja tietomallia kehitetään">&beta;eta</span></div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -29,13 +29,13 @@
         </div>
       </li>
 
-      {% if page.page == 'soveltamisohjeet' %}
+     <!-- {% if page.page == 'soveltamisohjeet' %}
       <li class="nav-item active">
       {% else %}
       <li class="nav-item">
       {% endif %}
         <a class="nav-link " href="{{ site.url }}/{{ page.modelversion | default: site.default_modelversion }}/soveltamisohjeet/index.html">Soveltamisohjeet</a>
-      </li>
+      </li>-->
 
       {% if page.page == 'projektitiimi' or page.page == 'jatkokehitys' %}
       <li class="nav-item active dropdown">
