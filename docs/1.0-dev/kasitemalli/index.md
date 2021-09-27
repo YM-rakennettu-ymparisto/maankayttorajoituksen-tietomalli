@@ -24,10 +24,10 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 ## Käsitteet
 
 ### Maankäyttörajoitus
-{% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
+{% include defintionref_tjs.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
 
 <!-- Tässä esimerkki määrittelystä
-{% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
+{% include defintionref_tjs.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
 -->
 
 ### Käsite
