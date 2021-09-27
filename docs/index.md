@@ -6,6 +6,7 @@ page: "main"
 ---
 # Maankäyttörajoitusten tietomalli
 
+
 {%include note.html content="Projekti on käynnissä, ja sivuston tiedot päivittyvät vaiheittain."%}
 
 Tietomallityön osana on laadittu **rakennuskiellon**, **rakentamisrajoituksen**, **toimenpidekiellon** ja **erityisharkinta-alueen** käsitteet, loogiset tietomallit ja niiden soveltamisprofiilit, jotka kuvaavat kyseisten maankäyttörajoitusten luontia maankäytön suunnitelmien toteuttamisen turvaamiseksi. Projekti on osa Ryhti-hanketta. 
