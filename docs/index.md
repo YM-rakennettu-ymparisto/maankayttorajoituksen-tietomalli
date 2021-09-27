@@ -1,10 +1,10 @@
 ---
 layout: "default"
-title: "Rakentamisrajoitteiden tietomallit"
-description: "Rakentamisrajoitteiden tietomallit"
+title: "Maankäyttörajoitusten tietomalli"
+description: "Maankäyttörajoitusten tietomalli"
 page: "main"
 ---
-# Rakentamisrajoitteiden tietomallit
+# Maankäyttörajoitusten tietomalli
 
 {%include note.html content="Projekti on käynnissä, ja sivuston tiedot päivittyvät vaiheittain."%}
 
@@ -26,6 +26,6 @@ Tietomallien ensisijainen sovelluskohde on [Rakennetun ympäristön tietojärjes
 
 Tietomallista järjestetään kansallinen kommentointikierros xx-xx/2021 otakantaa-palvelussa. Tietomalleja on tarkoitus kehittää mallinnustyön aloittavan projektin päätyttyä, läpi koko Ryhti-hankkeen.
 
-Toistaiseksi tietomalleja koskevista rakentamisrajoitteista on säädetty osana lainvoimaista [Maankäyttö- ja rakennuslakia (MRL)](https://www.finlex.fi/fi/laki/ajantasa/1999/19990132). Lisätietoja MRL-muutoksesta ja tontinjakosuunnitelmasta voi lukea [ympäristöministeriön](https://ym.fi/fi/ryhti) sivuilta. Tonttijakosuunnitelman tietomalli perustuu uuteen lakiluonnokseen joka vastaa jokseenkin nykyisen lain sitovaa tonttijakoa. 
+Toistaiseksi tietomalleja koskevista maankäyttörajoituksista on säädetty osana lainvoimaista [Maankäyttö- ja rakennuslakia (MRL)](https://www.finlex.fi/fi/laki/ajantasa/1999/19990132). Lisätietoja MRL-muutoksesta ja maankäyttörajoituksista voi lukea [ympäristöministeriön](https://ym.fi/fi/ryhti) sivuilta. Maankäyttörajoitusten tietomalli perustuu uuteen lakiluonnokseen joka vastaa jokseenkin nykyisen lain sitovaa tonttijakoa. 
 
 {% include note.html content="Sivustoa ylläpitää [Ubigu Oy](https://www.ubigu.fi). Yhteyshenkilö projektille on Marko Kauppi." %}
