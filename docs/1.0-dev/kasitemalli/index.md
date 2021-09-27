@@ -27,7 +27,7 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 {% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
 
 ### Erityisharkinta-alue
-{% include defintionref_mkr.html id="concept-0" name="erityisharkinta-alue" def="kunnan määrittämä tai tapauskohtaisesti harkittava asemakaava-alueen ulkopuolella sijaitseva alue, jolla rakentamisen edellytysten turvaamiseksi tarvitaan alueiden käytön suunnittelua tai erityistä harkintaa uuden rakentamisen sijoittamisessa." %}
+{% include defintionref_mkr.html id="concept-8" name="erityisharkinta-alue" def="kunnan määrittämä tai tapauskohtaisesti harkittava asemakaava-alueen ulkopuolella sijaitseva alue, jolla rakentamisen edellytysten turvaamiseksi tarvitaan alueiden käytön suunnittelua tai erityistä harkintaa uuden rakentamisen sijoittamisessa." %}
 
 <!-- Tässä esimerkki määrittelystä
 {% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
