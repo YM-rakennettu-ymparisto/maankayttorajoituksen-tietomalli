@@ -1,7 +1,7 @@
 theme: jekyll-theme-slate
-url: "https://YM-rakennettu-ymparisto.github.io/rakentamisrajoitteiden-tietomallit" # the base hostname & protocol for your site
-home: "https://YM-rakennettu-ymparisto.github.io/rakentamisrajoitteiden-tietomallit"
-repository: YM-rakennettu-ymparisto/rakentamisrajoitteiden-tietomallit
+url: "https://YM-rakennettu-ymparisto.github.io/maankayttorajoitusten-tietomalli" # the base hostname & protocol for your site
+home: "https://YM-rakennettu-ymparisto.github.io/maankayttorajoitusten-tietomalli"
+repository: YM-rakennettu-ymparisto/maankayttorajoitusten-tietomalli
 plugins:
 - jekyll-sitemap # Tämä helpottaa hakukoneen työtä
 - kramdown # defaul markdown renderer for jekyll
