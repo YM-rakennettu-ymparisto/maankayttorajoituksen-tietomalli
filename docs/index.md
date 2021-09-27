@@ -8,7 +8,7 @@ page: "main"
 
 {%include note.html content="Projekti on käynnissä, ja sivuston tiedot päivittyvät vaiheittain."%}
 
-Tietomallityön osana on laadittu **rakentamisrajoitteen**, **rakennuskiellon**, **toimenpidekiellon** ja **erityisharkinta-alueen** käsitteet, loogiset tietomallit ja niiden soveltamisprofiilit, jotka kuvaavat kyseisten rajoitusten luontia rakentamisen ohjauksessa. Projekti on osa Ryhti-hanketta. 
+Tietomallityön osana on laadittu **rakennuskiellon**, **rakentamisrajoituksen**, **toimenpidekiellon** ja **erityisharkinta-alueen** käsitteet, loogiset tietomallit ja niiden soveltamisprofiilit, jotka kuvaavat kyseisten maankäyttörajoitusten luontia maankäytön suunnitelmien toteuttamisen turvaamiseksi. Projekti on osa Ryhti-hanketta. 
 
 Loogisen tason tietomalli määrittelee kaikille kohteille yhteiset tietorakenteet, joita sovelletaan laadittujen soveltamisohjeiden ja niissä kiinnitettyjen koodistojen sekä elinkaari- ja laatusääntöjen mukaisesti. Looginen tietomalli pyrkii olemaan mahdollisimman riippumaton tietystä toteutusteknologiasta tai tiedon fyysisestä esitystavasta.
 
