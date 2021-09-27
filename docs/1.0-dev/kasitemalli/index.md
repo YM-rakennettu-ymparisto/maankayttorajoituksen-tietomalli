@@ -16,7 +16,7 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 ## Graafinen käsitekaavio
 
 <!--
-![Tonttijakosuunnitelma graafisena käsitekaaviona](kasitemalli.png "Graafinen käsitekaavio tonttijakosuunnitelmasta (Neo4j)")
+![Maankäyttörajoitus graafisena käsitekaaviona](kasitemalli.png "Graafinen käsitekaavio maankäyttörajoituksesta (Neo4j)")
 
 (Lataa [käsitekaavio määritelmien kanssa](kasitekaavio_selitteet.png))
 -->
@@ -24,14 +24,14 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 ## Käsitteet
 
 ### Maankäyttörajoitus
-{% include defintionref_tjs.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
+{% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
+
+### Erityisharkinta-alue
+{% include defintionref_mkr.html id="concept-0" name="erityisharkinta-alue" def="kunnan määrittämä tai tapauskohtaisesti harkittava asemakaava-alueen ulkopuolella sijaitseva alue, jolla rakentamisen edellytysten turvaamiseksi tarvitaan alueiden käytön suunnittelua tai erityistä harkintaa uuden rakentamisen sijoittamisessa." %}
 
 <!-- Tässä esimerkki määrittelystä
-{% include defintionref_tjs.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
+{% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
 -->
 
-### Käsite
 
-
-### Käsite
 
