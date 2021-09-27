@@ -24,19 +24,19 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 ## Käsitteet
 
 ### Maankäyttörajoitus
-{% include defintionref_mkr.html id="concept-0" name="maankayttorajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
+{% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
 
 ### Maankäyttörajoituksen laji
-{% include defintionref_mkr.html id="concept-2" name="maankayttorajoituksen laji" def="..." %}
+{% include defintionref_mkr.html id="concept-2" name="maankäyttörajoituksen laji" def="..." %}
 
 ### Maankäyttörajoituksen laatija
-{% include defintionref_mkr.html id="concept-3" name="maankayttorajoituksen laatija" def="..." %}
+{% include defintionref_mkr.html id="concept-3" name="maankäyttörajoituksen laatija" def="..." %}
 
 ### Maankäyttörajoituksen käsittelytapahtuma
-{% include defintionref_mkr.html id="concept-7" name="maankayttorajoituksen kasittelytapahtuma" def="maankäyttörajoituksen käsittelyprosessiin kuuluva tapahtuma, jonka johdosta elinkaaren tila voi muuttua" %}
+{% include defintionref_mkr.html id="concept-7" name="maankäyttörajoituksen kasittelytapahtuma" def="maankäyttörajoituksen käsittelyprosessiin kuuluva tapahtuma, jonka johdosta elinkaaren tila voi muuttua" %}
 
 ### Maankäyttörajoituksen kumoutumistieto
-{% include defintionref_mkr.html id="concept-1" name="maankayttorajoituksen kumoutumistieto" def="tieto maankäyttörajoituksen hyväksymisen johdosta kokonaisuudessaan tai osittain kumoutuvasta maankäyttörajoituksesta" %}
+{% include defintionref_mkr.html id="concept-1" name="maankäyttörajoituksen kumoutumistieto" def="tieto maankäyttörajoituksen hyväksymisen johdosta kokonaisuudessaan tai osittain kumoutuvasta maankäyttörajoituksesta" %}
 
 ### Rakennuskielto
 {% include defintionref_mkr.html id="concept-4" name="rakennuskielto" def="kunnan antama tai suoraan laista johtuva kaavan laatimisen tai muuttamisen turvaava rakentamista koskeva määräaikainen ja ehdoton kielto." %}
