@@ -8,10 +8,10 @@ status: "Keskeneräinen"
 
 ---
 # Loogisen tason maankäyttörajoitusten tietomalli - UML-luokkakaaviot
-UML-tietomalli tulee olemaaan ladattavissa sekä Enterprise Architect-muodossa (eap) että XMI-muodossa. UML-mallia vastaava looginen tietomalli on kuvattu myös yhteentoimivuusalustan soveltamisprofiilina.
+UML-tietomalli tulee olemaaan ladattavissa sekä Enterprise Architect-muodossa (eap) että XMI-muodossa. UML-mallia vastaava looginen tietomalli on kuvattu myös yhteentoimivuusalustan rakennetun ympäristön tietokomponenttikirjastona.
 
 
 <!-- Vaihdetaan tämä tiedosto nimeltään index.md, kun olemme valmiita muokkaamaan välilehteä niin, että EA-kaavio on upotettuna sivustorakenteeseen tarkoituksen mukaisella tavalla.  -->
 
-![Tonttijakosuunnitelma graafisena käsitekaaviona](Maankayttorajoitukset.png "Graafinen käsitekaavio maankäyttörajoituksista (Neo4j)")
+![Maankäyttörajoitusten loogisen tason tietomalli](Maankayttorajoitukset.png "Maankäyttörajoitusten looginen tason tietomalli")
 
