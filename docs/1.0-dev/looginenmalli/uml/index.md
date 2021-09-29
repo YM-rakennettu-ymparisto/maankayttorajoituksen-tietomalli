@@ -13,5 +13,5 @@ UML-tietomalli tulee olemaaan ladattavissa sekä Enterprise Architect-muodossa (
 
 <!-- Vaihdetaan tämä tiedosto nimeltään index.md, kun olemme valmiita muokkaamaan välilehteä niin, että EA-kaavio on upotettuna sivustorakenteeseen tarkoituksen mukaisella tavalla.  -->
 
-!(Maankayttorajoitukset.png)
+![Tonttijakosuunnitelma graafisena käsitekaaviona](Maankayttorajoitukset.png "Graafinen käsitekaavio maankäyttörajoituksista (Neo4j)")
 
