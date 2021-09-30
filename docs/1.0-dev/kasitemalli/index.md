@@ -24,7 +24,7 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 ## Käsitteet
 
 ### Maankäyttörajoitus
-{% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
+{% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="kaavoitus- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
 
 ### Maankäyttörajoituksen laji
 {% include defintionref_mkr.html id="concept-2" name="maankäyttörajoituksen laji" def="kaavoitus- ja rakennuslain maankäyttörajoitusta kuvaava arvo" note="Maankäyttörajoituksen lajin alakoodit kuvaavat maankäyttöpäätösprosessin ja sen mahdollisen vaiheen, jossa maankäyttörajoituksesta on päätetty." %}
@@ -51,7 +51,7 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 {% include defintionref_mkr.html id="concept-8" name="erityisharkinta-alue" def="kunnan määrittämä tai tapauskohtaisesti harkittava asemakaava-alueen ulkopuolella sijaitseva alue, jolla rakentamisen edellytysten turvaamiseksi tarvitaan alueiden käytön suunnittelua tai erityistä harkintaa uuden rakentamisen sijoittamisessa." %}
 
 <!-- Tässä esimerkki määrittelystä
-{% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
+{% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="kaavoitus- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
 -->
 
 
