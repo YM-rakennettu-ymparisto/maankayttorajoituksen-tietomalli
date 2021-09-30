@@ -27,7 +27,7 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 {% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="maankäyttö- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
 
 ### Maankäyttörajoituksen laji
-{% include defintionref_mkr.html id="concept-2" name="maankäyttörajoituksen laji" def="kaavoitus- ja rakennuslain mukaiset maankäyttörajoitukset" note="Maankäyttörajoituksen lajin alakoodit kuvaavat maankäyttöpäätösprosessin ja sen mahdollisen vaiheen, jossa maankäyttörajoituksesta on päätetty." %}
+{% include defintionref_mkr.html id="concept-2" name="maankäyttörajoituksen laji" def="kaavoitus- ja rakennuslain maankäyttörajoitusta kuvaava arvo" note="Maankäyttörajoituksen lajin alakoodit kuvaavat maankäyttöpäätösprosessin ja sen mahdollisen vaiheen, jossa maankäyttörajoituksesta on päätetty." %}
 
 ### Maankäyttörajoituksen laatija
 {% include defintionref_mkr.html id="concept-3" name="maankäyttörajoituksen laatija" def="henkilö tai organisaatio, joka on laatinut maankäyttörajoituksen" %}
