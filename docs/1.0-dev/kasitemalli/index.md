@@ -29,8 +29,8 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 ### Maankäyttörajoituksen laji
 {% include defintionref_mkr.html id="concept-2" name="maankäyttörajoituksen laji" def="kaavoitus- ja rakennuslain mukaisen maankäyttörajoituksen nimi" note="Maankäyttörajoituksen lajin alakoodit kuvaavat maankäyttöpäätösprosessin ja sen mahdollisen vaiheen, jossa maankäyttörajoituksesta on päätetty." %}
 
-### Maankäyttörajoituksen laatija
-{% include defintionref_mkr.html id="concept-3" name="maankäyttörajoituksen laatija" def="henkilö tai organisaatio, joka on laatinut maankäyttörajoituksen" %}
+### Maankäyttörajoituksen valmistelija
+{% include defintionref_mkr.html id="concept-3" name="maankäyttörajoituksen valmistelija" def="henkilö, joka on valmistellut maankäyttörajoituksen" %}
 
 ### Maankäyttörajoituksen käsittelytapahtuma
 {% include defintionref_mkr.html id="concept-7" name="maankäyttörajoituksen kasittelytapahtuma" def="maankäyttörajoituksen käsittelyprosessiin kuuluva tapahtuma, jonka johdosta elinkaaren tila voi muuttua" %}
