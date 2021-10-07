@@ -31,7 +31,6 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 
 ### Maankäyttörajoituksen syntytapa
 {% include defintionref_mkr.html id="concept-2" name="maankäyttörajoituksen syntytapa" def="kaavoitus- ja rakentamislain mukaisen maankäyttörajoituksen syntymisen tapa"%}
- <!--note="Maankäyttörajoituksen lajin alakoodit kuvaavat maankäyttöpäätösprosessin ja sen mahdollisen vaiheen, jossa maankäyttörajoituksesta on päätetty."-->
 
 ### Päätöksentekijä
 {% include defintionref_mkr.html id="concept-3" name="Päätöksentekijä" def="viranomainen tai toimielin, joka on tehnyt päätöksen maankäyttöpäätöksestä" %}
@@ -58,5 +57,7 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 {% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="kaavoitus- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
 -->
 
-
+<!-- 
+note="Maankäyttörajoituksen lajin alakoodit kuvaavat maankäyttöpäätösprosessin ja sen mahdollisen vaiheen, jossa maankäyttörajoituksesta on päätetty." 
+-->
 
