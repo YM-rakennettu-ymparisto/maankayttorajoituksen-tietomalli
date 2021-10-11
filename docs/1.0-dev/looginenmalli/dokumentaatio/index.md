@@ -248,7 +248,7 @@ Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
 arvo | [Abstraktiarvo](#Abstraktiarvo) | 0..1  | Esitontin tunnusarvo tai esitontin rajapisteen numero
 elinkaarentila | [Codelist](#tonttijakosuunnitelmanElinkaarentila) | 1 | yleisimmät arvot vireillä oleva,  hyväksytty tai voimassa
-geometria | [geometry](#geometry) | 0..1  | esitonttikohteen sijainti
+geometria | [geometry](#geometry) | 0..1  | maankäyttörajoituksen sijainti
 hyvaksymisAika | [TM_Instant](#TM_Instant) | 0..1 | aika, jolloin maankäyttörajoitus on tullut virallisesti hyväksyttyä
 kumoutumistieto | [MaankayttorajoituksenKumoutumistieto](#MaankayttorajoituksenKumoutumistieto) | 0..* | maankäyttörajoitus, jonka tämä maankäyttörajoitus kumoaa kokonaan tai osittain
 maankayttorajoituksenTunnus  | [CharacterString](#CharacterString) | 1 | yksilöivä ID
