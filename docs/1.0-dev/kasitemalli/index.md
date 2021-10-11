@@ -12,10 +12,10 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 
 1. 
 {:toc}
-
+<!--
 ## Graafinen käsitekaavio
 
-<!--
+
 ![Maankäyttörajoitus graafisena käsitekaaviona](kasitemalli.png "Graafinen käsitekaavio maankäyttörajoituksesta (Neo4j)")
 
 (Lataa [käsitekaavio määritelmien kanssa](kasitekaavio_selitteet.png))
