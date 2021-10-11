@@ -260,6 +260,31 @@ Vuorovaikutustapahtumien lajit kuvataan MKP-ydin -paketissa abstraktina koodisto
 
 ## Maankäyttörajoitusten tiedot
 
+### Maankayttorajoitus
+
+Kuvaa käsitteen Maankayttorajoitus, erikoistaa luokkaa AbstraktiMaankayttoasia, stereotyyppi: FeatureType (kohdetyyppi)
+
+Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
+-----------------|---------------------|-----------------|------------------------------------
+arvo | [Abstraktiarvo](#Abstraktiarvo) | 0..1  | Esitontin tunnusarvo tai esitontin rajapisteen numero
+elinkaarentila | [Codelist](#tonttijakosuunnitelmanElinkaarentila) | 1 | yleisimmät arvot vireillä oleva,  hyväksytty tai voimassa
+geometria | [geometry](#geometry) | 0..1  | esitonttikohteen sijainti
+hyvaksymisAika | [TM_Instant](#TM_Instant) | 0..1 | aika, jolloin maankäyttörajoitus on tullut virallisesti hyväksyttyä
+kumoutumistieto | [MaankayttorajoituksenKumoutumistieto](#MaankayttorajoituksenKumoutumistieto) | 0..* | maankäyttörajoitus, jonka tämä maankäyttörajoitus kumoaa kokonaan tai osittain
+maankayttorajoituksenTunnus  | [CharacterString](#CharacterString) | 1 | yksilöivä ID
+rajoituksenLaji | [Codelist](#MaankayttorajoituksenLaji) | 1  | kertoo, millainen maankäyttörajoitus on laadittu
+
+### MaankayttorajoituksenKumoutumistieto
+
+Stereotyyppi: DataType (tietotyyppi)
+
+Kumoamistieto yksilöi minkä maankäyttörajoituksen tämä maankäyttörajoitus kumoaa lainvoimaiseksi tullessaan.
+
+laji             | Tyyppi              | Kardinaliteetti | Kuvaus
+-----------------|---------------------|-----------------|------------------------------------
+kumoutuuKokonaan | [boolean](#boolean) | 1  | maankäyttörajoitus, johon kumoaminen kohdistuu
+kumoutuvanMaankayttorajoituksenTunnus | [URI](#URI) | 0..*  | maankäyttörajoitus, johon kumoutuminen kohdistuu
+
 ### Koodisto
 
 Kuvaa käsitteen x, erikoistaa luokkaa x, stereotyyppi: FeatureType (kohdetyyppi)
@@ -276,74 +301,11 @@ hyvaksymisAika | [TM_Instant](#TM_Instant) | 0..1 | aika, jolloin tonttijakosuun
 digitaalinenAlkupera | [DigitaalinenAlkupera](#DigitaalinenAlkupera) | 0..1 | luokittelu alunperin tietomallin mukaan luotuihin ja jälkeenpäin digitoituihin tonttijakosuunnitelmiin
 -->
 
-**Assosiaatiot**
 
-<!-- Esimerkkitaulukko
-Roolin nimi        | Kohde | Kardinaliteetti | Kuvaus
------------------|--------------------|---------------------|-----------------
-esitonttikohde | [Kaavakohde](#Kaavakohde) | 1 | paikkatietokohde, johon kohdistuu kaavamääräyksiä tai -suosituksia
-laatija | [TonttijakosuunnitelmanLaatija](#TonttijakosuunnitelmanLaatija) | 1 | tonttijakosuunnitelman laatija
--->
 
-### Abstraktikaavakohde
 
-Erikoistaa luokkaa AbstraktiVersioituObjekti, stereotyyppi: FeatureType (kohdetyyppi)
 
-Kaikkien tonttijakosuunnitelmaan liittyvien paikkatietokohteiden yhteinen abstrakti yläluokka. Kohteen geometria voi olla 2-ulotteinen piste,tai alue, tai 3-ulotteinen kappale. Moniosaiset geometriat (multigeometry) ovat sallittuja.
 
-Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
------------------|---------------------|-----------------|------------------------------------
-arvo | [Abstraktiarvo](#Abstraktiarvo) | 0..1  | Esitontin tunnusarvo tai esitontin rajapisteen numero
-geometria | [geometry](#geometry) | 0..1  | esitonttikohteen sijainti
-kohteenPinta-ala | [Number](#Number) | 0..*  | esitontin pinta-ala tai kolmiulotteisen esitontin projisoitu pinta-ala
-pystysuunteinenRajaus | [Korkeusvali](#Korkeusvali) | 0..1  | kolmiulotteisen esitontin ylin ja alin korkeus merenpinnasta
-
-**Assosiaatiot**
-
-Roolin nimi        | Kohde | Kardinaliteetti | Kuvaus
------------------|--------------------|---------------------|----------
-liittyvaKohde | [Abstraktikaavakohde](#Abstraktikaavakohde) | 0..* | kohde, joka liittyy tähän kohteeseen. Kukin assosiaatio voi sisältää rooli-määreen tyyppiä LanguageString, joka kuvaa miten kohde liittyy tähän kohteeseen.
-
-### Muodostustieto
-
-Stereotyyppi: DataType (tietotyyppi)
-
-Tieto muodostajakiinteistöistä, josta esitontti muodostetaan.
-
-Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
------------------|---------------------|-----------------|------------------------------------
-kiinteistoTunnus | [Tunnusarvo](#Tunnusarvo) | 1  | kiinteistörekisteriin merkityn rekisteriyksikön yksilöivä tunnus
-muodostusPinta-ala | [Number](#Number) | 1  | muodostavan rekisterikiinteistön pinta-alan määrä neliömetreissä
-
-### Kaavatilannetieto
-
-Stereotyyppi: DataType (tietotyyppi)
-
-Tieto esitonttiin liittyvistä asemakaavoista ja niiden vaikutuksista.
-
-Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
------------------|---------------------|-----------------|------------------------------------
-kaavaTunnus | [URI](#URI) | 1  | kaavatunnus, joka muuttaa esitonttikohteen kaavamääräyksiä tai kumoaa esitonttikohteen
-kaavalaji | [Kaavalaji](#Kaavalaji) | 1 | alueiden käytön ohjaustarpeeseen, kaavan sisältövaatimuksiin, prosessiin ja vastuulliseen hallintoviranomaiseen perustuva luokittelu
-kumoaaEsitonttikohteen | [boolean](#boolean) | 1 | jos arvo on true, kaava kumoaa esitonttikohteen kokonaan
-
-### Kaavamaarays
-
-Kuvaa käsitteen Kaavamääräys, erikoistaa luokkaa AbstraktiTietoyksikko, stereotyyppi: FeatureType (kohdetyyppi)
-
-laji             | Tyyppi              | Kardinaliteetti | Kuvaus
------------------|---------------------|-----------------|------------------------------------
-liittyvanKaavamaarayksenTunnus | [URI](#URI) | 1  | viittaustunnus kaavaan sisältyvän kaavamääräyksen tietokohteeseen, joka liittyy esitonttikohteeseen
-
-### AbstraktiTietoyksikko
-
-Erikoistaa luokkaa AbstraktiVersioituObjekti, stereotyyppi: FeatureType (kohdetyyppi)
-
-Kaikkien tonttijakosuunnitelmiin liittyvien tietoelementtien yhteinen abstrakti yläluokka.
-
-laji             | Tyyppi              | Kardinaliteetti | Kuvaus
------------------|---------------------|-----------------|------------------------------------
-arvo | [AbstraktiArvo](#AbstraktiArvo) | 0..*  | kuvaa tonttijakosuunnitelman laatijan tulkitsemaa arvoa esim. rakentamisen määrä
 
 <!-- linkit standardeihin, joihin mainittu sivun alussa -->
 [ISO-8601-1]: https://www.iso.org/standard/70907.html "ISO 8601-1:2019 Date and time — Representations for information interchange — Part 1: Basic rules"
