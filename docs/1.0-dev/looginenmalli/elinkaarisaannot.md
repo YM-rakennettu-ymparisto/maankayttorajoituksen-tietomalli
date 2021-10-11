@@ -41,7 +41,7 @@ UUID (Universally Unique Identifier) on OSF:n (Open Software Foundation) määri
 
 Maankäyttörajoitusten tietomallissa UUID-muotoisia tunnuksia suositellaan käytettäväksi [identiteettiTunnus-](#identiteettitunnus), maankäyttörajoituksenTunnus-attribuuttien arvoina.
 
-## tietomallien kohteiden elinkaaren hallinnan periaatteet
+## Tietomallien kohteiden elinkaaren hallinnan periaatteet
 
 Maankäyttörajoitusten tietomallin elinkaarisäännöt mahdollistavat tietomallin tietokohteiden käsittelyn, tallentamisen ja muuttamisen hallitusti sekä niiden eri voimassaolovaiheissa. Maankäyttörajoitusten tietomallin mukaiset tietosisällöt ovat merkittäviä oikeusvaikutuksia aiheuttavia, juridisesti päteviä aineistoja, joita käsitellään hajautetusti eri toimijoiden tietojärjestelmissä. Tämän vuoksi niiden tunnusten, viittausten ja versionnin hallintaan on syytä kiinnittää erityistä huomiota.
 
