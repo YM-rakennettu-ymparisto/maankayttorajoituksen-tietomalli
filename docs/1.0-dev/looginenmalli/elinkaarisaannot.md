@@ -219,7 +219,7 @@ Pysyvät viittaukset maankäyttörajoitusten tietomallin ulkopuolelta tietomalli
 {% include clause_start.html type="req" id="elinkaari/vaat-viittaukset-tallennettaessa" %}
 Tallennettaessa maankäyttörajoitusten tietomallin tietokohteita maankäyttörajoitusten tietovarastoon tietokohteiden tunnukset muuttuvat niiden pysyvään muotoon, kuten kuvattu luvussa [Tunnukset ja niiden hallinta](#tunnukset-ja-niiden-hallinta). Maankäyttörajoitusten tietovaraston vastuulla on päivittää kunkin paikallisen tunnuksen muuttamisen yhteydessä myös kaikkien ko. tietokohteen versioon sen paikallisen tunnuksen avulla viittaavien muiden ko. maankäyttörajoituksen tietokohteiden viittaukset käyttämään tietokohteen muutettua paikallista tunnusta.   
 {% include clause_end.html %}
-
+<!--
 ### Koodistojen koodien tunnuksiin liittyvät vaatimukset
 
 {% include clause_start.html type="req" id="elinkaari/vaat-koodien-yksiloivat-tunnukset" %}
@@ -235,7 +235,7 @@ Käytännössä tietyn koodin alakoodit voidaan tunnistaa vertaamalla niiden tun
 {% include clause_start.html type="req" id="elinkaari/vaat-alakoodi-tunnus" %}
 Koodin ```A``` alakoodin ```B``` tunnus alkaa koodin ```A``` tunnuksella ja sisältää sen jälkeen yhden tai useamman merkin.
 {% include clause_end.html %}
-
+-->
 <!--
 ## Muutokset ja tietojen versionti
 {% include clause_start.html type="req" id="elinkaari/vaat-pysyva-sisalto" %}
