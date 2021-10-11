@@ -20,7 +20,7 @@ Tietomalleilla on elinkaari, joka määrää niiden sisältämien tietokohteiden
 - Syntytavan
 - Sen, voivatko ne muuttua
 - Miten ne voivat muuttua
-- Miten ne kumoutuvat johtaen niiden voimassaolon päättymiseen
+- Miten ne raukeaa tai kumoutuu johtaen niiden voimassaolon päättymiseen
 
 Elinkaarisääntöjen määrittely liittyy olennaisesti tietokohteiden versionhallintaan, eli miten yksittäisten tietokohteiden niiden elinkaaren aikana muodostettavat versiot voidaan tallentaa ja yksilöidä viittauskelpoisten pysyvien tunnusten avulla. 
 
@@ -33,28 +33,26 @@ HTTP URI -muotoiset tunnukset ovat [RFC 3986 -standardiin](https://tools.ietf.or
 URI-tunnuksen ei tarvitse viitata konkreettiseen sijaintiin internetissä, vaan se voi olla abstraktimpi tunnus. [JHS 193 Paikkatiedon yksilöivät tunnukset](http://www.jhs-suositukset.fi/suomi/jhs193) määrittelee paikkatiedon yksilöiville tunnuksille muodon <http://paikkatiedot.fi/{tunnustyyppi}/{aineistotunnus}/{paikallinen tunnus}>, jossa paikkatietokohteiden ```tunnustyyppi``` on ```so```. Tonttijakomallissa on esimerkkinä käytetty tunnusmuotoa 
 <http://uri.suomi.fi/object/rytj/{aineistotyyppi}/{TietotyypinNimi}/{paikallinenTunnus}>. HTTP URI -muotoisen tunnuksen etuna on luettavuus sekä DNS- ja HTTP-protokollien tarjoama kyky ratkaista (resolve) tunnus ja ohjata kysyjä sitä kuvaavaan Internet-resurssiin ilman tarvetta erityiselle keskitetylle tunnusrekisterille ja siihen perustuvalle ratkaisupalvelulle.
 
-<!--
-Tonttijakomallissa HTTP URI -muotoa käytetään [viittaustunnus](#viittaustunnus)-attribuutissa, jonka avulla viitataan tiettyyn versioon tietokohteesta kaavan ulkopuolelta.
--->
+Maankäyttörajoitusten tietomallissa HTTP URI -muotoa käytetään [viittaustunnus](#viittaustunnus)-attribuutissa, jonka avulla viitataan tiettyyn versioon tietokohteesta maankäyttörajoitusten ulkopuolelta.
+
 ### UUID-tunnukset
 UUID (Universally Unique Identifier) on OSF:n (Open Software Foundation) määrittelemä standardoitu tunnusmuoto, jonka avulla voidaan luoda vakiokokoisia, hyvin suurella todennäköisyydellä yksilöiviä tunnuksia ilman keskitettyä hallintajärjestelmää. UUID-tunnukset voivat perustua satunnaislukuihin, aikaleimoihin, tietokoneiden verkkokorttien MAC-osoitteisiin tai merkkijonomuotoisiin nimiavaruuksiin eri yhdistelmissä. UUID-tunnukset erityisen hyvin tietojärjestelmissä, joissa uusia globaalisti pysyviä ja yksilöiviä tunnuksia on tarpeen luoda hajautetusti ilman keskitettyä tunnusrekisteriä.
 
-<!--
-Tonttijakosuunnitelman tietomallissa UUID-muotoisia tunnuksia suositellaan käytettäväksi [identiteettitunnus-](#identiteettitunnus), tonttijakosuunnitelma- ja tuottajakohtainen tunnus-attribuuttien arvoina.
--->
+
+Maankäyttörajoitusten tietomallissa UUID-muotoisia tunnuksia suositellaan käytettäväksi [identiteettiTunnus-](#identiteettitunnus), maankäyttörajoituksenTunnus-attribuuttien arvoina.
+
 ## tietomallien kohteiden elinkaaren hallinnan periaatteet
 
-<!--
-Tonttijakosuunnitelman tietomallin elinkaarisäännöt mahdollistavat tietomallin tietokohteiden käsittelyn, tallentamisen ja muuttamisen hallitusti sekä niiden laatimis- että voimassaolovaiheissa. Tonttijakosuunnitelman tietomallin mukaiset tietosisällöt ovat merkittäviä oikeusvaikutuksia aiheuttavia, juridisesti päteviä aineistoja, joita käsitellään hajautetusti eri toimijoiden tietojärjestelmissä. Tämän vuoksi niiden tunnusten, viittausten ja versionnin hallintaan on syytä kiinnittää erityistä huomiota.
+Maankäyttörajoitusten tietomallin elinkaarisäännöt mahdollistavat tietomallin tietokohteiden käsittelyn, tallentamisen ja muuttamisen hallitusti sekä niiden eri voimassaolovaiheissa. Maankäyttörajoitusten tietomallin mukaiset tietosisällöt ovat merkittäviä oikeusvaikutuksia aiheuttavia, juridisesti päteviä aineistoja, joita käsitellään hajautetusti eri toimijoiden tietojärjestelmissä. Tämän vuoksi niiden tunnusten, viittausten ja versionnin hallintaan on syytä kiinnittää erityistä huomiota.
 
-Seuraavat keskeiset periaatteet ohjaavat tonttijakomallin elinkaaren hallintaa:
-* Kukin tonttijakosuunnitelmatietovarastoon tallennettu versio tonttijakosuunnitelmasta ja sen sisältämistä yksittäisistä esitonttikohteista saa pysyvän, versiokohtaisen tunnuksen.
-* Kuhunkin tonttijakosuunnitelmatietovarastoon tallennetun tietokohteen versioon voidaan viitata sen pysyvän tunnuksen avulla.
-* Tonttijakosuunnitelman tietomallin tietokohteiden väliset viittaukset toteutetaan hallitusti sekä tonttijakosuunnitelmatietoa tuottavissa tietojärjestelmissä että yhteisissä tonttijakosuunnitelmatietovarannoissa.
-* Tonttijakosuunnitelmatietovarasto vastaa pysyvien tunnusten luomisesta ja antamisesta tallennettaville tietokohteille.
+Seuraavat keskeiset periaatteet ohjaavat maankäyttörajoitusten elinkaaren hallintaa:
+* Kukin maankäyttörajoitusten tietovarastoon tallennettu versio maankäyttörajoituksesta saa pysyvän, versiokohtaisen tunnuksen.
+* Kuhunkin maankäyttörajoitusten tietovarastoon tallennetun tietokohteen versioon voidaan viitata sen pysyvän tunnuksen avulla.
+* Maankäyttörajoitusten tietomallin tietokohteiden väliset viittaukset toteutetaan hallitusti sekä maankäyttörajoitustietoa tuottavissa tietojärjestelmissä että yhteisissä maankäyttörajoitusten tietovarastoissa.
+* Maankäyttörajoitusten tietovarasto vastaa pysyvien tunnusten luomisesta ja antamisesta tallennettaville tietokohteille.
 
-Tonttijakosuunnitelman tietomallin mukaisten aineistojen tallentamisessa erotetaan toisistaan tietojen tuottaminen ja muokkaus sisäisesti niiden tuottamiseen ja muokkaamiseen käytettävissä tietojärjestelmissä ja niiden hallinta yhteisessä versiohallitussa tonttijakosuunnitelmatietovarannossa. Tonttijakosuunnitelman tietomallin ei ole mielekästä asettaa vaatimuksia tonttijakosuunnitelmatietoa tuottavien tietojärjestelmien tunnusten ja versioiden hallintaan, vaan tietomallissa tulee varautua siihen, että yhteiseen tietovarastoon tallennettavia tietoja on muokattu ja tallennettu sisäisesti tuntematon määrä kertoja ennen ensimmäistä viemistä yhteiseen tietovarastoon, ja samoin tuntematon määrä kertoja kunkin yhteiseen varastoon vietävän version välillä. Näin ollen on mahdollista, että tonttijakosuunnitelmasta voi olla joissain tietojärjestelmissä tallennettuna paikallisia versiota, joita ei ole koskaan viety yhteiseen tonttijakosuunnitelmatietovarastoon.
--->
+Maankäyttörajoitusten tietomallin mukaisten aineistojen tallentamisessa erotetaan toisistaan tietojen tuottaminen ja muokkaus sisäisesti niiden tuottamiseen ja muokkaamiseen käytettävissä tietojärjestelmissä ja niiden hallinta yhteisessä versiohallitussa maankäyttörajoitusten tietovarastoissa. Maankäyttörajoitusten tietomallin ei ole mielekästä asettaa vaatimuksia maankäyttörajoitustietoa tuottavien tietojärjestelmien tunnusten ja versioiden hallintaan, vaan tietomallissa tulee varautua siihen, että yhteiseen tietovarastoon tallennettavia tietoja on muokattu ja tallennettu sisäisesti tuntematon määrä kertoja ennen ensimmäistä viemistä yhteiseen tietovarastoon, ja samoin tuntematon määrä kertoja kunkin yhteiseen varastoon vietävän version välillä. Näin ollen on mahdollista, että maankäyttörajoituksesta voi olla joissain tietojärjestelmissä tallennettuna paikallisia versiota, joita ei ole koskaan viety yhteiseen maankäyttörajoitusten tietovarastoon.
+
 ## Tunnukset ja niiden hallinta
 
 ### Identiteettitunnus
@@ -70,7 +68,7 @@ Tietomallin tietokohteissa identiteettitunnus kuvataan attribuutilla ```identite
 
 Yksittäisen tietokohteen koko ko. tietojärjestelmään tallennettu kehityshistoria saadaan noutamalla kaikki ko. tyyppisen tietokohteen objektit, joilla on sama ```identiteettiTunnus```-attribuutin arvo.
 
-Yhteinen tietovarasto on vastuussa uusien identiteettitunnusten luomisesta tarvittaessa tallennustapahtumien yhteydessä, ja niiden välittämisestä tiedoksi tallentavalle tietojärjestelmälle. Tallentavan tietojärjestelmän tulee tallentaa itselleen kopiot tietovaraston tallennustapahtuman yhteydessä palautamistä kaavan ja sen tietokohteiden identiteettitunnuksista, sillä ne tulee sisällyttää ko. tietokohteiden seuraavien versioden tallennettavaksi lähetettäviin objekteihin.
+Yhteinen tietovarasto on vastuussa uusien identiteettitunnusten luomisesta tarvittaessa tallennustapahtumien yhteydessä, ja niiden välittämisestä tiedoksi tallentavalle tietojärjestelmälle. Tallentavan tietojärjestelmän tulee tallentaa itselleen kopiot tietovaraston tallennustapahtuman yhteydessä palautamista maankäyttörajoitusten tietokohteiden identiteettitunnuksista, sillä ne tulee sisällyttää ko. tietokohteiden seuraavien versioden tallennettavaksi lähetettäviin objekteihin.
 
 {% include clause_start.html type="req" id="elinkaari/vaat-identiteettitunnus-gen" %}
 * Mikäli tallennettavalle tietokohteelle ei ole annettu ```identiteettitunnus```-attribuuttia, tai tietovarasto ei sisällä sellaista saman luokan tietokohdetta, jolla on sama ```identiteettiTunnus```-attribuutin arvo, tietovarasto luo ko. objektille uuden identiteettitunnuksen, joka korvaa tuottavan tietojärjestelmän objektille mahdollisesti antaman ```identiteettiTunnus```-attribuutin arvon. Tällöin objektia pidetään uuden tietokohteen ensimmäisenä versiona.
@@ -79,9 +77,9 @@ Yhteinen tietovarasto on vastuussa uusien identiteettitunnusten luomisesta tarvi
 
 <!--
 {% include clause_start.html type="req" id="elinkaari/vaat-kaavan-identiteettitunnus" %}
-[Tonttijakosuunnitelma](../../looginenmalli/dokumentaatio/#tonttijakosuunnitelma)-luokan tietokohteen tallennuksen yhteydessä tonttijakosuunnitelmatietovarasto tarkistaa, että sen attribuutti ```tonttijakosuunnitelmaTunnus``` on annettu ja validi.
-* Mikäli kohde katsotaan sen ```identiteettiTunnus```-attribuutin arvon perusteella uudeksi tietokohteeksi, sama ```tonttijakosuunnitelmaTunnus```-attribuutti ei saa olla käytössä muilla [Tonttijakosuunnitelma](../../looginenmalli/dokumentaatio/#tonttijakosuunnitelma)-luokan objekteilla.
-* Mikäli kohde katsotaan sen ```identiteettiTunnus```-attribuutin arvon perusteella aiemmin tallennetun tietokohteen uudeksi versioksi, aiemmin tallennetun version ```tonttijakosuunnitelmaTunnus```-attribuutin tulee olla sama kuin tallennettavassa objektissa.
+[Maankayttorajoitus](../../looginenmalli/dokumentaatio/#maankayttorajoitus)-luokan tietokohteen tallennuksen yhteydessä maankäyttörajoitusten tietovarasto tarkistaa, että sen attribuutti ```maankayttorajoituksenTunnus``` on annettu ja validi.
+* Mikäli kohde katsotaan sen ```identiteettiTunnus```-attribuutin arvon perusteella uudeksi tietokohteeksi, sama ```maankayttorajoituksenTunnus```-attribuutti ei saa olla käytössä muilla [Maankayttorajoitus](../../looginenmalli/dokumentaatio/#maankayttorajoitus)-luokan objekteilla.
+* Mikäli kohde katsotaan sen ```identiteettiTunnus```-attribuutin arvon perusteella aiemmin tallennetun tietokohteen uudeksi versioksi, aiemmin tallennetun version ```maankayttorajoituksenTunnus```-attribuutin tulee olla sama kuin tallennettavassa objektissa.
 {% include clause_end.html %}
 -->
 
@@ -118,7 +116,7 @@ Esimerkki:```640bff6b-c16a-4947-af8d-d86f89106be1.b05cf48d46d8c905c54522f44b0a12
 
 ### Nimiavaruus
 {% include clause_start.html type="req" id="elinkaari/vaat-nimiavaruus-maar" %}
-Nimiavaruus määrää tietomallin kaikkien tietokohteiden viittaustunnusten alkuosan yhden tietovaraston sisällä. Tonttijakosuunnitelman tietomallin tietokohteissa paikallinen tunnus kuvataan attribuutilla ```nimiavaruus```.
+Nimiavaruus määrää tietomallin kaikkien tietokohteiden viittaustunnusten alkuosan yhden tietovaraston sisällä. Maankäyttörajoitusten tietomallin tietokohteissa paikallinen tunnus kuvataan attribuutilla ```nimiavaruus```.
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-nimiavaruus-form" %}
@@ -131,7 +129,7 @@ Nimiavaruus on syytä valita huolella siten, että se olisi mahdollisimman pysyv
 Tietovarasto vastaa ```nimiavaruus```-attribuuttien asetamisesta tallennustapahtuman yhteydessä. Tuottavan tietojärjestelmän mahdollisesti antamat arvot korvataan.
 {% include clause_end.html %}
 
-Esimerkki: ```http://uri.suomi.fi/object/rytj/rakraj```
+Esimerkki: ```http://uri.suomi.fi/object/rytj/mkr```
 
 ### Viittaustunnus
 {% include clause_start.html type="req" id="elinkaari/vaat-viittaustunnus-maar" %}
@@ -152,7 +150,7 @@ Tallentavan tietojärjestelmän ei siis tarvitse tallentaa luotuja viittaustunnu
 Viittaustunnuksen on suositeltavaa ohjautua aina ko. tietokohteen version tietosisältöön kulloinkin toiminnassa olevassa tietovaraston latauspalvelussa.
 {% include clause_end.html %}
 
-Esimerkki: <!--```http://uri.suomi.fi/object/rytj/tjs/tonttijakosuunnitelma/640bff6b-c16a-4947-af8d-d86f89106be1.b05cf48d46d8c905c54522f44b0a12daff11604e```-->
+Esimerkki: ```http://uri.suomi.fi/object/rytj/mkr/maankayttorajoitus/640bff6b-c16a-4947-af8d-d86f89106be1.b05cf48d46d8c905c54522f44b0a12daff11604e```
 
 ### Tuottajakohtainen tunnus
 
@@ -173,55 +171,53 @@ Tuottajakohtaisilta tunnuksilta ei vaadita yksilöivyyttä tai mitään tiettyä
 Tuottajakohtaisen tunnuksen suositeltu muoto on UUID.
 {% include clause_end.html %}
 
-Esimerkki: ```rakmaj-123445```
+Esimerkki: ```mkr-123445```
 
-<!-- Tästä eteenpäin selkeämmin tjs-kohtaisia säännöksiä
-
-### Tonttijakosuunnitelmatunnus
-{% include clause_start.html type="req" id="elinkaari/vaat-tonttijakosuunnitelmatunnus-maar" %}
-Tonttijakosuunnitelmatunnus on tonttijakosuunnitelmalle ennakolta haettava, tonttijakosuunnitelman kansallisesti yksilöivä tunnus. Tonttijakosuunnitelman tietomallissa tonttijakosuunnitelmatunnus kuvataan [Tonttijakosuunnitelma](../../looginenmalli/dokumentaatio/#tonttijakosuunnitelma)-luokan attribuutilla ```tonttijakosuunnitelmaTunnus```.
+### Maankäyttörajoituksen tunnus
+{% include clause_start.html type="req" id="elinkaari/vaat-maankayttorajoitustunnus-maar" %}
+Maankäyttörajoituksen tunnus on maankäyttöpäätökselle ennakolta haettava, maankäyttöpäätöksen kansallisesti yksilöivä tunnus. Maankäyttörajoitusten tietomallissa maankäyttörajoituksen tunnus kuvataan [Maankayttorajoitus](../../looginenmalli/dokumentaatio/#maankayttorajoitus)-luokan attribuutilla ```maankayttorajoitusTunnus```.
 {% include clause_end.html %}
 
-{% include clause_start.html type="req" id="elinkaari/vaat-tonttijakosuunnitelmatunnus-gen" %}
-Tuottava tietojärjestelmän vastaa tonttijakosuunnitelmatunnuksen asettamisesta [Tonttijakosuunnitelma](../../looginenmalli/dokumentaatio/#tonttijakosuunnitelma)-luokan attribuutiksi. Se tulee olla asetettuna myös tonttijakosuunnitelman  ensimmäisen tonttijakosuunnitelmatietovarastoon tallennuksen yhteydessä.
+{% include clause_start.html type="req" id="elinkaari/vaat-maankayttorajoitustunnus-gen" %}
+Tuottava tietojärjestelmän vastaa maankäyttörajoituksen tunnuksen asettamisesta [Maankayttorajoitus](../../looginenmalli/dokumentaatio/#maankayttorajoitus)-luokan attribuutiksi. Se tulee olla asetettuna myös maankäyttörajoituksen ensimmäisen maankäyttörajoitusten tietovarastoon tallennuksen yhteydessä.
 {% include clause_end.html %}
 
-{% include clause_start.html type="req" id="elinkaari/vaat-tonttijakosuunnitelmatunnus-yks" %}
-Tonttijakosuunnitelmatunnus on [Tonttijakosuunnitelma](../../looginenmalli/dokumentaatio/#tonttijakosuunnitelma)-luokan objekteille globaalisti yksilöivä, eikä muutu saman tonttijakosuunnitelman eri elinkaaren aikaisten versioiden tallennuksen yhteydessä.
+{% include clause_start.html type="req" id="elinkaari/vaat-maankayttorajoitustunnus-yks" %}
+Maankäyttörajoituksen tunnus on [Maankayttorajoitus](../../looginenmalli/dokumentaatio/#maankayttorajoitus)-luokan objekteille globaalisti yksilöivä, eikä muutu saman Maankäyttörajoituksen eri elinkaaren aikaisten versioiden tallennuksen yhteydessä.
 {% include clause_end.html %}
 
-Käytännössä myönnetyt tonttijakosuunnitelmatunnukset kannattaa tallentaa valmiiksi tonttijakosuunnitelmatietovarastoon, jotta voidaan tarkistaa, onko tallennettavaksi tarkoitettu tonttijakosuunnitelmatunnus myönnetty organisaatiolle, jonka tonttijakosuunnitelmaa ollaan tallentamassa. Kuntakoodin tai muun hallinnollisen alueen tunnuksen käyttö osana tonttijakosuunnitelmatunnusta ei ole suositeltavaa, sillä hallinnolliset alueet muuttuvat ajan kuluessa. Kun sidos tunnuksen ja hallinnollisen alueen välillä ei näy tunnuksessa, voidaan tonttijakosuunnitelman hallinnollista aluetta muuttaa joustavammin tonttijakosuunnitelman elinkaaren aikana.
+Käytännössä myönnetyt maankäyttörajoitusten tunnukset  kannattaa tallentaa valmiiksi maankäyttörajoitusten tietovarastoon, jotta voidaan tarkistaa, onko tallennettavaksi tarkoitettu maankäyttörajoituksen tunnus myönnetty organisaatiolle, jonka maankäyttörajoitusta ollaan tallentamassa. Kuntakoodin tai muun hallinnollisen alueen tunnuksen käyttö osana maankäyttörajoituksen tunnus tunnusta ei ole suositeltavaa, sillä hallinnolliset alueet muuttuvat ajan kuluessa. Kun sidos tunnuksen ja hallinnollisen alueen välillä ei näy tunnuksessa, voidaan maankäyttörajoituksen hallinnollista aluetta muuttaa joustavammin maankäyttörajoituksen elinkaaren aikana.
 
 {% include clause_start.html type="rec" id="elinkaari/suos-tonttijakosuunnitelmatunnus-form" %}
-Tonttijakosuunnitelmatunnuksen suositeltu muoto on UUID.
+Maankäyttörajoituksen tunnuksen suositeltu muoto on UUID.
 {% include clause_end.html %}
 
 Esimerkki: ```df5b2d6f-d6d6-4695-938c-dd7c4c784c28```
 
 ### Pysyvien tunnusten palauttaminen tuottavalle järjestelmälle
 
-Versionhallinnan näkökulmasta on tärkeää, että tonttijakosuunnitelman tuottava tietojärjestelmä käyttää saman tonttijakosuunnitelman seuraavan version tallentamisessa tonttijakosuunnitelman ensimmäisen version tallennuksen yhteydessä luotua identiteettitunnusta. Vastaavasti kaikkien tonttijakosuunnitelman tietokohteiden osalta käytetään niiden ensimmäisen tallennuksen yhteydessä luotuja identiteettitunnuksia, mikäli objektin katsotaan kuvaavan ko. tietokohteen uutta versiota.
+Versionhallinnan näkökulmasta on tärkeää, että maankäyttörajoituksen tuottava tietojärjestelmä käyttää saman maankäyttörajoituksen seuraavan version tallentamisessa maankäyttörajoituksen ensimmäisen version tallennuksen yhteydessä luotua identiteettitunnusta. Vastaavasti kaikkien maankäyttörajoituksen tietokohteiden osalta käytetään niiden ensimmäisen tallennuksen yhteydessä luotuja identiteettitunnuksia, mikäli objektin katsotaan kuvaavan ko. tietokohteen uutta versiota.
 
 {% include clause_start.html type="req" id="elinkaari/vaat-tunnusten-palautus" %}
-Tietovaraston tallennusrajapinta palauttaa tallennetun tonttijakosuunnitelman tiedot tuottavalle tietojärjestelmälle tallennusoperaation yhteydessä siten, että ne sisältävät yllä mainittujen tunnustenhallintasääntöjen mukaisesti mahdollisesti generoidut tai muokatut identiteettitunnukset, paikalliset tunnukset, nimiavaruudet ja viittaustunnukset kaikille tallennetuille tietokohteille.
+Tietovaraston tallennusrajapinta palauttaa tallennetun maankäyttörajoituksen tiedot tuottavalle tietojärjestelmälle tallennusoperaation yhteydessä siten, että ne sisältävät yllä mainittujen tunnustenhallintasääntöjen mukaisesti mahdollisesti generoidut tai muokatut identiteettitunnukset, paikalliset tunnukset, nimiavaruudet ja viittaustunnukset kaikille tallennetuille tietokohteille.
 {% include clause_end.html %}
 
-### Tonttijakosuunnitelman tietokohteisiin viittaaminen ja viitteiden ylläpito
+### Maankäyttörajoituksen tietokohteisiin viittaaminen ja viitteiden ylläpito
 
 {% include clause_start.html type="req" id="vaat-tonttijakosuunnitelman-sisaiset-viittaukset" %}
-Saman tonttijakosuunnitelman tietokohteiden keskinäiset assosiaatiot toteutetaan viitattavan tietokohteen [paikallinenTunnus](#paikallinen-tunnus)-attribuuttia käyttäen.
+Saman maankäyttörajoituksen tietokohteiden keskinäiset assosiaatiot toteutetaan viitattavan tietokohteen [paikallinenTunnus](#paikallinen-tunnus)-attribuuttia käyttäen.
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-tietovaraston-sisaiset-viittaukset" %}
-Tonttijakosuunitelmatietokohteen luokkien assosiaatiot eri tonttijakosuunnitelmien välillä tai tonttijakosuunnitelman ja muiden maankäyttöpäätösten tietokohteiden välillä toteutetaan viitattavan tietokohteen [viittaustunnus](#viittaustunnus)-attribuuttia käyttäen.
+Maankäyttörajoituksen tietokohteen luokkien assosiaatiot eri maankäyttörajoitusten välillä tai maankäyttörajoituksen ja muiden maankäyttöpäätösten tietokohteiden välillä toteutetaan viitattavan tietokohteen [viittaustunnus](#viittaustunnus)-attribuuttia käyttäen.
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-viittaukset-ulkoa" %}
-Pysyvät viittaukset Tonttijakosuunnitelman tietomallin ulkopuolelta tietomallin tietokohteisiin toteutetaan viitattavan tietokohteen [viittaustunnus](#viittaustunnus)-attribuuttia käyttäen.
+Pysyvät viittaukset maankäyttörajoitusten tietomallin ulkopuolelta tietomallin tietokohteisiin toteutetaan viitattavan tietokohteen [viittaustunnus](#viittaustunnus)-attribuuttia käyttäen.
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-viittaukset-tallennettaessa" %}
-Tallennettaessa Tonttijakosuunnitelman tietomallin tietokohteita tonttijakosuunnitelmatietovarastoon tietokohteiden tunnukset muuttuvat niiden pysyvään muotoon, kuten kuvattu luvussa [Tunnukset ja niiden hallinta](#tunnukset-ja-niiden-hallinta). Tonttijakosuunnitelmatietovaraston vastuulla on päivittää kunkin paikallisen tunnuksen muuttamisen yhteydessä myös kaikkien ko. tietokohteen versioon sen paikallisen tunnuksen avulla viittaavien muiden ko. tonttijakosuunnitelman tietokohteiden viittaukset käyttämään tietokohteen muutettua paikallista tunnusta.   
+Tallennettaessa maankäyttörajoitusten tietomallin tietokohteita maankäyttörajoitusten tietovarastoon tietokohteiden tunnukset muuttuvat niiden pysyvään muotoon, kuten kuvattu luvussa [Tunnukset ja niiden hallinta](#tunnukset-ja-niiden-hallinta). Maankäyttörajoitusten tietovaraston vastuulla on päivittää kunkin paikallisen tunnuksen muuttamisen yhteydessä myös kaikkien ko. tietokohteen versioon sen paikallisen tunnuksen avulla viittaavien muiden ko. maankäyttörajoituksen tietokohteiden viittaukset käyttämään tietokohteen muutettua paikallista tunnusta.   
 {% include clause_end.html %}
 
 ### Koodistojen koodien tunnuksiin liittyvät vaatimukset
@@ -240,6 +236,7 @@ Käytännössä tietyn koodin alakoodit voidaan tunnistaa vertaamalla niiden tun
 Koodin ```A``` alakoodin ```B``` tunnus alkaa koodin ```A``` tunnuksella ja sisältää sen jälkeen yhden tai useamman merkin.
 {% include clause_end.html %}
 
+<!--
 ## Muutokset ja tietojen versionti
 {% include clause_start.html type="req" id="elinkaari/vaat-pysyva-sisalto" %}
 Kukin tonttijakosuunnitelman tai sen kohteiden tallennusoperaatio yhteiseen tietovarastoon muodostaa uuden version tallennettavista tietokohteista, mikäli yksittäinen tietokohde on miltään osin muuttunut verrattuna sen edelliseen versioon. Myös muutokset muissa Tonttijakosuunnitelman tietomallin tietokohteissa, joihin tietokohteesta on viittaus, lasketaan tietokohteen muutoksiksi. Tallennetun tietokohteen version sisältö ei voi muuttua tallennuksen jälkeen, poislukien sen voimassaolon päättymiseen, seuraavaan versioon linkittämiseen ja elinkaaritilaan liittyvät attribuutit, joita tonttijakosuunnitelmatietovarasto itse päivittää tietyissä tilanteissa.
