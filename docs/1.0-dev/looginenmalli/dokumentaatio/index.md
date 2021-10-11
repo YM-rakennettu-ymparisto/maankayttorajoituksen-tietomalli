@@ -298,16 +298,6 @@ Laajennettavuus: Ei laajennettavissa
 
 {% include codelistref.html id="RY_MaankayttorajoituksenSyntytapa" name="Maankäyttörajoituksen syntytapa" %}
 
-#### MaankayttorajoituksenSyntytapa
-
-Englanninkielinen nimi: 
-
-Stereotyyppi: CodeList (koodisto)
-
-Laajennettavuus: Ei laajennettavissa
-
-{% include codelistref.html id="RY_MaankayttorajoituksenSyntytapa" name="Maankäyttörajoituksen syntytapa" %}
-
 
 
 <!-- linkit standardeihin, joihin mainittu sivun alussa -->
