@@ -39,7 +39,7 @@ Tietomallin mukaisten aineistojen tulee noudattaa tietomallin [elinkaarisäänt�
 
 ### Soveltamisohjeiden mukaisuus
 {% include clause_start.html type="req" id="laatu/vaat-soveltamisohjeet" %}
-Tietomallin mukaisten aineistojen tulee noudattaa tietomallin yksilöimää [Tonttijakosuunnitelman](../soveltamisohjeet/) soveltamisprofiilia. Vaatimukset ja suositukset on erotettu selkeästi soveltamisprofiilien muusta sisällöstä.
+Tietomallin mukaisten aineistojen tulee noudattaa tietomallin yksilöimää [Maankäyttöpäätöksen](../soveltamisohjeet/) soveltamisprofiilia. Vaatimukset ja suositukset on erotettu selkeästi soveltamisprofiilien muusta sisällöstä.
 {% include clause_end.html %}
 
 {% include question.html content="" %}
@@ -76,7 +76,7 @@ Kunkin yhdellä kielellä annetun LanguageString-tyyppisen merkkijonon enimmäis
 <!-- poistettu toistaiseksi 
 #### Tekstiarvojen käyttö
 
-Tekstimuotoisina annettujen kaavamääräysten ja niiden lisätietojen koneellinen tulkittavuus on monimutkaisempaa, epätäsmällisempää ja epäluotettavampaa kuin kuvattaessa sama ohjausvaikutus koodistojen arvojen tai numeeristen arvojen avulla. Tekstimuotoiset arvot ovat kuitenkin toisinaan tarpeen, koska kaikkia mahdollisia yksityiskohtaisia kaavamääräystietoja ei ole mielekästä koodittaa. Ihmisen tulee todennäköisesti aina tarkistaa tekstimuotoisten kaavamääräysten tulkinta, mikä heikentää konetulkittavan kaavatiedon käsittelytehokkuutta. Tämän vuoksi tekstimuotoisia kaavamääräysten ja niiden lisätietojen arvoja ei tule käyttää tarpeettomasti, esimerkiksi kuvaamaan uudelleen jo kaavamääräyslajikoodin otsikkoon, määritelmään tai kuvaukseen sisältyvää sisältöä.
+Tekstimuotoisina annettujen maankäyttörajoitusten arvojen koneellinen tulkittavuus on monimutkaisempaa, epätäsmällisempää ja epäluotettavampaa kuin kuvattaessa sama ohjausvaikutus koodistojen arvojen tai numeeristen arvojen avulla. Tekstimuotoiset arvot ovat kuitenkin toisinaan tarpeen, koska kaikkia mahdollisia yksityiskohtaisia maankäyttörajoitustietoja ei ole mielekästä koodittaa. Ihmisen tulee todennäköisesti aina tarkistaa tekstimuotoisten arvojen tulkinta, mikä heikentää konetulkittavan maankäyttörajoitustiedon käsittelytehokkuutta. Tämän vuoksi tekstimuotoisia arvoja ei tule käyttää tarpeettomasti, esimerkiksi kuvaamaan uudelleen jo kaavamääräyslajikoodin otsikkoon, määritelmään tai kuvaukseen sisältyvää sisältöä.
 
 {% include clause_start.html type="req" id="laatu/vaat-vain-tarpeelliset-tekstiarvot" %}
 Mikäli [Kaavamaarays](dokumentaatio/#kaavamaarays)- tai [Lisatieto](dokumentaatio/#lisatieto)-luokkien ```arvo```-attribuuteille on sallittu nollasta poikkeava määrä [TekstiArvo](dokumentaatio/#tekstiarvo)-tyyppisiä arvoja, tulee niitä käyttää ainoastaan tapauksissa, joissa teksti on välttämätön täydentämään kaavamääräyksen tai lisätiedon muiden attribuuttien avulla kuvattua merkitystä. Mikäli sama ohjausvaikutus saavutetaan myös jättämällä [TekstiArvo](dokumentaatio/#tekstiarvo)-tyyppinen arvo pois, ei sitä tule käyttää.
@@ -120,7 +120,7 @@ Geometrioiden ilmaisemisessa tulee noudattaa kunkin koordinaatiston määritelm�
 {% include clause_end.html %}
 
 #### Geometrinen ja topologinen eheys
-
+<!--
 {% include clause_start.html type="req" id="laatu/vaat-suljetut-ringit" %}
 Mikäli viiva on osa aluemaisen geometrian reunaviivaa, on sen oltava suljettu, eli sen alku- ja loppuppisteiden on oltava samat.
 {% include clause_end.html %}
@@ -128,7 +128,7 @@ Mikäli viiva on osa aluemaisen geometrian reunaviivaa, on sen oltava suljettu, 
 {% include clause_start.html type="req" id="laatu/vaat-viiva-kielletyt-leikkaukset" %}
 Viivamainen geometria ei saa leikata itseään.
 {% include clause_end.html %}
-
+-->
 {% include clause_start.html type="req" id="laatu/vaat-alue-kielletyt-leikkaukset" %}
 Aluemaisen geometrian ulkoreunan ja reikien reunaviivat eivät saa leikata itseään tai toisiaan. Kukin reunaviiva saa koskettaa alueen ulkoreunaa tai reiän reunaa, mukaanlukien se itse, vain yksittäisissä pisteissä.
 {% include clause_end.html %}
@@ -136,11 +136,11 @@ Aluemaisen geometrian ulkoreunan ja reikien reunaviivat eivät saa leikata itse�
 {% include clause_start.html type="req" id="laatu/vaat-yhteneva-alue" %}
 Aluemaisen geometrian sisäosan on oltava yhtenevä, eli minkä tahansa kahden alueen sisäpisteen välillä on voitava muodostaa yhtenäinen käyrä, joka kulkee kokonaan alueen sisällä.
 {% include clause_end.html %}
-
+<!--
 {% include clause_start.html type="req" id="laatu/vaat-ei-tyhja-alue" %}
 Aluemaisen geometrian sisäosan pinta-ala on oltava mitattavissa, eli alueeseen tulee sisältyä pisteitä, jotka eivät ole osa alueen ulkoreunaa.
 {% include clause_end.html %}
-
+-->
 {% include clause_start.html type="req" id="laatu/vaat-pinnan-orientaatio" %}
 Aluemaisten geometrioiden kiertosuuntien tulee noudattaa ISO 19107 -standardin määritelmää: Geometrioiden reunojen kiertosuunnat tulee valita siten, että pinnan yläpuolelta katsottuna ulkorajan reunan kiertosuunta on vastapäivään ja pinnan mahdollisten reikien reunojen kiertosuunnat ovat myötäpäivään. Mikäli pinta on osa 3-ulotteisten geometrian ulkorajaa, ulkopuoli vastaa yläpuolta.
 {% include clause_end.html %}
@@ -173,14 +173,14 @@ Mikäli fyysinen tietomalli ei aseta ajanhetken muodolle rajoituksia, on suosite
 {% include clause_start.html type="req" id="laatu/vaat-aikavali-maar" %}
 Aikavälejä kuvaavat attribuutit voidaan antaa joko sekä alku- että loppuajanhetken avulla tai vain joko alku- tai loppuajanhetken avulla. Mikäli alkuajanhetkeä ei anneta, tulkitaan aikavälin sisältävän minkä tahansa ajanhetken loppuajanhetkeen saakka. Vastaavasti mikäli loppuajanhetkeä ei anneta, tulkitaan aikavälin sisältävän minkä tahansa ajanhetken alkujanhetkestä lähtien.
 {% include clause_end.html %}
-
+<!--
 ## Luokkakohtaiset säännöt
 
 ### AbstraktiMaankayttoasia
 {% include clause_start.html type="req" id="laatu/vaat-mkp-aluerajaus-geometria" %}
 [AbstraktiMaankayttoasia](dokumentaatio/#abstraktimaankayttoasia)-luokan objektien ```aluerajaus```-attribuutin arvon tulee kuvata tonttijakosuunnitelman suunnittelualue joko [aluemaisena geometriana](#laatu-vaat-geom-2d-alue-maar) tai [monialueena](#laatu-vaat-geom-kokoelmat-maar).
 {% include clause_end.html %}
-<!--
+
 ### Lahtotietoaineisto
 {% include clause_start.html type="req" id="laatu/vaat-lahtotietoaineisto-aluerajaus-geometria" %}
 [Lahtotietoaineito](dokumentaatio/#lahtotietoaineisto)-luokan objektien ```aluerajaus```-attribuutin arvon tulee kuvata aineiston maantieteellinen kattavuus joko [aluemaisena geometriana](#laatu-vaat-geom-2d-alue-maar) tai [monialueena](#laatu-vaat-geom-kokoelmat-maar).
