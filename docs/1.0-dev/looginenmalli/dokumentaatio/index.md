@@ -14,7 +14,7 @@ status: "Keskeneräinen"
 
 ## Yleistä
 
-Loogisen tason tietomalli määrittelee kaikille kohteille yhteiset tietorakenteet, joita sovelletaan maankäyttörajoitusten ilmaisemiseen laadittujen [soveltamisohjeiden](https://www.tonttijakosuunnitelma.fi/1.0-dev/soveltamisohjeet/index.html) ja niihin kiinnittyvien koodistojen sekä [elinkaari-](https://www.tonttijakosuunnitelma.fi/1.0-dev/looginenmalli/elinkaarisaannot.html) ja [laatusääntöjen](https://www.tonttijakosuunnitelma.fi/1.0-dev/looginenmalli/laatusaannot.html) mukaisesti. Looginen tietomalli pyrkii olemaan mahdollisimman riippumaton tietystä toteutusteknologiasta tai tiedon fyysisestä esitystavasta.
+Loogisen tason tietomalli määrittelee kaikille kohteille yhteiset tietorakenteet, joita sovelletaan maankäyttörajoitusten ilmaisemiseen laadittujen [soveltamisohjeiden](https://ym-rakennettu-ymparisto.github.io/maankayttorajoitusten-tietomalli/1.0-dev/soveltamisohjeet/index.html) ja niihin kiinnittyvien koodistojen sekä [elinkaari-](https://ym-rakennettu-ymparisto.github.io/maankayttorajoitusten-tietomalli/1.0-dev/looginenmalli/elinkaarisaannot.html) ja [laatusääntöjen](https://ym-rakennettu-ymparisto.github.io/maankayttorajoitusten-tietomalli/1.0-dev/looginenmalli/laatusaannot.html) mukaisesti. Looginen tietomalli pyrkii olemaan mahdollisimman riippumaton tietystä toteutusteknologiasta tai tiedon fyysisestä esitystavasta.
 
 <!--**Graafinen mallinnus loogisesta tietomallista**
 
@@ -37,7 +37,7 @@ Tietomallit hyödyntävät samoja normatiivisia viittauksia kuin muutkin Ryhti-h
 
 Tietomallien looginen tietomalli perustuu [ISO 19109][ISO-19109]-standardin yleiseen kohdetietomalliin (General Feature Model, GFM), joka määrittelee rakennuspalikat paikkatiedon ISO-standardiperheen mukaisten sovellusskeemojen määrittelyyn. GFM kuvaa muun muassa metaluokat ```FeatureType```, ```AttributeType``` ja ```FeatureAssociationType```. 
 
-Tietomalleissa kaikki tietokohteet, joilla on tunnus ja jotka voivat esiintyä erillään toisista kohteista on määritelty kohdetyypeinä stereotyypin ```FeatureType``` kautta. Sellaiset tietokohteet, joilla ei ole omaa tunnusta ja jotka voivat esiintyä vain kohdetyyppien attribuuttien arvoina on määritelty [ISO 19103][ISO-19103]-standardin ```DataType```-stereotyypin avulla. Lisäksi [HallinnollinenAlue](#hallinnollinenalue) ja [Organisaatio](#organisaatio) on mallinnettu vain rajapintojen (```Interface```) avulla, koska niitä ei ole tarpeen kuvata tonttijakosuunnitelman tietomallissa yksityiskohtaisesti, ja on todennäköistä, että suunnitelmia ylläpitävät tietojärjestelmät tarjoavat niille konkreettiset toteuttavat luokat.
+Tietomalleissa kaikki tietokohteet, joilla on tunnus ja jotka voivat esiintyä erillään toisista kohteista on määritelty kohdetyypeinä stereotyypin ```FeatureType``` kautta. Sellaiset tietokohteet, joilla ei ole omaa tunnusta ja jotka voivat esiintyä vain kohdetyyppien attribuuttien arvoina on määritelty [ISO 19103][ISO-19103]-standardin ```DataType```-stereotyypin avulla. Lisäksi [HallinnollinenAlue](#hallinnollinenalue) ja [Organisaatio](#organisaatio) on mallinnettu vain rajapintojen (```Interface```) avulla, koska niitä ei ole tarpeen kuvata maankäyttörajoitusten tietomallissa yksityiskohtaisesti, ja on todennäköistä, että suunnitelmia ylläpitävät tietojärjestelmät tarjoavat niille konkreettiset toteuttavat luokat.
 
 [ISO 19109][ISO-19109] -standardin lisäksi tietomallit perustuvat muihin paikkatiedon ISO-standardeihin, joista keskeisimpiä ovat [ISO 19103][ISO-19103] (UML-kielen käyttö paikkatietojen mallinnuksessa), [ISO 19107][ISO-19107] (sijaintitiedon mallintaminen) ja [ISO 19108][ISO-19108] (aikaan sidotun tiedon mallintaminen).
 
@@ -92,11 +92,11 @@ Täsmälleen yhdestä pisteestä koostuva geometriatyyppi. Määritelty rajapint
 
 ## Tietomallin yleispiirteet
 
-Tietomalli perustuu kaavatietomallin yhteiskäyttöisiin tietokomponentteihin. Kaavatietomallin MKP-ydin (maankäyttöpäätökset, MKP) kuvaa maankäyttöpäätösten tietomallintamisessa yleiskäyttöisiksi suunnitellut luokat ja niihin liittyvät koodistot, joita hyödynnetään tonttijakosuunnitelman soveltamisprofiilin kautta. MKP-ytimen lisäksi hyödynnetään laajasti Kaavatietomallin abstrakteja ja muita luokkia tonttijakosuunnitelmatietomallin määrittelemien koodistojen ja soveltamisprofiilin avulla. 
+Tietomalli perustuu maankäyttöpäätösten yhteiskäyttöisiin tietokomponentteihin. Maankäyttöpäätösten tietokomponenttien MKP-ydin (maankäyttöpäätökset, MKP) kuvaa maankäyttöpäätösten tietomallintamisessa yleiskäyttöisiksi suunnitellut luokat ja niihin liittyvät koodistot, joita hyödynnetään maankäyttörajoitusten tietokomponenttien kautta. MKP-ytimen lisäksi hyödynnetään laajasti Maankäyttöpäätösten tietokomponenttien abstrakteja ja muita luokkia maankäyttöpäätösten tietomallin määrittelemien koodistojen ja soveltamisprofiilin avulla. 
 
-Tietomallien UML-luokkakaaviot ovat saatavilla erillisellä [UML-kaaviot-sivulla](https://www.tonttijakosuunnitelma.fi/1.0-dev/looginenmalli/uml/).
+Tietomallien UML-luokkakaaviot ovat saatavilla erillisellä [UML-kaaviot-sivulla](https://ym-rakennettu-ymparisto.github.io/maankayttorajoitusten-tietomalli/1.0-dev/looginenmalli/uml/).
 
-## Rakennusrajoitusten tietomallien suhde ja tietovirrat Ryhti-hankkeen toisiin tietomalleihin
+## Maankäyttörajoitusten tietomallin suhde ja tietovirrat Ryhti-hankkeen toisiin tietomalleihin
 
 ## Maankäyttöpäätöksien ydin (MKP-ydin)
 
@@ -106,7 +106,7 @@ Englanninkielinen nimi: AbstractVersionedObject
 
 Stereotyyppi: FeatureType (kohdetyyppi)
 
-Yhteinen yläluokka kaikille tonttijakosuunnitelman versiohallituille luokille. Kuvaa kaikkien kohdetyyppien yhteiset ominaisuudet ja assosiaatiot.
+Yhteinen yläluokka kaikille maankäyttörajoitusten versiohallituille luokille. Kuvaa kaikkien kohdetyyppien yhteiset ominaisuudet ja assosiaatiot.
 
 Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
@@ -137,14 +137,14 @@ metatietokuvaus  | [URI](#uri) | 0..1  | viittaus ulkoiseen metatietokuvaukseen
 
 Englanninkielinen nimi: Document
 
-Kuvaa käsitteen [tonttijakosuunnitelman viiteasiakirjan](../kasitemalli/#tonttijakosuunnitelman-viiteasiakirja). Erikoistaa luokkaa [AbstraktiVersioituObjekti](#abstraktiversioituobjekti). 
+Kuvaa käsitteen [maankayttorajoitusten viiteasiakirjan](../kasitemalli/#maankayttorajoitusten-viiteasiakirja). Erikoistaa luokkaa [AbstraktiVersioituObjekti](#abstraktiversioituobjekti). 
 
 Stereotyyppi: FeatureType (kohdetyyppi)
 
 Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
 asiakirjatunnus | [URI](#uri) | 0..* | asiakirjan pysyvä tunnus, esim. diaarinumero tai muu dokumentinhallinnan tunnus
-laji | [TonttijakosuunnitelmanAsiakirjanLaji](#tonttijakosuunnitelmanasiakirjanlaji) | 1  | asiakirjan tyyppi
+laji | [MaankayttorajoitustenAsiakirjanLaji](#maankayttorajoitustenasiakirjanlaji) | 1  | asiakirjan tyyppi
 lisatietolinkki  | [URI](#uri) | 0..1 | viittaus ulkoiseen lisätietokuvaukseen asiakirjasta
 metatietolinkki | [URI](#uri) | 0..1 | viittaus ulkoiseen metatietokuvaukseen asiakirjasta
 nimi | [LanguageString](#languagestring) | 0..* | asiakirjan nimi
@@ -193,7 +193,7 @@ Englanninkielinen nimi: AdministrativeArea
 
 Stereotyyppi: Interface (rajapinta)
 
-Hallinnollinen alue on kuvattu tonttijakosuunniteman tietomallissa ainoastaan rajapintana, koska sen mallintaminen on kuulu tonttijakosuunnitelman tietomallin sovellusalaan. Toteuttavien tietojärjestelmien tulee tarjota rajapinnan määrittelemät vähimmäistoiminnallisuudet.
+Hallinnollinen alue on kuvattu maankäyttörajoitusten tietomallissa ainoastaan rajapintana, koska sen mallintaminen on kuulu maankäyttörajoitusten tietomallin sovellusalaan. Toteuttavien tietojärjestelmien tulee tarjota rajapinnan määrittelemät vähimmäistoiminnallisuudet.
 
 Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
@@ -207,11 +207,23 @@ Englanninkielinen nimi: Organization
 
 Stereotyyppi: Interface (rajapinta)
 
-Organisaatio on kuvattu tonttijakosuunnitelman tietomallissa ainoastaan rajapintana, koska sen mallintaminen on kuulu tonttijakosuunnitelman tietomallin sovellusalaan. Toteuttavien tietojärjestelmien tulee tarjota rajapinnan määrittelemät vähimmäistoiminnallisuudet.
+Organisaatio on kuvattu maankäyttörajoitusten tietomallissa ainoastaan rajapintana, koska sen mallintaminen on kuulu maankäyttörajoitusten tietomallin sovellusalaan. Toteuttavien tietojärjestelmien tulee tarjota rajapinnan määrittelemät vähimmäistoiminnallisuudet.
 
 Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
 nimi | [CharacterString](#characterstring) | 1  | palauttaa organisaation alueen nimen valitulla kielellä
+
+### Päätöksentekijä
+
+Englanninkielinen nimi: Decision-maker
+
+Stereotyyppi: Interface (rajapinta)
+
+Päätöksentekijä on kuvattu maankäyttörajoitusten tietomallissa ainoastaan rajapintana, koska sen mallintaminen on kuulu maankäyttörajoitusten tietomallin sovellusalaan. Toteuttavien tietojärjestelmien tulee tarjota rajapinnan määrittelemät vähimmäistoiminnallisuudet.
+
+Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
+-----------------|---------------------|-----------------|------------------------------------
+nimi | [CharacterString](#characterstring) | 1  | palauttaa päätöksentekjän nimen valitulla kielellä
 
 ### Koodistot
 
@@ -224,7 +236,7 @@ Stereotyyppi: <!-- CodeList (koodisto) -->
 Laajennettavuus: <!-- Ei laajennettavissa -->
 
 <!--
-{% include codelistref.html id="RY_TonttijakosuunnitelmanAsiakirjanLaji" name="Tonttijakosuunnitelman asiakirjan laji" %}
+{% include codelistref.html id="RY_MaankayttorajoituksenAsiakirjanLaji" name="Maankäyttörajoituksen asiakirjan laji" %}
 -->
 #### AbstraktiKasittelytapahtumanLaji
 
@@ -234,7 +246,7 @@ Stereotyyppi: CodeList (koodisto)
 
 Laajennettavuus: Ei laajennettavissa
 
-Käsittelytapahtumien lajit kuvataan MKP-ydin -paketissa abstraktina koodistona, jota laajennetaan kunkin maankäyttöpäätöksen prosessin konkreettisten arvojen mukaisesti niiden tietomalleissa.
+Käsittelytapahtumien lajit kuvataan MKP-ydin -paketissa abstraktina koodistona, jota laajennetaan kunkin maankäyttörajoitus prosessin konkreettisten arvojen mukaisesti niiden tietomalleissa.
 
 #### AbstraktiVuorovaikutustapahtumanLaji
 
@@ -244,7 +256,7 @@ Stereotyyppi: CodeList (koodisto)
 
 Laajennettavuus: Ei laajennettavissa
 
-Vuorovaikutustapahtumien lajit kuvataan MKP-ydin -paketissa abstraktina koodistona, jota laajennetaan kunkin maankäyttöpäätöksen prosessin konkreettisten arvojen mukaisesti niiden tietomalleissa.
+Vuorovaikutustapahtumien lajit kuvataan MKP-ydin -paketissa abstraktina koodistona, jota laajennetaan kunkin maankäyttörajoitus prosessin konkreettisten arvojen mukaisesti niiden tietomalleissa.
 
 ## Maankäyttörajoitusten tiedot
 
