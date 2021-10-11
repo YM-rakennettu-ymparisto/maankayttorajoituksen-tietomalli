@@ -302,16 +302,11 @@ Maankäyttörajoitus voi olla elinkaaritilassa Voimassa ainoastaan, mikäli niid
 
 Kaavoitus- ja rakentamislain pykälässä XX säädetään maankäyttörajoituksen raukeamisesta ja kumoamisesta.
 
-Voimassaoleva maankäyttörajoitus voi kumoutua jatkettavalla maankäyttörajoituksella osittain tai kokonaan.  maankäyttörajoitus voi kumoutua kokonaan tai osittain, jos alueelle tulee voimaan asemakaava kokonaan tai osittain, jonka toteuttamiseksi maankäyttörajoitus on tehty.
+Voimassaoleva maankäyttörajoitus raukeaa sen voimassaoloajan mennessä umpeen. 
+Voimassaoleva maankäyttörajoitus voi kumoutua jatkettavalla maankäyttörajoituksella osittain tai muulla päätöksellä.  Maankäyttörajoitus voi kumoutua kokonaan tai osittain, jos alueelle tulee voimaan kaava kokonaan tai osittain, jonka toteuttamiseksi maankäyttörajoitus on määrätty.
 <!--
-Lisää tähän vielä sisäiset linkit kuntoon
-{% include clause_start.html type="req" id="elinkaari/vaat-kumoutumistieto-per-tonttijakosuunnitelma" %}
+{% include clause_start.html type="req" id="elinkaari/vaat-kumoutumistieto-per-maankayttorajoitus" %}
 Tonttijakosuunnitelmilla kumoutuvat, aiemmin hyväksyttyjen tonttijakosuunnitelmien esitonttikohteet tulee yksilöidä kumoutuvassa tonttijakosuunnitelmassa. Kutakin tonttijakosuunnitelmaa kohti tulee antaa yksi Tonttijakosuunnitelma-luokan attribuutin kumoamistieto arvo tyyppiä TonttijakosuunnitelmanKumoamistieto, jonka kumottavanTonttijakosuunnitelmanTunnus-attribuutin arvo on kumottavan tonttijakosuunnitelman ```viittaustunnus```.
-{% include clause_end.html %}
-
-Lisää tähän vielä sisäiset linkit kuntoon
-{% include clause_start.html type="req" id="elinkaari/vaat-kumoutuva-esitonttikohteen-tunnus" %}
-Kumoutumisessa esitonttikohteet kuvataan ensisijaisesti kumoattavanEsitonttikohteenTunnus-attribuutin arvojen avulla. Attribuutin arvo on kumottavan Esitonttikohde-luokan tietokohteen ```viittaustunnus```.
 {% include clause_end.html %}
 
 Lisää tähän vielä sisäiset linkit kuntoon
