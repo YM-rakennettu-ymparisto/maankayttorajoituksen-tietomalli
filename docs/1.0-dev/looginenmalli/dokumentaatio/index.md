@@ -227,17 +227,6 @@ nimi | [CharacterString](#characterstring) | 1  | palauttaa päätöksentekjän 
 
 ### Koodistot
 
-#### Koodisto
-
-Englanninkielinen nimi: <!-- Esim: PlotPlanDocumentKind -->
-
-Stereotyyppi: <!-- CodeList (koodisto) -->
-
-Laajennettavuus: <!-- Ei laajennettavissa -->
-
-<!--
-{% include codelistref.html id="RY_MaankayttorajoituksenAsiakirjanLaji" name="Maankäyttörajoituksen asiakirjan laji" %}
--->
 #### AbstraktiKasittelytapahtumanLaji
 
 Englanninkielinen nimi: AbstractHandlingEventKind
@@ -246,17 +235,8 @@ Stereotyyppi: CodeList (koodisto)
 
 Laajennettavuus: Ei laajennettavissa
 
-Käsittelytapahtumien lajit kuvataan MKP-ydin -paketissa abstraktina koodistona, jota laajennetaan kunkin maankäyttörajoitus prosessin konkreettisten arvojen mukaisesti niiden tietomalleissa.
+{% include codelistref.html id="RY_MaankayttorajoituksenKasittelytapahtumanLaji" name="Maankäyttörajoituksen käsittelytapahtuman laji" %}
 
-#### AbstraktiVuorovaikutustapahtumanLaji
-
-Englanninkielinen nimi: AbstractInteractionEventKind
-
-Stereotyyppi: CodeList (koodisto)
-
-Laajennettavuus: Ei laajennettavissa
-
-Vuorovaikutustapahtumien lajit kuvataan MKP-ydin -paketissa abstraktina koodistona, jota laajennetaan kunkin maankäyttörajoitus prosessin konkreettisten arvojen mukaisesti niiden tietomalleissa.
 
 ## Maankäyttörajoitusten tiedot
 
@@ -287,23 +267,45 @@ kumoutuvanMaankayttorajoituksenTunnus | [URI](#URI) | 0..*  | maankäyttörajoit
 
 ### Koodisto
 
-Kuvaa käsitteen x, erikoistaa luokkaa x, stereotyyppi: FeatureType (kohdetyyppi)
+#### MaankayttorajoituksenLaji
 
-<!-- Esimerkkitaulukko
-Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
------------------|---------------------|-----------------|------------------------------------
-laji | [Codelist](#tonttijakosuunnitelmanLaji) | 1  | kertoo, millainen tonttijakosuunnitelma on laadittu
-tunnus  | [CharacterString](#CharacterString) | 1 | yksilöivä ID
-elinkaarentila | [Codelist](#tonttijakosuunnitelmanElinkaarentila) | 1 | yleisimmät arvot vireillä oleva,  hyväksytty tai voimassa
-kumoutumistieto | [TonttijakosuunnitelmanKumoutumistieto](#TonttijakosuunnitelmanKumoutumistieto) | 0..* | tonttijakosuunnitelman tai sen osa, jonka tämä tonttijakosuunnitelma kumoaa
-vireilletuloAika | [TM_Instant](#TM_Instant) | 0..1 | aika, jolloin tonttijakosuunnitema on tullut vireille
-hyvaksymisAika | [TM_Instant](#TM_Instant) | 0..1 | aika, jolloin tonttijakosuunnitelma on tullut virallisesti hyväksyttyä
-digitaalinenAlkupera | [DigitaalinenAlkupera](#DigitaalinenAlkupera) | 0..1 | luokittelu alunperin tietomallin mukaan luotuihin ja jälkeenpäin digitoituihin tonttijakosuunnitelmiin
--->
+Englanninkielinen nimi: 
 
+Stereotyyppi: CodeList (koodisto)
 
+Laajennettavuus: Ei laajennettavissa
 
+{% include codelistref.html id="RY_MaankayttorajoitustenLaji" name="Maankäyttörajoituksen laji" %}
 
+#### MaankayttorajoituksenElinkaarentila
+
+Englanninkielinen nimi: 
+
+Stereotyyppi: CodeList (koodisto)
+
+Laajennettavuus: Ei laajennettavissa
+
+{% include codelistref.html id="RY_MaankayttorajoituksenElinkaarentila" name="Maankäyttörajoituksen elinkaaren tila" %}
+
+#### MaankayttorajoituksenSyntytapa
+
+Englanninkielinen nimi: 
+
+Stereotyyppi: CodeList (koodisto)
+
+Laajennettavuus: Ei laajennettavissa
+
+{% include codelistref.html id="RY_MaankayttorajoituksenSyntytapa" name="Maankäyttörajoituksen syntytapa" %}
+
+#### MaankayttorajoituksenSyntytapa
+
+Englanninkielinen nimi: 
+
+Stereotyyppi: CodeList (koodisto)
+
+Laajennettavuus: Ei laajennettavissa
+
+{% include codelistref.html id="RY_MaankayttorajoituksenSyntytapa" name="Maankäyttörajoituksen syntytapa" %}
 
 
 
