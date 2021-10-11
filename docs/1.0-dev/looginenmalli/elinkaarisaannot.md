@@ -298,6 +298,18 @@ Maankayttorajoitus on voimassa niiden voimassaoloAika-attribuuttien määräämi
 Maankäyttörajoitus voi olla elinkaaritilassa Voimassa ainoastaan, mikäli niiden voimassaoloAika on annettu ja sisältää alkuajan ja loppuajan. 
 {% include clause_end.html %}
 
+### Maankäyttörajoituksen syntytapa
+
+Kaavoitus- ja rakentamislaissa säädetään tavoista tai menettelyistä, joiden johdosta maankäyttörajoitus voi syntyä. 
+
+Maankäyttörajoituksen syntytapaa hallitaan syntytapa-attribuutilla ja sen mahdolliset arvot kuvataan Maankäyttörajoituksen syntytapa-koodiston avulla. Maankayttorajoitus-luokan syntytapa-attribuutti on pakollinen.
+
+**Maankäyttörajoituksen syntytapa**-koodisto kuvaa 4 mahdollista tilaa, joissa maankäyttörajoitus voi syntyä:
+- Automaattinen maankäyttörajoitus
+- Päätöksellä määrätty maankäyttörajoitus
+- Vanhentuneen asemakaavan maankäyttörajoitus
+- Voimassa olevan kaavan maankäyttörajoitus
+
 ### Maankäyttörajoituksen raukeaminen ja kumoaminen
 
 Kaavoitus- ja rakentamislain pykälässä XX säädetään maankäyttörajoituksen raukeamisesta ja kumoamisesta.
