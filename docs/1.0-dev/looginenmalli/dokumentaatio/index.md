@@ -246,13 +246,14 @@ Kuvaa käsitteen Maankayttorajoitus, erikoistaa luokkaa AbstraktiMaankayttoasia,
 
 Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
-arvo | [Abstraktiarvo](#Abstraktiarvo) | 0..1  | Esitontin tunnusarvo tai esitontin rajapisteen numero
-elinkaarentila | [Codelist](#tonttijakosuunnitelmanElinkaarentila) | 1 | yleisimmät arvot vireillä oleva,  hyväksytty tai voimassa
+arvo | [Abstraktiarvo](#Abstraktiarvo) | 0..1  | maankäyttörajoituksen kuvaava tekstiarvo
+elinkaarentila | [Codelist](#MaankayttorajoituksenElinkaarentila) | 1 | yleisimmät arvot hyväksytty, voimassa tai rauennut
 geometria | [geometry](#geometry) | 0..1  | maankäyttörajoituksen sijainti
 hyvaksymisAika | [TM_Instant](#TM_Instant) | 0..1 | aika, jolloin maankäyttörajoitus on tullut virallisesti hyväksyttyä
 kumoutumistieto | [MaankayttorajoituksenKumoutumistieto](#MaankayttorajoituksenKumoutumistieto) | 0..* | maankäyttörajoitus, jonka tämä maankäyttörajoitus kumoaa kokonaan tai osittain
 maankayttorajoituksenTunnus  | [CharacterString](#CharacterString) | 1 | yksilöivä ID
 rajoituksenLaji | [Codelist](#MaankayttorajoituksenLaji) | 1  | kertoo, millainen maankäyttörajoitus on laadittu
+syntytapa | [Codelist](#MaankayttorajoituksenSyntytapa) | 1  | kertoo tavan tai menettelyn, jonka johdosta maankäyttörajoitus on syntynyt
 
 ### MaankayttorajoituksenKumoutumistieto
 
