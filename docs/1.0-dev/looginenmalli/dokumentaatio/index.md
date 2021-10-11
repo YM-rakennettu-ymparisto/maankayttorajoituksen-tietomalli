@@ -14,7 +14,7 @@ status: "Keskeneräinen"
 
 ## Yleistä
 
-Loogisen tason tietomalli määrittelee kaikille kohteille yhteiset tietorakenteet, joita sovelletaan rakentamisrajoitteiden ilmaisemiseen laadittujen [soveltamisohjeiden](https://www.tonttijakosuunnitelma.fi/1.0-dev/soveltamisohjeet/index.html) ja niihin kiinnittyvien koodistojen sekä [elinkaari-](https://www.tonttijakosuunnitelma.fi/1.0-dev/looginenmalli/elinkaarisaannot.html) ja [laatusääntöjen](https://www.tonttijakosuunnitelma.fi/1.0-dev/looginenmalli/laatusaannot.html) mukaisesti. Looginen tietomalli pyrkii olemaan mahdollisimman riippumaton tietystä toteutusteknologiasta tai tiedon fyysisestä esitystavasta.
+Loogisen tason tietomalli määrittelee kaikille kohteille yhteiset tietorakenteet, joita sovelletaan maankäyttörajoitusten ilmaisemiseen laadittujen [soveltamisohjeiden](https://www.tonttijakosuunnitelma.fi/1.0-dev/soveltamisohjeet/index.html) ja niihin kiinnittyvien koodistojen sekä [elinkaari-](https://www.tonttijakosuunnitelma.fi/1.0-dev/looginenmalli/elinkaarisaannot.html) ja [laatusääntöjen](https://www.tonttijakosuunnitelma.fi/1.0-dev/looginenmalli/laatusaannot.html) mukaisesti. Looginen tietomalli pyrkii olemaan mahdollisimman riippumaton tietystä toteutusteknologiasta tai tiedon fyysisestä esitystavasta.
 
 <!--**Graafinen mallinnus loogisesta tietomallista**
 
@@ -246,7 +246,7 @@ Laajennettavuus: Ei laajennettavissa
 
 Vuorovaikutustapahtumien lajit kuvataan MKP-ydin -paketissa abstraktina koodistona, jota laajennetaan kunkin maankäyttöpäätöksen prosessin konkreettisten arvojen mukaisesti niiden tietomalleissa.
 
-## Rakentamisrajoitteiden tiedot
+## Maankäyttörajoitusten tiedot
 
 ### Koodisto
 
