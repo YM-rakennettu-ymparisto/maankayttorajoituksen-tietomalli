@@ -270,11 +270,22 @@ Maankäyttörajoituksen voimaantulotapa kuvataan Maankäyttörajoitus-luokan ```
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-voimaantulo" %}
-Maankäyttörajoituksen ```voimassaoloAika``` -attribuutin alkuaika on ajanhetki, jolloin maankäyttörajoitus on tullut voimaan ja loppuaika on siitä kaksi vuotta eteenpäin ensimmäisen määräyksen osalta. Maankäyttörajoitusta voidaan jatkaa kolme kertaa aina kaksi vuotta kerralla. Maankäyttöpäätöstä jatkettaessa, alkuaika on aina ensimmäisen määräyksen ajanhetki ja loppuaika on kustakin jatkavasta määräyksestä kaksi vuotta eteenpäin. Yhteensä maankäyttörajoitus voi olla maksimissaan kahdeksan vuotta voimassa, jonka jälkeen se raukeaa voimassaolon päätyttyä.
+Maankäyttörajoituksen ```voimassaoloAika``` -attribuutin alkuaika on ajanhetki, jolloin maankäyttörajoitus on tullut voimaan ja loppuaika määräytyy voimaantulotavasta riippuen.
+```voimaantuloTapa```-attribuutin arvon ollessa **Maankäyttörajoituksen voimaantulotapa**-koodiston arvo Päätöksellä määrätty maankäyttörajoitus, loppuaika on alkuajasta kaksi vuotta eteenpäin ensimmäisen määräyksen osalta. Maankäyttörajoitusta voidaan jatkaa kolme kertaa aina kaksi vuotta kerralla. Maankäyttöpäätöstä jatkettaessa, alkuaika on aina ensimmäisen määräyksen ajanhetki ja loppuaika on kustakin jatkavasta määräyksestä kaksi vuotta eteenpäin. Yhteensä päätöksellä määrätty maankäyttörajoitus voi olla maksimissaan kahdeksan vuotta voimassa, jonka jälkeen se raukeaa voimassaolon päätyttyä.
 
-Voimaantulemisen yhteydessä maankäyttörajoituksesta tallennetaan maankäyttörajoitusten tietovarastoon uusi versio, jossa sen:
+Päätöksellä määrätyn maankäyttörajoituksen voimaantulemisen yhteydessä maankäyttörajoituksesta tallennetaan maankäyttörajoitusten tietovarastoon uusi versio, jossa sen:
 - Maankayttorajoitus-luokan objektin elinkaaritila-attribuutin arvoksi on asetettu Voimassa,
 - Maankayttorajoitus-luokan objektin voimassaoloAika-attribuutin alkuajaksi on asetettu käsittelytapahtuman ajanhetki, jolloin maankäyttöpäätöksen määräys on annettu ja loppuaika on siitä kaksi vuotta eteenpäin.
+
+Automaattisen maankäyttörajoituksen ja Voimassa olevan kaavan kaavamääräyksen maankäyttörajoituksen voimaantulemisen yhteydessä maankäyttörajoituksesta tallennetaan maankäyttörajoitusten tietovarastoon uusi versio, jossa sen:
+- Maankayttorajoitus-luokan objektin elinkaaritila-attribuutin arvoksi on asetettu Voimassa,
+- Maankayttorajoitus-luokan objektin voimassaoloAika-attribuutin alkuajaksi on asetettu käsittelytapahtuman ajanhetki, jolloin kaava hyväksytty ja loppuajankohtaa ei olla annettu. Loppuajankohta määräytyy käsittelytapahtuman kaavan voimaantulo mukaan.
+<!--
+Vanhentuneen asemakaavan maankäyttörajoituksen voimaantulemisen yhteydessä maankäyttörajoituksesta tallennetaan maankäyttörajoitusten tietovarastoon uusi versio, jossa sen:
+- Maankayttorajoitus-luokan objektin elinkaaritila-attribuutin arvoksi on asetettu Voimassa,
+- Maankayttorajoitus-luokan objektin voimassaoloAika-attribuutin alkuajaksi on asetettu käsittelytapahtuman ajanhetki, jolloin maankäyttöpäätös on annettu ja loppuajankohtaa ei olla annettu.
+-->
+
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-voimassaoloaika" %}
@@ -289,7 +300,7 @@ Maankäyttörajoitus voi olla elinkaaritilassa Voimassa ainoastaan, mikäli niid
 
 ### Maankäyttörajoituksen jatkaminen, raukeaminen ja kumoaminen 
 
-Kaavoitus- ja rakentamislain pykälässä XX säädetään maankäyttörajoituksen raukeamisesta ja kumoamisesta.
+Kaavoitus- ja rakentamislain pykälässä XX säädetään maankäyttörajoituksen jatkamisesta, raukeamisesta ja kumoamisesta.
 
 Voimassaoleva maankäyttörajoitus raukeaa sen voimassaoloajan mennessä umpeen. Voimassaoleva maankäyttörajoitus voi kumoutua jatkettavalla maankäyttörajoituksella osittain tai muulla päätöksellä.  Maankäyttörajoitus voi kumoutua kokonaan tai osittain, jos alueelle tulee voimaan kaava kokonaan tai osittain, jonka toteuttamiseksi maankäyttörajoitus on määrätty.
 
@@ -325,7 +336,7 @@ Maankäyttörajoituksen kumoutuessaan kokonaan kaavan voimaantulessa tai erillis
 - ```tallennusAika```-attribuutin arvoksi asetetaan ajanhetki, jolloin versio muutokset tallennettiin maankäyttörajoitusten tietovarastoon elinkaaritilassa Kumoutunut kokonaan.
 {% include clause_end.html %}
 
-{% include question.html content="Raukeaako automaattisen maankäyttörajoituksen tapauksessa maankäyttörajoitusten tietovarantossa kaavarajauksen mukainen maankäyttörajoitus kaavan Käsittelytapahtuman lajin ollessa **Kaava voimaantulo**?" %}
+{% include question.html content="Raukeaako automaattisen maankäyttörajoituksen tapauksessa maankäyttörajoitusten tietovarastossa kaavarajauksen mukainen maankäyttörajoitus kaavan Käsittelytapahtuman lajin ollessa **Kaavan voimaantulo**?" %}
 
 ## Maankäyttörajoituksen elinkaaren vaiheet ja elinkaaritila-attribuutin käyttötavat
 
