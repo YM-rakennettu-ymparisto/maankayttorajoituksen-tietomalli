@@ -362,7 +362,7 @@ Maankäyttörajoituksen ```elinkaaritila```-attribuutin arvo voi kahden sen per�
 
 ### Maankäyttörajoituksen syntytapaan liittyvät tilamuutokset
 
-Kaavoitus- ja rakentamislaissa säädetään tavoista tai menettelyistä, joiden johdosta maankäyttörajoitus voi syntyä. Kun maankäyttörajoitus syntyy, tallennetaan maankäyttörajoitusten tietovarastoon ensimmäinen versio. Maankäyttörajoitus voi syntyä tässä luvussa kuvatuilla tavoilla.
+Kaavoitus- ja rakentamislaissa säädetään tavoista tai menettelyistä, joiden johdosta maankäyttörajoitus voi syntyä. Kun maankäyttörajoitus syntyy, tallennetaan maankäyttörajoitusten tietovarastoon ensimmäinen versio jonka ```elinkaaritila```-attribuutin arvo on Voimassa. Maankäyttörajoitus voi syntyä tässä luvussa kuvatuilla tavoilla.
 
 {% include clause_start.html type="req" id="elinkaari/vaat-syntytapa" %}
 Maankäyttörajoituksen syntytapa kuvataan Maankäyttörajoitus-luokan syntytapa-attribuutilla ja sen mahdolliset arvot kuvataan Maankäyttörajoituksen syntytapa-koodiston avulla. Maankayttorajoitus-luokan syntytapa-attribuutti on pakollinen.
@@ -376,7 +376,7 @@ Maankäyttörajoituksen syntytapa kuvataan Maankäyttörajoitus-luokan syntytapa
 
 {% include question.html content="Tallennetaanko automaattisen maankäyttörajoituksen tapauksessa maankäyttörajoitusten tietovarantoon automaattisesti kaavarajauksen mukainen geometria kaavan Käsittelytapahtuman lajin ollessa **Kaava hyväksytty**?" %}
 
-{% include question.html content="Raukeaako automaattisen maankäyttörajoituksen tapauksessa maankäyttörajoitusten tietovarantossa kaavarajauksen mukainen maankäyttörajoitus kaavan Käsittelytapahtuman lajin ollessa **Kaava voimaantullut**?" %}
+{% include question.html content="Raukeaako automaattisen maankäyttörajoituksen tapauksessa maankäyttörajoitusten tietovarantossa kaavarajauksen mukainen maankäyttörajoitus kaavan Käsittelytapahtuman lajin ollessa **Kaava voimaantulo**?" %}
 
 ### Maankäyttörajoituksen elinkaaritilan muutoksiin liittyvät käsittelytapahtumat
 
