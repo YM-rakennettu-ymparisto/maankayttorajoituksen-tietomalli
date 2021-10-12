@@ -221,7 +221,7 @@ Tallennettaessa maankäyttörajoitusten tietomallin tietokohteita maankäyttöra
 {% include clause_end.html %}
 
 
-<!-- ### Koodistojen koodien tunnuksiin liittyvät vaatimukset
+<!-- Koodistojen koodien tunnuksiin liittyvät vaatimukset
 
 {% include clause_start.html type="req" id="elinkaari/vaat-koodien-yksiloivat-tunnukset" %}
 Kullakin koodiston koodilla on oltava pysyvä tunnus, joka sellaisenaan yksilöi kyseisen koodin globaalisti ilman erilistä tietoa koodistosta, johon koodi kuuluu. Koodin tunnus on HTTP URI -muotoinen.
