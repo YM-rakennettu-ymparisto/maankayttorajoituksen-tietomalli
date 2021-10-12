@@ -188,7 +188,7 @@ Maankäyttörajoituksen tunnus on [Maankayttorajoitus](../../looginenmalli/dokum
 
 Käytännössä myönnetyt maankäyttörajoitusten tunnukset  kannattaa tallentaa valmiiksi maankäyttörajoitusten tietovarastoon, jotta voidaan tarkistaa, onko tallennettavaksi tarkoitettu maankäyttörajoituksen tunnus myönnetty organisaatiolle, jonka maankäyttörajoitusta ollaan tallentamassa. Kuntakoodin tai muun hallinnollisen alueen tunnuksen käyttö osana maankäyttörajoituksen tunnus tunnusta ei ole suositeltavaa, sillä hallinnolliset alueet muuttuvat ajan kuluessa. Kun sidos tunnuksen ja hallinnollisen alueen välillä ei näy tunnuksessa, voidaan maankäyttörajoituksen hallinnollista aluetta muuttaa joustavammin maankäyttörajoituksen elinkaaren aikana.
 
-{% include clause_start.html type="rec" id="elinkaari/suos-tonttijakosuunnitelmatunnus-form" %}
+{% include clause_start.html type="rec" id="elinkaari/suos-maankayttorajoitustunnus-form" %}
 Maankäyttörajoituksen tunnuksen suositeltu muoto on UUID.
 {% include clause_end.html %}
 
