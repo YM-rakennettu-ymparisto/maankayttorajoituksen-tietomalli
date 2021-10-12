@@ -298,18 +298,6 @@ Maankayttorajoitus on voimassa niiden voimassaoloAika-attribuuttien määräämi
 Maankäyttörajoitus voi olla elinkaaritilassa Voimassa ainoastaan, mikäli niiden voimassaoloAika on annettu ja sisältää alkuajan ja loppuajan. 
 {% include clause_end.html %}
 
-### Maankäyttörajoituksen syntytapa
-
-Kaavoitus- ja rakentamislaissa säädetään tavoista tai menettelyistä, joiden johdosta maankäyttörajoitus voi syntyä. 
-
-Maankäyttörajoituksen syntytapaa hallitaan syntytapa-attribuutilla ja sen mahdolliset arvot kuvataan Maankäyttörajoituksen syntytapa-koodiston avulla. Maankayttorajoitus-luokan syntytapa-attribuutti on pakollinen.
-
-**Maankäyttörajoituksen syntytapa**-koodisto kuvaa 4 mahdollista tilaa, joissa maankäyttörajoitus voi syntyä:
-- Automaattinen maankäyttörajoitus
-- Päätöksellä määrätty maankäyttörajoitus
-- Vanhentuneen asemakaavan maankäyttörajoitus
-- Voimassa olevan kaavan maankäyttörajoitus
-
 ### Maankäyttörajoituksen raukeaminen ja kumoaminen
 
 Kaavoitus- ja rakentamislain pykälässä XX säädetään maankäyttörajoituksen raukeamisesta ja kumoamisesta.
@@ -317,30 +305,22 @@ Kaavoitus- ja rakentamislain pykälässä XX säädetään maankäyttörajoituks
 Voimassaoleva maankäyttörajoitus raukeaa sen voimassaoloajan mennessä umpeen. 
 Voimassaoleva maankäyttörajoitus voi kumoutua jatkettavalla maankäyttörajoituksella osittain tai muulla päätöksellä.  Maankäyttörajoitus voi kumoutua kokonaan tai osittain, jos alueelle tulee voimaan kaava kokonaan tai osittain, jonka toteuttamiseksi maankäyttörajoitus on määrätty.
 <!--
-{% include clause_start.html type="req" id="elinkaari/vaat-kumoutumistieto-per-maankayttorajoitus" %}
-Tonttijakosuunnitelmilla kumoutuvat, aiemmin hyväksyttyjen tonttijakosuunnitelmien esitonttikohteet tulee yksilöidä kumoutuvassa tonttijakosuunnitelmassa. Kutakin tonttijakosuunnitelmaa kohti tulee antaa yksi Tonttijakosuunnitelma-luokan attribuutin kumoamistieto arvo tyyppiä TonttijakosuunnitelmanKumoamistieto, jonka kumottavanTonttijakosuunnitelmanTunnus-attribuutin arvo on kumottavan tonttijakosuunnitelman ```viittaustunnus```.
-{% include clause_end.html %}
-
 Lisää tähän vielä sisäiset linkit kuntoon
-{% include clause_start.html type="req" id="elinkaari/vaat-tonttijakosuunnitelman-voimaantulo" %}
-Kun tonttijakosuunnitelman kumoutumisessa tallennetaan versio, jonka elinkaaritila-attribuutin arvo on Voimassa, tonttijakosuunnitelmatietovarasto päivittää niiden siinä kumoutuviksi asetettuja esitonttikohteita, joiden elinkaaritila-attribuutin arvo on Voimassa, attribuutteja seuraavasti luomatta niistä uusia versioita:
+{% include clause_start.html type="req" id="elinkaari/vaat-tonttijakosuunnitelman-kumoutuminen-osittain" %}
+Maankäyttörajoituksen kumoutuessa osittain tallennetaan rajoituksesta uusi versio, jonka elinkaaritila-attribuutin arvo on Kumoutunut osittain, maankäyttörajoitusten tietovarasto päivittää maaakäyttörajoituksen edellisen version elinkaaritila-attribuutin arvo on Voimassa, attribuutteja seuraavasti luomatta siitä uutta versioita:
 
-- ```voimassaoloAika```-attribuutin päättymisaika asetetaan samaksi kuin uuden tonttijakosuuunnitelman ```voimassaoloAika```-attribuutin alkamisaika.
-- ```elinkaaritila```-attribuutin arvoksi asetetaan Kumottu.
-- ```tallennusAika```-attribuutin arvoksi asetetaan ajanhetki, jolloin tonttijakosuunnitelma tallennettiin tonttijakosuunnitelmatietovarastoon elinkaaritilassa Voimassa.
+- ```voimassaoloAika```-attribuutin päättymisaika muutataan samaksi kuin uuden tallennetun version ```voimassaoloAika```-attribuutin alkamisaika.
+- ```elinkaaritila```-attribuutin arvoksi asetetaan Kumoutunut osittain.
+- ```tallennusAika```-attribuutin arvoksi asetetaan ajanhetki, jolloin maankäyttörajoitus tallennettiin maankäyttörajoitusten tietovarastoon elinkaaritilassa Voimassa.
 {% include clause_end.html %}
-
-Tonttijakosuunnitelman tietomalli ei sisällä omaa tietorakennettaan ajantasaiselle tonttijakosuunnitelma-aineistolle, joka sisältää annetun alueella tietyllä ajanhetkellä voimassaolevat esitonttikohteet, huomioiden kaavamuutosten ja vaihekaavojen vaikutukset niiltä osin kun ne ovat ko. ajanhetkellä voimassa. Tällainen toiminnallisuus on kuitenkin aivan ilmeisesti yhteisen tonttijakosuunnitelmatietovaraston palveluna erittäin hyödyllinen. Esitonttikohteiden ```voimassaoloAika```-attribuutin arvojen avulla tällainen ajantasainen “Esitonttimatto” voidaan laskea mille tahansa ajanhetkelle, olettaen, että kaikki kyseisen alueen tonttijakosuunnitelmat on viety tonttijakosuunnitelmatietovarastoon tonttijakosuunnitelman tietomallin mukaisessa muodossa.
-
 
 
 ## Maankäyttörajoituksen elinkaaren vaiheet ja elinkaaritila-attribuutin käyttötavat
 
-Maankäyttörajoituksen elinkaareen liittyvää tilaa hallitaan ko. tietokohteiden elinkaaritila-attribuutin ja sen mahdolliset arvot kuvaavan Elinkaaren tila-koodiston avulla. Tonttijakosuunnitelma- ja  Esitonttikohde-luokkien elinkaaritila-attribuutit ovat pakollisia.
+Maankäyttörajoituksen elinkaareen liittyvää tilaa hallitaan ko. tietokohteiden elinkaaritila-attribuutin ja sen mahdolliset arvot kuvaavan Elinkaaren tila-koodiston avulla. Maankäyttörajoitus-luokan elinkaaritila-attribuutti on pakollinen.
 
-**Elinkaaren tila**-koodisto kuvaa 9 mahdollista tilaa, joissa tonttijakosuunnitelma voi olla sen elinkaaren eri vaiheissa:
+**Elinkaaren tila**-koodisto kuvaa 4 mahdollista tilaa, joissa tonttijakosuunnitelma voi olla sen elinkaaren eri vaiheissa:
 
-- Hyväksytty
 - Voimassa
 - Rauennut
 - Kumoutunut osittain
@@ -351,6 +331,16 @@ Maankäyttörajoituksen elinkaareen liittyvää tilaa hallitaan ko. tietokohteid
 Maankäyttörajoituksien, joiden elinkaaritila on Vireillä, Luonnos, Ehdotus, Hyväksytty laadinta- ja päätösprosessi on kesken, eli niiden esitonttikohteet eivät (vielä) ole lainvoimaisia. Tonttijakosuunnitelma, jotka ovat elinkaaritilassa Voimassa,  Kumottu osittain tai Kumoutunut osttain, sisältävät nykyajanhetkellä rajaamallaan alueella voimassa olevia esitonttikohteita. Koodit Kumottu kokonaan ja Kumoutunut kokonaan kuvaavat tonttijakosuunnitelman tiloja, joissa olevan tonttijakosuunnitelman elinkaari on päättynyt.
 
 ### Sallitut maankäyttörajoituksen elinkaaren tilan muutokset
+
+Kaavoitus- ja rakentamislaissa säädetään tavoista tai menettelyistä, joiden johdosta maankäyttörajoitus voi syntyä. 
+
+Maankäyttörajoituksen syntytapa kuvataan Maankäyttörajoitus-luokan syntytapa-attribuutilla ja sen mahdolliset arvot kuvataan Maankäyttörajoituksen syntytapa-koodiston avulla. Maankayttorajoitus-luokan syntytapa-attribuutti on pakollinen.
+
+**Maankäyttörajoituksen syntytapa**-koodisto kuvaa 4 mahdollista tilaa, joissa maankäyttörajoitus voi syntyä:
+- Automaattinen maankäyttörajoitus
+- Päätöksellä määrätty maankäyttörajoitus
+- Vanhentuneen asemakaavan maankäyttörajoitus
+- Voimassa olevan kaavan maankäyttörajoitus
 
 Maankäyttörajoituksen elinkaaritila voi sen laadinta-, päätös-, valitus-, voimassaolo- ja kumoutumisvaiheidensa esiintyä ja muuttua vain tässä luvussa kuvatuilla tavoilla.
 
