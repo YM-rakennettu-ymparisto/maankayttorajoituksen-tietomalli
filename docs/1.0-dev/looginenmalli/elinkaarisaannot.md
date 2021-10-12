@@ -304,7 +304,7 @@ Maankäyttörajoituksen rauetessa voimassaoloajan mennessä umpeen ja jonka elin
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-tonttijakosuunnitelman-kumoutuminen-osittain" %}
-Jatkettaessa maankäyttörajoitusta tai kaavan osittaisella vahvistumisella, jossa maankäyttörajoitus kumoutuu osittain, tallennetaan rajoituksesta uusi versio, jonka elinkaaritila-attribuutin arvo on Kumoutunut osittain, maankäyttörajoitusten tietovarasto päivittää maankäyttörajoituksen edellisen version attribuutteja seuraavasti luomatta siitä uutta versioita:
+Jatkettaessa maankäyttörajoitusta tai kaavan osittaisella vahvistumisella, jossa maankäyttörajoitus kumoutuu osittain, tallennetaan rajoituksesta uusi versio maankäyttörajoitusten tietovarastoon, jonka elinkaaritila-attribuutin arvo on Kumoutunut osittain, maankäyttörajoitusten tietovarasto päivittää maankäyttörajoituksen edellisen version attribuutteja seuraavasti luomatta siitä uutta versioita:
 
 - ```voimassaoloAika```-attribuutin päättymisaika asetetaan samaksi kuin uuden tallennetun version ```voimassaoloAika```-attribuutin alkamisaika. Alkamisaika on määritely kohdassa Maankäyttörajoituksen voimaantulo. 
 - ```elinkaaritila```-attribuutin arvoksi asetetaan Kumoutunut osittain.
@@ -312,7 +312,7 @@ Jatkettaessa maankäyttörajoitusta tai kaavan osittaisella vahvistumisella, jos
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-tonttijakosuunnitelman-kumoutuminen-kokonaan" %}
-Maankäyttörajoituksen kumoutuessaan kokonaan kaavan voimaantulessa tai erillisellä määräyksellä, jonka elinkaaritila-attribuutin arvo on Voimassa tai Kumoutunut osittain, maankäyttörajoitusten tietovarasto päivittää attribuutteja seuraavasti luomatta siitä uutta versioita:
+Maankäyttörajoituksen kumoutuessaan kokonaan kaavan voimaantulessa tai erillisellä päätöksellä, jonka elinkaaritila-attribuutin arvo on Voimassa tai Kumoutunut osittain, maankäyttörajoitusten tietovarasto päivittää attribuutteja seuraavasti luomatta siitä uutta versioita:
 
 - ```voimassaoloAika```-attribuutin päättymisajaksi asetetaan kumoamispäätöksen ajankohta
 - ```elinkaaritila```-attribuutin arvoksi asetetaan Kumoutunut kokonaan.
