@@ -312,7 +312,6 @@ Maankäyttörajoituksen rauetessa voimassaoloajan mennessä umpeen ja jonka elin
 - ```tallennusAika```-attribuutin arvoksi asetetaan ajanhetki, jolloin maankäyttörajoitus tallennettiin maankäyttörajoitusten tietovarastoon elinkaaritilassa Rauennut.
 {% include clause_end.html %}
 
-Lisää tähän vielä sisäiset linkit kuntoon
 {% include clause_start.html type="req" id="elinkaari/vaat-tonttijakosuunnitelman-kumoutuminen-osittain" %}
 Jatkettaessa maankäyttörajoitusta tai kaavan osittaisella vahvistumisella, jossa maankäyttörajoitus kumoutuu osittain, tallennetaan rajoituksesta uusi versio, jonka elinkaaritila-attribuutin arvo on Kumoutunut osittain, maankäyttörajoitusten tietovarasto päivittää maankäyttörajoituksen edellisen version attribuutteja seuraavasti luomatta siitä uutta versioita:
 
@@ -328,12 +327,12 @@ Maankäyttörajoituksen kumoutuessaan kokonaan kaavan voimaantulessa tai erillis
 - ```elinkaaritila```-attribuutin arvoksi asetetaan Kumoutunut kokonaan.
 - ```tallennusAika```-attribuutin arvoksi asetetaan ajanhetki, jolloin versio muutokset tallennettiin maankäyttörajoitusten tietovarastoon elinkaaritilassa Kumoutunut kokonaan.
 {% include clause_end.html %}
-<!--
+
 ## Maankäyttörajoituksen elinkaaren vaiheet ja elinkaaritila-attribuutin käyttötavat
 
 Maankäyttörajoituksen elinkaareen liittyvää tilaa hallitaan ko. tietokohteiden elinkaaritila-attribuutin ja sen mahdolliset arvot kuvaavan Elinkaaren tila-koodiston avulla. Maankäyttörajoitus-luokan elinkaaritila-attribuutti on pakollinen.
 
-**Elinkaaren tila**-koodisto kuvaa 4 mahdollista tilaa, joissa tonttijakosuunnitelma voi olla sen elinkaaren eri vaiheissa:
+**Elinkaaren tila**-koodisto kuvaa 4 mahdollista tilaa, joissa maankäyttörajoitus voi olla sen elinkaaren eri vaiheissa:
 
 - Voimassa
 - Rauennut
@@ -342,12 +341,30 @@ Maankäyttörajoituksen elinkaareen liittyvää tilaa hallitaan ko. tietokohteid
 
 {% include question.html content="Mitkä ovat Kumottu- ja Kumoutunut-tilojen tarkat määritelmät ja erot?" %}
 
-Maankäyttörajoituksien, joiden elinkaaritila on Vireillä, Luonnos, Ehdotus, Hyväksytty laadinta- ja päätösprosessi on kesken, eli niiden esitonttikohteet eivät (vielä) ole lainvoimaisia. Tonttijakosuunnitelma, jotka ovat elinkaaritilassa Voimassa,  Kumottu osittain tai Kumoutunut osttain, sisältävät nykyajanhetkellä rajaamallaan alueella voimassa olevia esitonttikohteita. Koodit Kumottu kokonaan ja Kumoutunut kokonaan kuvaavat tonttijakosuunnitelman tiloja, joissa olevan tonttijakosuunnitelman elinkaari on päättynyt.
+Maankäyttörajoitus, jonka elinkaaritila on Voimassa, Kumoutunut osittain, sisältää nykyajanhetkellä rajaamallaan alueella voimassa olevan maankäyttörajoituksen. Koodit Kumoutunut kokonaan ja Rauennut kuvaavat Maankäyttörajoituksen tiloja, joissa olevan maankäyttörajoituksen elinkaari on päättynyt.
 
 ### Sallitut maankäyttörajoituksen elinkaaren tilan muutokset
 
-Kaavoitus- ja rakentamislaissa säädetään tavoista tai menettelyistä, joiden johdosta maankäyttörajoitus voi syntyä. 
+Maankäyttörajoituksen elinkaaritila voi sen voimassaolo-, raukeamis- ja kumoutumisvaiheidensa esiintyä ja muuttua vain tässä luvussa kuvatuilla tavoilla.
 
+{% include clause_start.html type="req" id="elinkaari/vaat-ensimmainen-elinkaaritila" %}
+Maankäyttörajoituksen elinkaaritila tallennettaessa maankäyttörajoitusta ensimmäistä kertaa maankäyttörajoitusten tietovarastoon voi olla vain tilassa Voimassa.
+{% include clause_end.html %}
+
+{% include clause_start.html type="req" id="elinkaari/vaat-elinkaaritila-siirtymat" %}
+Maankäyttörajoituksen ```elinkaaritila```-attribuutin arvo voi kahden sen peräkkäisen tallennusversion välillä vain seuraavilla tavoilla:
+
+- Tilasta ```Voimassa``` tilaan ```Rauennut```, ```Kumoutunut osittain```, ```Kumoutunut kokonaan```.
+- Tilasta ```Kumoutunut osittain``` tilaan ```Rauennut```, ```Kumoutunut kokonaan```.
+- Tilasta ```Rauennut``` ei ole sallittuja siirtymiä.
+- Tilasta ```Kumoutunut kokonaan``` ei ole sallittuja siirtymiä.
+{% include clause_end.html %}
+
+### Maankäyttörajoituksen syntytapaan liittyvät tilamuutokset
+
+Kaavoitus- ja rakentamislaissa säädetään tavoista tai menettelyistä, joiden johdosta maankäyttörajoitus voi syntyä. Kun maankäyttörajoitus syntyy, tallennetaan maankäyttörajoitusten tietovarastoon ensimmäinen versio. Maankäyttörajoitus voi syntyä tässä luvussa kuvatuilla tavoilla.
+
+{% include clause_start.html type="req" id="elinkaari/vaat-syntytapa" %}
 Maankäyttörajoituksen syntytapa kuvataan Maankäyttörajoitus-luokan syntytapa-attribuutilla ja sen mahdolliset arvot kuvataan Maankäyttörajoituksen syntytapa-koodiston avulla. Maankayttorajoitus-luokan syntytapa-attribuutti on pakollinen.
 
 **Maankäyttörajoituksen syntytapa**-koodisto kuvaa 4 mahdollista tilaa, joissa maankäyttörajoitus voi syntyä:
@@ -355,51 +372,26 @@ Maankäyttörajoituksen syntytapa kuvataan Maankäyttörajoitus-luokan syntytapa
 - Päätöksellä määrätty maankäyttörajoitus
 - Vanhentuneen asemakaavan maankäyttörajoitus
 - Voimassa olevan kaavan maankäyttörajoitus
-
-Maankäyttörajoituksen elinkaaritila voi sen laadinta-, päätös-, valitus-, voimassaolo- ja kumoutumisvaiheidensa esiintyä ja muuttua vain tässä luvussa kuvatuilla tavoilla.
-
-{% include clause_start.html type="req" id="elinkaari/vaat-ensimmainen-elinkaaritila" %}
-Tonttijakosuunnitelman elinkaaritila tallennettaessa tonttijakosuunnitelmaa ensimmäistä kertaa tonttijakosuunnitelmatietovarastoon voi olla jokin seuraavista riippuen Tonttijakosuunnitelman ```digitaalinenAlkupera```-attribuutin arvosta:
-
-- **Tietomallin mukaan laadittu**: tilat Vireillä, Luonnos, Ehdotus, Hyväksytty, Voimassa tonttijakosuunnitelma.
-- **Kokonaan digitoitu**, **Osittain digitoitu** tai **Tonttijakosuunnitelman rajaus digitoitu**: tilat Voimassa, Kumottu osittain, Kumottu, Kumoutunut osittain, Kumoutunut
 {% include clause_end.html %}
 
-{% include clause_start.html type="req" id="elinkaari/vaat-elinkaaritila-siirtymat" %}
-Tonttijakosuunnitelman ```elinkaaritila```-attribuutin arvo voi kahden sen peräkkäisen tallennusversion välillä vain seuraavilla tavoilla:
+{% include question.html content="Tallennetaanko automaattisen maankäyttörajoituksen tapauksessa maankäyttörajoitusten tietovarantoon automaattisesti kaavarajauksen mukainen geometria kaavan Käsittelytapahtuman lajin ollessa **Kaava hyväksytty**?" %}
 
-- Tilasta ```Vireillä``` tilaan ```Ehdotus```, ```Hyväksytty```.
-- Tilasta ```Hyväksytty``` tilaan ```Voimassa```, ```Kumottu osittain```, ```Kumottu kokonaan```, ```Kumoutunut osittain``` tai ```Kumoutunut kokonaan```.
-- Tilasta ```Voimassa``` tilaan ```Kumottu osittain```, ```Kumottu kokonaan```, ```Kumoutunut osittain``` tai ```Kumoutunut kokonaan```.
-- Tilasta ```Kumottu``` ei ole sallittuja siirtymiä.
-- Tilasta ```Kumoutunut``` ei ole sallittuja siirtymiä.
-{% include clause_end.html %}
+{% include question.html content="Raukeaako automaattisen maankäyttörajoituksen tapauksessa maankäyttörajoitusten tietovarantossa kaavarajauksen mukainen maankäyttörajoitus kaavan Käsittelytapahtuman lajin ollessa **Kaava voimaantullut**?" %}
 
 ### Maankäyttörajoituksen elinkaaritilan muutoksiin liittyvät käsittelytapahtumat
 
- Kun tonttijakosuunnitelmasta viedään tonttijakosuunnitelmatietovarastoon uusi versio, jossa sen elinkaaritila on muuttunut, liittyy kyseisen tonttijakosuunniteman version syntymiseen tyypillisesti jokin käsittelytapahtuma.
+Kun maankäyttörajoituksesta viedään maankäyttörajoitusten tietovarastoon uusi versio, jossa sen elinkaaritila on muuttunut, liittyy kyseisen maankäyttörajoituksen version syntymiseen tyypillisesti jokin käsittelytapahtuma.
 
 {% include clause_start.html type="req" id="elinkaari/vaat-elinkaaritilan-muutostapahtumat" %}
-Tonttijakosuunnitelman ```elinkaaritila```-attribuutin arvon seuraaviin muutoksiin tulee aina liittyä **Kasittelytapahtuma**, jonka ```laji```-attribuutin arvo tulee olla elinkaarimuutosta vastaava:
+Maankäyttörajoituksen ```elinkaaritila```-attribuutin arvon seuraaviin muutoksiin tulee aina liittyä **Kasittelytapahtuma**, jonka ```laji```-attribuutin arvo tulee olla elinkaarimuutosta vastaava:
 
-- Muutos tilaan **Vireillä**: Liityttävä käsittelytapahtuman laji Tonttijakosuunnitelman virelletulo.
-- Muutos tilaan **Ehdotus**: Liityttävä käsittelytapahtuman laji Tonttijakosuunnitelman ehdotuksen nähtäville asettaminen.
-- Muutos tilaan **Hyväksytty**: Liityttävä käsittelytapahtuman laji Tonttijakosuunnitelman hyväksyminen.
-- Muutos tilaan **Voimassa**: Liityttävä käsittelytapahtuman laji Tonttijakosuunnitelman voimaantulo.
-- Muutos tilaan **Kumoutunut osittain**: Liityttävä käsittelytapahtuman laji Tonttijakosuunnitelman kumoutuminen.
-- Muutos tilaan **Kumoutunut kokonaan**: Liityttävä käsittelytapahtuman laji Tonttijakosuunnitelman kumoutuminen.
+- Muutos tilaan **Voimassa**: Liityttävä käsittelytapahtuman laji Maankäyttörajoituksen määrääminen.
+- Muutos tilaan **Kumoutunut osittain**: Liityttävä käsittelytapahtuman laji Maankäyttörajoituksen jatkaminen tai Maankäyttörajoituksen kumoaminen.
+- Muutos tilaan **Kumoutunut kokonaan**: Liityttävä käsittelytapahtuman laji Maankäyttörajoituksen kumoaminen.
 {% include clause_end.html %}
 
-Yllä luetellut käsittelytapahtumat tulee tallentaa samaan aikaan elinkaaritilaltaan muuttuneen tonttijakosuunnitelman kanssa.
+Yllä luetellut käsittelytapahtumat tulee tallentaa samaan aikaan elinkaaritilaltaan muuttuneen maankäyttörajoituksen kanssa.
 
-{% include clause_start.html type="req" id="elinkaari/vaat-ehdotuksen-nahtavilleasettaminen" %}
-Tonttijakosuunnitelman ```elinkaaritila```-attribuutin arvon muuttuminen arvosta Ehdotus arvoon Hyväksytty vaatii, että tonttijakosuunnitelmatietovarastossa on sekä Kasittelytapahtuma lajia Ehdotuksen nähtäville asettaminen että Vuorovaikutustapahtuma lajia Nähtävilläolo, joista molemmat viittaavat johonkin ko. tonttijakosuunnitelman aiemmista Ehdotus-tilassa olevista versioista assosiaatiolla ```liittyvaAsia```. Vuorovaikutustapahtuman attribuutin ```tapahtumaAika``` tulee kuvata aikaväli, jonka aikana tonttijakosuunnitelman ehdotus on ollut nähtävillä.
-{% include clause_end.html %}
+Huomaa, että muutos tilaan Kumoutunut osittain, Kumoutunut kokonaan voi liittyvä joko kaavan voimaantuloon, kaavan kumoamiseen, kaavamuutokseen tai vaihekaavan lainvoimaiseksi tuloon.
 
-{% include clause_start.html type="rec" id="elinkaari/suos-nahtavillaolopaikka" %}
-Mikäli tonttijakosuunnitelman ehdotus on nähtävillä tietyssä fyysisessä paikassa, on suositeltavaa ilmaista kyseisen paikan sijainti Vuorovaikutustapahtuma-luokan attribuutin ```sijainti```-attribuutin avulla.
-{% include clause_end.html %}
 
-Huomaa, että muutos tilaan Kumottu osittain, Kumottu kokonaan, Kumoutunut osittain,  Kumoutunut kokonaan voi liittyvä joko käsittelytapahtuman lajiin Tonttijakosuunnitelman kumoaminen tai kaavan kumoamiseen kaavamuutokseen tai vaihekaavan lainvoimaiseksi tulon yhteydessä.
-
--->
