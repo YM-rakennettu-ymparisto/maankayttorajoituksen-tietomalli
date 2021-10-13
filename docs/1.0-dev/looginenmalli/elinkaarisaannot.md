@@ -278,7 +278,7 @@ Ensimmäisen päätöksellä määrätyn maankäyttörajoituksen voimaantulemise
 - Maankayttorajoitus-luokan objektin elinkaaritila-attribuutin arvoksi on asetettu Voimassa,
 - Maankayttorajoitus-luokan objektin voimassaoloAika-attribuutin alkuajaksi on asetettu käsittelytapahtuman ajanhetki, jolloin maankäyttöpäätöksen määräys on annettu ja loppuaika on siitä kaksi vuotta eteenpäin.
 
-Maankäyttörajoituksen voimaantuloTapa-attribuutin ollessa Maankäyttörajoituksen voimaantulotapa-koodiston arvo Automaattisen maankäyttörajoituksen tai Voimassa olevan kaavan kaavamääräyksen maankäyttörajoituksen voimaantulemisen yhteydessä maankäyttörajoituksesta tallennetaan maankäyttörajoitusten tietovarastoon uusi versio, jossa sen:
+Maankäyttörajoituksen ```voimaantuloTapa```-attribuutin ollessa **Maankäyttörajoituksen voimaantulotapa**-koodiston arvo Automaattisen maankäyttörajoituksen tai Voimassa olevan kaavan kaavamääräyksen maankäyttörajoituksen voimaantulemisen yhteydessä maankäyttörajoituksesta tallennetaan maankäyttörajoitusten tietovarastoon uusi versio, jossa sen:
 - Maankayttorajoitus-luokan objektin elinkaaritila-attribuutin arvoksi on asetettu Voimassa,
 - Maankayttorajoitus-luokan objektin voimassaoloAika-attribuutin alkuajaksi on asetettu käsittelytapahtuman ajanhetki, jolloin kaava on hyväksytty ja loppuajankohtaa ei olla annettu. Loppuajankohta määräytyy käsittelytapahtuman kaavan voimaantulo mukaan.
 
