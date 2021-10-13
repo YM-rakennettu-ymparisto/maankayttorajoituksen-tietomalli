@@ -347,19 +347,17 @@ Maankäyttörajoituksen elinkaareen liittyvää tilaa hallitaan ko. tietokohteid
 - Kumoutunut osittain
 - Kumoutunut kokonaan
 
-{% include question.html content="Mitkä ovat Kumottu- ja Kumoutunut-tilojen tarkat määritelmät ja erot?" %}
-
 Maankäyttörajoitus, jonka elinkaaritila on Voimassa, Kumoutunut osittain, sisältää nykyajanhetkellä rajaamallaan alueella voimassa olevan maankäyttörajoituksen. Koodit Kumoutunut kokonaan ja Rauennut kuvaavat Maankäyttörajoituksen tiloja, joissa olevan maankäyttörajoituksen elinkaari on päättynyt.
 
 ### Sallitut maankäyttörajoituksen voimaantulotavat maankäyttörajoituksen lajeille
 
-Maankäyttörajoituksen voimaantulotavan ollessa Automaattinen maankäyttörajoitus,  Päätöksellä annettu maankäyttörajoitus, Vanhentuneen asemakaavan maankäyttörajoitus tai Voimassa olevan kaavan kaavamääräyksen maankäyttörajoitus voi ```rajoituksenLaji``` -attribuutin arvo esiintyä ja muuttua vain tässä luvussa kuvatuilla tavoilla.
+Maankäyttörajoituksen voimaantulotavan ollessa Automaattinen maankäyttörajoitus,  Päätöksellä annettu maankäyttörajoitus, Vanhentuneen asemakaavan maankäyttörajoitus tai Voimassa olevan maankäyttöpäätöksen rajoitus voi ```rajoituksenLaji``` -attribuutin arvo esiintyä vain tässä luvussa kuvatuilla tavoilla.
 
 {% include clause_start.html type="req" id="elinkaari/vaat-ensimmainen-elinkaaritila" %}
 Maankäyttörajoituksen voimaantulotapaa tallennettaessa ensimmäistä kertaa maankäyttörajoitusten tietovarastoon voi elinkaarentila olla vain tilassa Voimassa.
 {% include clause_end.html %}
 
-{% include clause_start.html type="req" id="elinkaari/vaat-elinkaaritila-siirtymat" %}
+{% include clause_start.html type="req" id="elinkaari/vaat-voimaantulotapa" %}
 Maankäyttörajoituksen ```voimaantuloTapa```-attribuutin arvo määrittelee ```rajoituksenLajin``` -attribuutin mahdolliset arvot seuraavilla tavoilla:
 
 - Arvolla ```Automaattinen maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Asemakaavan toimenpiderajoitus```.
