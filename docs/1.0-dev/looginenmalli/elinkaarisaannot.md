@@ -334,7 +334,7 @@ Maankäyttörajoituksen kumoutuessaan kokonaan kaavan voimaantulessa tai erillis
 - ```tallennusAika```-attribuutin arvoksi asetetaan ajanhetki, jolloin versio muutokset tallennettiin maankäyttörajoitusten tietovarastoon elinkaaritilassa Kumoutunut kokonaan.
 {% include clause_end.html %}
 
-{% include question.html content="Raukeaako automaattisen maankäyttörajoituksen tapauksessa maankäyttörajoitusten tietovarastossa kaavarajauksen mukainen maankäyttörajoitus kaavan Käsittelytapahtuman lajin ollessa **Kaavan voimaantulo**?" %}
+{% include question.html content="Raukeaako automaattisen maankäyttörajoituksen,  Vanhentuneen asemakaavan maankäyttörajoitus tai Voimassa olevan maankäyttöpäätöksen rajoitus tapauksessa maankäyttörajoitusten tietovarastossa kaavarajauksen mukainen maankäyttörajoitus kaavan Käsittelytapahtuman lajin ollessa **Kaavan voimaantulo**?" %}
 
 ## Maankäyttörajoituksen elinkaaren vaiheet ja elinkaaritila-attribuutin käyttötavat
 
@@ -400,6 +400,6 @@ Maankäyttörajoituksen ```elinkaaritila```-attribuutin arvon seuraaviin muutoks
 
 Yllä luetellut käsittelytapahtumat tulee tallentaa samaan aikaan elinkaaritilaltaan muuttuneen maankäyttörajoituksen kanssa.
 
-Huomaa, että muutos tilaan Kumoutunut osittain tai Kumoutunut kokonaan voi liittyä kaavan **Kasittelytapahtuma** -luokkaan, jonka ```laji```-attribuutin arvo voi olla kaavan voimaantuloon tai kaavan kumoaminen.
+Huomaa, että muutos tilaan Rauennut, Kumoutunut osittain tai Kumoutunut kokonaan voi liittyä kaavan **Kasittelytapahtuma** -luokkaan, jonka ```laji```-attribuutin arvo voi olla maankäyttöpäätöksen voimaantuloon tai kumoaminen.
 
 
