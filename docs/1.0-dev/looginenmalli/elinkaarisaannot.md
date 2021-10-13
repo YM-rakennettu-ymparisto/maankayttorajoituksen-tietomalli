@@ -298,12 +298,12 @@ Maankayttorajoitus on voimassa niiden voimassaoloAika-attribuuttien määräämi
 
 ### Maankäyttörajoituksen jatkaminen, raukeaminen ja kumoaminen 
 
-Kaavoitus- ja rakentamislain pykälässä XX säädetään maankäyttörajoituksen jatkamisesta, raukeamisesta ja kumoamisesta.
+Kaavoitus- ja rakentamislaissa säädetään maankäyttörajoituksen jatkamisesta, raukeamisesta ja kumoamisesta.
 
-Voimassaoleva maankäyttörajoitus raukeaa sen voimassaoloajan mennessä umpeen. Voimassaoleva maankäyttörajoitus voi kumoutua jatkettavalla maankäyttörajoituksella osittain tai muulla päätöksellä.  Maankäyttörajoitus voi kumoutua kokonaan tai osittain, jos alueelle tulee voimaan kaava kokonaan tai osittain, jonka toteuttamiseksi maankäyttörajoitus on määrätty.
+Voimassaoleva maankäyttörajoitus raukeaa sen voimassaoloajan mennessä umpeen. Maankäyttörajoitus voi kumoutua kokonaan tai osittain, jos alueelle tulee voimaan kaava kokonaan tai osittain, jonka toteuttamiseksi maankäyttörajoitus on määrätty. Voimassaoleva maankäyttörajoitus voi kumoutua jatkettavalla maankäyttörajoituksella osittain tai muulla päätöksellä.
 
 {% include clause_start.html type="req" id="elinkaari/vaat-jatkaminen" %}
-Maankäyttörajoitusta jatkettaessa jonka elinkaarentila on Voimassa ilman, että rajoitusalueen geometria muuttuu mm. kaavan osittaisen vahvistumisen myötä, tallennetaan rajoituksesta uusi versio maankäyttörajoitusten tietovarastoon, jonka elinkaaritila-attribuutin arvo on Voimassa, maankäyttörajoitusten tietovarasto päivittää maankäyttörajoituksen edellisen version attribuutteja, joiden elinkaaritila-attribuutin arvo on Voimassa seuraavasti luomatta siitä uutta versioita:
+Maankäyttörajoitusta jatkettaessa jonka elinkaarentila on Voimassa ilman, että rajoitusalueen geometria muuttuu mm. kaavan osittaisen vahvistumisen myötä, tallennetaan rajoituksesta uusi versio maankäyttörajoitusten tietovarastoon, jonka elinkaaritila-attribuutin arvo on Voimassa, maankäyttörajoitusten tietovarasto päivittää automaattisesti maankäyttörajoituksen edellisen version attribuutteja, joiden elinkaaritila-attribuutin arvo on Voimassa seuraavasti luomatta siitä uutta versioita:
 
 - ```voimassaoloAika```-attribuutin päättymisaika asetetaan samaksi kuin uuden tallennetun version ```voimassaoloAika```-attribuutin alkamisaika. Alkamisaika on määritely kohdassa Maankäyttörajoituksen voimaantulo. 
 - ```elinkaaritila```-attribuutin arvo säilyy Voimassa.
@@ -311,7 +311,7 @@ Maankäyttörajoitusta jatkettaessa jonka elinkaarentila on Voimassa ilman, ett�
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-raukeaminen" %}
-Maankäyttörajoituksen rauetessa voimassaoloajan mennessä umpeen ja jonka elinkaaritila-attribuutin arvo on Voimassa tai kumoutunut osittain, maankäyttörajoitusten tietovarasto päivittää maaakäyttörajoituksen attribuutteja seuraavasti luomatta siitä uutta versioita:
+Maankäyttörajoituksen rauetessa voimassaoloajan mennessä umpeen ja jonka elinkaaritila-attribuutin arvo on Voimassa tai kumoutunut osittain, maankäyttörajoitusten tietovarasto päivittää automaattisesti maaakäyttörajoituksen attribuutteja seuraavasti luomatta siitä uutta versioita:
 
 - ```voimassaoloAika```-attribuutin arvot säilyy ennalla.
 - ```elinkaaritila```-attribuutin arvoksi asetetaan Rauennut.
@@ -319,10 +319,10 @@ Maankäyttörajoituksen rauetessa voimassaoloajan mennessä umpeen ja jonka elin
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-kumoutuminen-osittain" %}
-Maankäyttörajoitusta jatkettaessa tai kaavan osittaisella vahvistumisella, jossa maankäyttörajoitus kumoutuu osittain tietyiltä alueilta, tallennetaan rajoituksesta uusi versio maankäyttörajoitusten tietovarastoon, jonka elinkaaritila-attribuutin arvo on Kumoutunut osittain, maankäyttörajoitusten tietovarasto päivittää maankäyttörajoituksen edellisen version attribuutteja seuraavasti luomatta siitä uutta versioita:
+Maankäyttörajoitusta jatkettaessa tai kaavan osittaisella vahvistumisella, jossa maankäyttörajoitus kumoutuu osittain tietyiltä alueilta, tallennetaan rajoituksesta uusi versio maankäyttörajoitusten tietovarastoon, jonka elinkaaritila-attribuutin arvo on Kumoutunut osittain, maankäyttörajoitusten tietovarasto päivittää automaattisesti maankäyttörajoituksen edellisen version attribuutteja seuraavasti luomatta siitä uutta versioita:
 
 - ```voimassaoloAika```-attribuutin päättymisaika asetetaan samaksi kuin uuden tallennetun version ```voimassaoloAika```-attribuutin alkamisaika. Alkamisaika on määritely kohdassa Maankäyttörajoituksen voimaantulo. 
-- ```elinkaaritila```-attribuutin arvoksi asetetaan Kumoutunut osittain.
+- ```elinkaaritila```-attribuutin arvoksi asetetaan Kumoutunut osittain kaikille edellisille versioille.
 - ```tallennusAika```-attribuutin arvoksi asetetaan ajanhetki, jolloin versio muutokset tallennettiin maankäyttörajoitusten tietovarastoon elinkaaritilassa Kumoutunut osittain.
 {% include clause_end.html %}
 
