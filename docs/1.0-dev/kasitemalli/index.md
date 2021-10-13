@@ -29,7 +29,7 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 ### Maankäyttörajoituksen laji
 {% include defintionref_mkr.html id="concept-2" name="maankäyttörajoituksen laji" def="kaavoitus- ja rakentamislain mukaisen maankäyttörajoituksen nimitys" %}
 
-### Maankäyttörajoituksen syntytapa
+### Maankäyttörajoituksen voimaantulotapa
 {% include defintionref_mkr.html id="concept-9" name="maankäyttörajoituksen syntytapa" def="kaavoitus- ja rakentamislakiin perustuva tapa tai menettely, jonka johdosta maankäyttörajoitus on syntynyt" %}
 
 ### Päätöksentekijä
@@ -37,9 +37,6 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 
 ### Maankäyttörajoituksen käsittelytapahtuma
 {% include defintionref_mkr.html id="concept-7" name="maankäyttörajoituksen kasittelytapahtuma" def="maankäyttörajoituksen käsittelyprosessiin kuuluva tapahtuma, jonka johdosta elinkaaren tila voi muuttua" %}
-
-### Maankäyttörajoituksen kumoutumistieto
-{% include defintionref_mkr.html id="concept-1" name="maankäyttörajoituksen kumoutumistieto" def="tieto maankäyttörajoituksen hyväksymisen johdosta kokonaisuudessaan tai osittain kumoutuvasta maankäyttörajoituksesta" %}
 
 ### Rakennuskielto
 {% include defintionref_mrl.html id="concept-161" name="rakennuskielto" def="kunnan antama tai suoraan laista johtuva kaavan laatimisen tai muuttamisen turvaava rakentamista koskeva määräaikainen ja ehdoton kielto." %}
