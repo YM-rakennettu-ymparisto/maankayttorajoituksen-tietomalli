@@ -260,7 +260,7 @@ Kerran tallennettuja AbstraktiTapahtuma-luokan tietokohteita ei voi poistaa maan
 Kaavoitus- ja rakentamislaissa säädetään tavoista tai menettelyistä, joiden johdosta maankäyttörajoitus voi tulla voimaan. Kun maankäyttörajoitus tulee voimaan, tallennetaan maankäyttörajoitusten tietovarastoon ensimmäinen versio, jonka ```elinkaaritila```-attribuutin arvo on Voimassa. Maankäyttörajoitus voi syntyä tässä luvussa kuvatuilla tavoilla.
 
 {% include clause_start.html type="req" id="elinkaari/vaat-voimaantulotapa" %}
-Maankäyttörajoituksen voimaantulotapa kuvataan Maankäyttörajoitus-luokan ```voimaantuloTapa```-attribuutilla ja sen mahdolliset arvot kuvataan Maankäyttörajoituksen voimaantulotapa-koodiston avulla. Maankayttorajoitus-luokan voimaantulotapa-attribuutti on pakollinen.
+Maankäyttörajoituksen voimaantulotapa kuvataan Maankäyttörajoitus-luokan ```voimaantuloTapa```-attribuutilla ja sen mahdolliset arvot kuvataan Maankäyttörajoituksen voimaantulotapa-koodiston avulla. Maankayttorajoitus-luokan ```voimaantuloTapa```-attribuutti on pakollinen.
 
 **Maankäyttörajoituksen voimaantulotapa**-koodisto kuvaa 4 mahdollista tilaa, joissa maankäyttörajoitus voi tulla voimaan:
 - Automaattinen maankäyttörajoitus
@@ -353,14 +353,14 @@ Maankäyttörajoitus, jonka elinkaaritila on Voimassa, Kumoutunut osittain, sis�
 
 ### Sallitut maankäyttörajoituksen voimaantulotavat maankäyttörajoituksen lajeille
 
-Maankäyttörajoituksen voimaantulotavan ollessa Automaattinen maankäyttörajoitus,  Päätöksellä annettu maankäyttörajoitus, Vanhentuneen asemakaavan maankäyttörajoitus tai Voimassa olevan kaavan kaavamääräyksen maankäyttörajoitus voi ```maankäyttörajoituksenLaji``` -attribuutin arvo esiintyä ja muuttua vain tässä luvussa kuvatuilla tavoilla.
+Maankäyttörajoituksen voimaantulotavan ollessa Automaattinen maankäyttörajoitus,  Päätöksellä annettu maankäyttörajoitus, Vanhentuneen asemakaavan maankäyttörajoitus tai Voimassa olevan kaavan kaavamääräyksen maankäyttörajoitus voi ```rajoituksenLaji``` -attribuutin arvo esiintyä ja muuttua vain tässä luvussa kuvatuilla tavoilla.
 
 {% include clause_start.html type="req" id="elinkaari/vaat-ensimmainen-elinkaaritila" %}
 Maankäyttörajoituksen voimaantulotapaa tallennettaessa ensimmäistä kertaa maankäyttörajoitusten tietovarastoon voi elinkaarentila olla vain tilassa Voimassa.
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-elinkaaritila-siirtymat" %}
-Maankäyttörajoituksen ```voimaantuloTapa```-attribuutin arvo määrittelee ```maankäyttörajoituksenLajin``` -attribuutin mahdolliset arvot seuraavilla tavoilla:
+Maankäyttörajoituksen ```voimaantuloTapa```-attribuutin arvo määrittelee ```rajoituksenLajin``` -attribuutin mahdolliset arvot seuraavilla tavoilla:
 
 - Arvolla ```Automaattinen maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Asemakaavan toimenpiderajoitus```.
 - Arvolla ```Päätöksellä annettu maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Asemakaavan toimenpiderajoitus```, ```Yleiskaavan rakennuskielto```, ```Yleiskaavan toimenpiderajoitus```, ```Maakuntakaavan rakentamisrajoitus```.
