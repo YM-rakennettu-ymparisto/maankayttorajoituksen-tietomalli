@@ -334,7 +334,7 @@ Maankäyttörajoituksen kumoutuessaan kokonaan kaavan voimaantulessa tai erillis
 - ```tallennusAika```-attribuutin arvoksi asetetaan ajanhetki, jolloin versio muutokset tallennettiin maankäyttörajoitusten tietovarastoon elinkaaritilassa Kumoutunut kokonaan.
 {% include clause_end.html %}
 
-{% include question.html content="Raukeaako automaattisen maankäyttörajoituksen,  Vanhentuneen asemakaavan maankäyttörajoitus tai Voimassa olevan maankäyttöpäätöksen rajoitus tapauksessa maankäyttörajoitusten tietovarastossa kaavarajauksen mukainen maankäyttörajoitus kaavan Käsittelytapahtuman lajin ollessa **Kaavan voimaantulo**?" %}
+{% include question.html content="Raukeaako automaattisen maankäyttörajoituksen tapauksessa maankäyttörajoitusten tietovarastossa kaavarajauksen mukainen maankäyttörajoitus kaavan Käsittelytapahtuman lajin ollessa **Kaavan voimaantulo**?" %}
 
 ## Maankäyttörajoituksen elinkaaren vaiheet ja elinkaaritila-attribuutin käyttötavat
 
