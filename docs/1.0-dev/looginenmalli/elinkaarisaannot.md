@@ -400,6 +400,6 @@ Maankäyttörajoituksen ```elinkaaritila```-attribuutin arvon seuraaviin muutoks
 
 Yllä luetellut käsittelytapahtumat tulee tallentaa samaan aikaan elinkaaritilaltaan muuttuneen maankäyttörajoituksen kanssa.
 
-Huomaa, että muutos tilaan Kumoutunut osittain tai Kumoutunut kokonaan voi liittyä kaavan **Kasittelytapahtuma** -luokkaan, jonka ```laji```-attribuutin arvo tulee olla kaavan voimaantuloon tai kaavan kumoaminen.
+Huomaa, että muutos tilaan Kumoutunut osittain tai Kumoutunut kokonaan voi liittyä kaavan **Kasittelytapahtuma** -luokkaan, jonka ```laji```-attribuutin arvo voi olla kaavan voimaantuloon tai kaavan kumoaminen.
 
 
