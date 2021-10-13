@@ -360,12 +360,12 @@ Maankäyttörajoituksen voimaantulotapaa tallennettaessa ensimmäistä kertaa ma
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-elinkaaritila-siirtymat" %}
-Maankäyttörajoituksen ```voimaantuloTapa```-attribuutin arvo määrittelee ```maankäyttörajoituksenLajin``` -attribuutin arvo mahdolliset arvot seuraavilla tavoilla:
+Maankäyttörajoituksen ```voimaantuloTapa```-attribuutin arvo määrittelee ```maankäyttörajoituksenLajin``` -attribuutin mahdolliset arvot seuraavilla tavoilla:
 
-- Arvolla ```Automaattinen maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Kumoutunut osittain```, ```Kumoutunut kokonaan```.
-- Arvolla ```Päätöksellä annettu maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskieltoi```, ```Kumoutunut osittain```, ```Kumoutunut kokonaan```.
+- Arvolla ```Automaattinen maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Asemakaavan toimenpiderajoitus```.
+- Arvolla ```Päätöksellä annettu maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Asemakaavan toimenpiderajoitus```, ```Yleiskaavan rakennuskielto```, ```Yleiskaavan toimenpiderajoitus```, ```Maakuntakaavan rakentamisrajoitus```.
 - Arvolla ```Vanhentuneen asemakaavan maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Kumoutunut osittain```, ```Kumoutunut kokonaan```.
-- Arvolla ```Voimassa olevan kaavan kaavamääräyksen maankäyttörajoitus``` mahdolliset arvot  ```maankäyttörajoituksenLaji```, ```Kumoutunut osittain```, ```Kumoutunut kokonaan```.
+- Arvolla ```Voimassa olevan kaavan kaavamääräyksen maankäyttörajoitus``` mahdolliset arvot  ```Yleiskaavan rakennuskielto```, ```Yleiskaavan toimenpiderajoitus```, ```Yleiskaavan rakentamisrajoitus```, ```Yleiskaavan erityisharkinta-alue```, ```Asemakaavan toimenpiderajoitus```, ```Rakennusjärjestyksen erityisharkinta-alue```, ```Rakennusjärjestyksen erityisharkinta-alue```, ```Maakuntakaavan rakentamisrajoitus```.
 
 {% include clause_end.html %}
 
