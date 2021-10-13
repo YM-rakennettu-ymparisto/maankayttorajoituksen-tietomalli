@@ -351,6 +351,24 @@ Maankäyttörajoituksen elinkaareen liittyvää tilaa hallitaan ko. tietokohteid
 
 Maankäyttörajoitus, jonka elinkaaritila on Voimassa, Kumoutunut osittain, sisältää nykyajanhetkellä rajaamallaan alueella voimassa olevan maankäyttörajoituksen. Koodit Kumoutunut kokonaan ja Rauennut kuvaavat Maankäyttörajoituksen tiloja, joissa olevan maankäyttörajoituksen elinkaari on päättynyt.
 
+### Sallitut maankäyttörajoituksen voimaantulotavat maankäyttörajoituksen lajeille
+
+Maankäyttörajoituksen voimaantulotavan ollessa Automaattinen maankäyttörajoitus,  Päätöksellä annettu maankäyttörajoitus, Vanhentuneen asemakaavan maankäyttörajoitus tai Voimassa olevan kaavan kaavamääräyksen maankäyttörajoitus voi ```maankäyttörajoituksenLaji``` -attribuutin arvo esiintyä ja muuttua vain tässä luvussa kuvatuilla tavoilla.
+
+{% include clause_start.html type="req" id="elinkaari/vaat-ensimmainen-elinkaaritila" %}
+Maankäyttörajoituksen voimaantulotapaa tallennettaessa ensimmäistä kertaa maankäyttörajoitusten tietovarastoon voi elinkaarentila olla vain tilassa Voimassa.
+{% include clause_end.html %}
+
+{% include clause_start.html type="req" id="elinkaari/vaat-elinkaaritila-siirtymat" %}
+Maankäyttörajoituksen ```voimaantuloTapa```-attribuutin arvo määrittelee ```maankäyttörajoituksenLajin``` -attribuutin arvo mahdolliset arvot seuraavilla tavoilla:
+
+- Arvolla ```Automaattinen maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Kumoutunut osittain```, ```Kumoutunut kokonaan```.
+- Arvolla ```Päätöksellä annettu maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskieltoi```, ```Kumoutunut osittain```, ```Kumoutunut kokonaan```.
+- Arvolla ```Vanhentuneen asemakaavan maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Kumoutunut osittain```, ```Kumoutunut kokonaan```.
+- Arvolla ```Voimassa olevan kaavan kaavamääräyksen maankäyttörajoitus``` mahdolliset arvot  ```maankäyttörajoituksenLaji```, ```Kumoutunut osittain```, ```Kumoutunut kokonaan```.
+
+{% include clause_end.html %}
+
 ### Sallitut maankäyttörajoituksen elinkaaren tilan muutokset
 
 Maankäyttörajoituksen elinkaaritila voi sen voimassaolo-, raukeamis- ja kumoutumisvaiheidensa aikana esiintyä ja muuttua vain tässä luvussa kuvatuilla tavoilla.
