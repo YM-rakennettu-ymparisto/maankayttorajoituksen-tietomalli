@@ -330,7 +330,7 @@ Maankäyttörajoitusta jatkettaessa tai kaavan osittaisella vahvistumisella, jos
 Maankäyttörajoituksen kumoutuessaan kokonaan kaavan voimaantulessa tai erillisellä päätöksellä, jonka elinkaaritila-attribuutin arvo on Voimassa tai Kumoutunut osittain, maankäyttörajoitusten tietovarasto päivittää attribuutteja seuraavasti luomatta siitä uutta versioita:
 
 - ```voimassaoloAika```-attribuutin päättymisajaksi asetetaan kumoamispäätöksen ajankohta
-- ```elinkaaritila```-attribuutin arvoksi asetetaan Kumoutunut kokonaan.
+- ```elinkaaritila```-attribuutin arvoksi asetetaan Kumoutunut kokonaan kaikille edellisille versioille.
 - ```tallennusAika```-attribuutin arvoksi asetetaan ajanhetki, jolloin versio muutokset tallennettiin maankäyttörajoitusten tietovarastoon elinkaaritilassa Kumoutunut kokonaan.
 {% include clause_end.html %}
 
