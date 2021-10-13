@@ -266,7 +266,7 @@ Maankäyttörajoituksen voimaantulotapa kuvataan Maankäyttörajoitus-luokan ```
 - Automaattinen maankäyttörajoitus
 - Päätöksellä määrätty maankäyttörajoitus
 - Vanhentuneen asemakaavan maankäyttörajoitus
-- Voimassa olevan kaavan kaavamääräyksen maankäyttörajoitus
+- Voimassa olevan maankäyttöpäätöksen rajoitus
 {% include clause_end.html %}
 
 {% include clause_start.html type="req" id="elinkaari/vaat-voimaantulo" %}
