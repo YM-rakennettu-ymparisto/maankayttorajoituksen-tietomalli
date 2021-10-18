@@ -30,7 +30,7 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 {% include defintionref_mkr.html id="concept-2" name="maankäyttörajoituksen laji" def="kaavoitus- ja rakentamislain mukaisen maankäyttörajoituksen nimitys" %}
 
 ### Maankäyttörajoituksen voimaantulotapa
-{% include defintionref_mkr.html id="concept-9" name="maankäyttörajoituksen voimaantulotapa" def="kaavoitus- ja rakentamislakiin perustuva tapa tai menettely, jonka johdosta maankäyttörajoitus on syntynyt" %}
+{% include defintionref_mkr.html id="concept-9" name="maankäyttörajoituksen voimaantulotapa" def="kaavoitus- ja rakentamislakiin perustuva tapa tai menettely, jonka johdosta maankäyttörajoitus on tullut voimaan" %}
 
 ### Päätöksentekijä
 {% include defintionref_mkr.html id="concept-3" name="päätöksentekijä" def="viranomainen tai toimielin, joka on tehnyt päätöksen maankäyttöpäätöksestä" %}
