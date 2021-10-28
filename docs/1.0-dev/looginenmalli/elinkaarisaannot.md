@@ -300,7 +300,7 @@ Maankayttorajoitus on voimassa niiden voimassaoloAika-attribuuttien määräämi
 
 Kaavoitus- ja rakentamislaissa säädetään maankäyttörajoituksen jatkamisesta, raukeamisesta ja kumoamisesta.
 
-Voimassaoleva maankäyttörajoitus raukeaa sen voimassaoloajan mennessä umpeen. Maankäyttörajoitus voi kumoutua kokonaan tai osittain, jos alueelle tulee voimaan kaava kokonaan tai osittain, jonka toteuttamiseksi maankäyttörajoitus on määrätty. Voimassaoleva maankäyttörajoitus voi kumoutua jatkettavalla maankäyttörajoituksella osittain tai muulla päätöksellä.
+Voimassaoleva maankäyttörajoitus raukeaa sen voimassaoloajan mennessä umpeen. Päätöksellä annettu maankäyttörajoitus voi kumoutua kokonaan tai osittain päätöksellä, jos alueelle tulee voimaan kaava kokonaan tai osittain, jonka toteuttamiseksi maankäyttörajoitus on määrätty.
 
 {% include clause_start.html type="req" id="elinkaari/vaat-jatkaminen" %}
 Maankäyttörajoitusta jatkettaessa jonka elinkaarentila on Voimassa ilman, että rajoitusalueen geometria muuttuu mm. kaavan osittaisen vahvistumisen myötä, tallennetaan rajoituksesta uusi versio maankäyttörajoitusten tietovarastoon, jonka elinkaaritila-attribuutin arvo on Voimassa, maankäyttörajoitusten tietovarasto päivittää automaattisesti maankäyttörajoituksen edellisen version attribuutteja, joiden elinkaaritila-attribuutin arvo on Voimassa seuraavasti luomatta siitä uutta versioita:
