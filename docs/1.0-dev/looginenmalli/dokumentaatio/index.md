@@ -259,18 +259,8 @@ syntytapa | [Codelist](#MaankayttorajoituksenSyntytapa) | 1  | kertoo tavan tai 
 
 Roolin nimi        | Kohde | Kardinaliteetti | Kuvaus
 -----------------|--------------------|---------------------|-----------------
-liittyvaKohde | [Kaavakohde](#Kaavakohde) | 1 | viittaustunnus kaavakohde-luokkaan, johon kohdistuu maankäyttörajoituskaavamääräyksiä
-
-### MaankayttorajoituksenKumoutumistieto
-
-Stereotyyppi: DataType (tietotyyppi)
-
-Kumoamistieto yksilöi minkä maankäyttörajoituksen tämä maankäyttörajoitus kumoaa lainvoimaiseksi tullessaan.
-
-laji             | Tyyppi              | Kardinaliteetti | Kuvaus
------------------|---------------------|-----------------|------------------------------------
-kumoutuuKokonaan | [boolean](#boolean) | 1  | maankäyttörajoitus, johon kumoaminen kohdistuu
-kumoutuvanMaankayttorajoituksenTunnus | [URI](#URI) | 0..*  | maankäyttörajoitus, johon kumoutuminen kohdistuu
+liittyvaKaavarajaus | [Kaava](#Kaava) | 1 | viittaustunnus Kaava-luokkaan, johon kohdistuu maankäyttörajoituskaavamääräyksiä
+liittyvaKaavaohde | [Kaavakohde](#Kaavakohde) | 1 | viittaustunnus Kaavakohde-luokkaan, johon kohdistuu maankäyttörajoituskaavamääräyksiä
 
 ### Koodisto
 
