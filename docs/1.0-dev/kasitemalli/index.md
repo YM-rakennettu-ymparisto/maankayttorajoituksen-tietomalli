@@ -38,8 +38,8 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 ### Maankäyttörajoituksen käsittelytapahtuma
 {% include defintionref_mkr.html id="concept-7" name="maankäyttörajoituksen kasittelytapahtuma" def="maankäyttörajoituksen käsittelyprosessiin kuuluva tapahtuma, jonka johdosta elinkaaren tila voi muuttua" %}
 
-### Rakennuskielto
-{% include defintionref_mrl.html id="concept-161" name="rakennuskielto" def="kunnan antama tai suoraan laista johtuva kaavan laatimisen tai muuttamisen turvaava rakentamista koskeva määräaikainen ja ehdoton kielto." %}
+### Rakentamiskielto
+{% include defintionref_mrl.html id="concept-161" name="rakentamiskielto" def="kunnan antama tai suoraan laista johtuva kaavan laatimisen tai muuttamisen turvaava rakentamista koskeva määräaikainen ja ehdoton kielto." %}
 
 ### Rakentamisrajoitus
 {% include defintionref_mrl.html id="concept-165" name="rakentamisrajoitus" def="suoraan laista johtuva tai kaavassa määrätty rakentamista koskeva pysyvä ja ehdoton rajoitus, jolla estetään kaavan vastainen rakentaminen." %}
