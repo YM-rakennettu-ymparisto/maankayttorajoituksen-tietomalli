@@ -29,101 +29,19 @@ Luokan AbstraktiKasittelytapahtumanLaji sijaan tulee käyttää tarkentavaa luok
 
 ## Maankäyttörajoituksen lajien arvot
 
-### Asemakaavan rakentamiskielto
-
-**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/01
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitontti" %}
-Ilmaisee, että esitonttikohde kuvaa esitontin 2-ulotteisena alueena tai 3-ulotteisena kappaleena.
-{% include clause_end.html %}
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitontti-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai yksi Tunnusarvo, jotka kuvaavat tulevan tontin tunnusarvoa tietojärjestelmissä tai rekistereissä.
-{% include clause_end.html %}
-
-### Asemakaavan toimenpiderajoitus
-
-**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/02
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-mkp/vaat-" %}
-Ilmaisee, että ...
-{% include clause_end.html %}
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-mkp/vaat-...-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat .. tietojärjestelmissä tai rekistereissä.
-{% include clause_end.html %}
-
-### Maakuntakaavan rakentamisrajoitus
-
-**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/03
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-mkp/vaat-" %}
-Ilmaisee, että ...
-{% include clause_end.html %}
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-mkp/vaat-..-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat .. tietojärjestelmissä tai rekistereissä.
-{% include clause_end.html %}
-
-### Yleiskaavan rakennuskielto
-
-**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/04
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-mkp/vaat-" %}
-Ilmaisee, että ...
-{% include clause_end.html %}
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-mkp/vaat-..-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat .. tietojärjestelmissä tai rekistereissä.
-{% include clause_end.html %}
-
-### Yleiskaavan toimenpiderajoitus
-
-**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/05
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-mkp/vaat-" %}
-Ilmaisee, että ...
-{% include clause_end.html %}
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-mkp/vaat-..-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat .. tietojärjestelmissä tai rekistereissä.
-{% include clause_end.html %}
-
-### Yleiskaavan erityisharkinta-alue
-
-**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/06
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-mkp/vaat-" %}
-Ilmaisee, että ...
-{% include clause_end.html %}
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-mkp/vaat-...-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat .. tietojärjestelmissä tai rekistereissä.
-{% include clause_end.html %}
+Kaikki muut maankäyttörajoitusten lajien arvot linkitetään maankäyttörajoituksia sisältäviltä kaavakohteilta ja niiden kaavamääräyksistä. Ainoana poikkeuksena on rakennusjärjestyksen erityisharkinta-alue.
 
 ### Rakennusjärjestyksen erityisharkinta-alue
 
 **Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/07
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-mkp/vaat-" %}
-Ilmaisee, että ...
+{% include clause_start.html type="req" id="prof-mkp/vaat-erityisharkinta-alue" %}
+Ilmaisee, että kyseinen maankäyttörajoitus koskee Rakennusjärjestyksen erityisharkinta-aluetta 
 {% include clause_end.html %}
 
 <!--Lisää sisäiset linkit vielä -->
 {% include clause_start.html type="req" id="prof--mkp/vaat...-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat .. tietojärjestelmissä tai rekistereissä.
+```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat rakennusjärjestyksen erityisharkinta-alueen informatiivisen sisällön tietojärjestelmissä tai rekistereissä.
 {% include clause_end.html %}
 
