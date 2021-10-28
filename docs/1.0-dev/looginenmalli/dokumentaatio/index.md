@@ -259,7 +259,7 @@ syntytapa | [Codelist](#MaankayttorajoituksenSyntytapa) | 1  | kertoo tavan tai 
 
 Roolin nimi        | Kohde | Kardinaliteetti | Kuvaus
 -----------------|--------------------|---------------------|-----------------
-liittyvaKohde | [Kaavakohde](#Kaavakohde) | 1 | viittaustunnus kaavan kohteeseen, johon kohdistuu maankäyttörajoituskaavamääräyksiä
+liittyvaKohde | [Kaavakohde](#Kaavakohde) | 1 | viittaustunnus kaavakohde-luokkaan, johon kohdistuu maankäyttörajoituskaavamääräyksiä
 
 ### MaankayttorajoituksenKumoutumistieto
 
