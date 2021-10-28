@@ -260,7 +260,7 @@ syntytapa | [Codelist](#MaankayttorajoituksenSyntytapa) | 1  | kertoo tavan tai 
 Roolin nimi        | Kohde | Kardinaliteetti | Kuvaus
 -----------------|--------------------|---------------------|-----------------
 liittyvaKaavarajaus | [Kaava](#Kaava) | 1 | viittaustunnus Kaava-luokkaan, johon kohdistuu maankäyttörajoituskaavamääräyksiä
-liittyvaKaavaohde | [Kaavakohde](#Kaavakohde) | 1 | viittaustunnus Kaavakohde-luokkaan, johon kohdistuu maankäyttörajoituskaavamääräyksiä
+liittyvaKaavakohde | [Kaavakohde](#Kaavakohde) | 1 | viittaustunnus Kaavakohde-luokkaan, johon kohdistuu maankäyttörajoituskaavamääräyksiä
 
 ### Koodisto
 
