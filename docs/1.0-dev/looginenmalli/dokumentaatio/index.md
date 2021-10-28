@@ -249,6 +249,7 @@ Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 arvo | [Abstraktiarvo](#Abstraktiarvo) | 0..1  | maankäyttörajoituksen kuvaava tekstiarvo
 elinkaarentila | [Codelist](#MaankayttorajoituksenElinkaarentila) | 1 | yleisimmät arvot hyväksytty, voimassa tai rauennut
 geometria | [geometry](#geometry) | 0..1  | maankäyttörajoituksen sijainti
+kaavaTunnus | [URI](#uri)) | 0..1  | liittyvän kaavan viittaustunnus jota käytetään kaavatietovarannon suunnasta oikean maankäyttörajoituksen kohdistamiseen kaavan elinkaaren tilojen muutoksen yhteydessä
 hyvaksymisAika | [TM_Instant](#TM_Instant) | 0..1 | aika, jolloin maankäyttörajoitus on tullut virallisesti hyväksyttyä
 kumoutumistieto | [MaankayttorajoituksenKumoutumistieto](#MaankayttorajoituksenKumoutumistieto) | 0..* | maankäyttörajoitus, jonka tämä maankäyttörajoitus kumoaa kokonaan tai osittain
 maankayttorajoituksenTunnus  | [CharacterString](#CharacterString) | 1 | yksilöivä ID
