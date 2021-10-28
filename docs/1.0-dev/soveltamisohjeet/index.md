@@ -29,7 +29,7 @@ Luokan AbstraktiKasittelytapahtumanLaji sijaan tulee käyttää tarkentavaa luok
 
 ## Maankäyttörajoituksen lajien arvot
 
-### Asemakaavan rakennuskielto
+### Asemakaavan rakentamiskielto
 
 **Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/01
 
@@ -48,13 +48,13 @@ Ilmaisee, että esitonttikohde kuvaa esitontin 2-ulotteisena alueena tai 3-ulott
 **Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/02
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitonttirajapiste" %}
-Ilmaisee, että esitonttikohde kuvaa sijainnin, johon on tarkoitus rakentaa kiinteistönmuodostustoimituksessa rajamerkki.
+{% include clause_start.html type="req" id="prof-mkp/vaat-" %}
+Ilmaisee, että ...
 {% include clause_end.html %}
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitonttrajapiste-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat tulevan tontin rajamerkkien numeroita tietojärjestelmissä tai rekistereissä.
+{% include clause_start.html type="req" id="prof-mkp/vaat-...-arvot" %}
+```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat .. tietojärjestelmissä tai rekistereissä.
 {% include clause_end.html %}
 
 ### Maakuntakaavan rakentamisrajoitus
@@ -62,13 +62,13 @@ Ilmaisee, että esitonttikohde kuvaa sijainnin, johon on tarkoitus rakentaa kiin
 **Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/03
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitonttirajapiste" %}
-Ilmaisee, että esitonttikohde kuvaa sijainnin, johon on tarkoitus rakentaa kiinteistönmuodostustoimituksessa rajamerkki.
+{% include clause_start.html type="req" id="prof-mkp/vaat-" %}
+Ilmaisee, että ...
 {% include clause_end.html %}
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitonttrajapiste-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat tulevan tontin rajamerkkien numeroita tietojärjestelmissä tai rekistereissä.
+{% include clause_start.html type="req" id="prof-mkp/vaat-..-arvot" %}
+```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat .. tietojärjestelmissä tai rekistereissä.
 {% include clause_end.html %}
 
 ### Yleiskaavan rakennuskielto
@@ -76,13 +76,13 @@ Ilmaisee, että esitonttikohde kuvaa sijainnin, johon on tarkoitus rakentaa kiin
 **Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/04
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitonttirajapiste" %}
-Ilmaisee, että esitonttikohde kuvaa sijainnin, johon on tarkoitus rakentaa kiinteistönmuodostustoimituksessa rajamerkki.
+{% include clause_start.html type="req" id="prof-mkp/vaat-" %}
+Ilmaisee, että ...
 {% include clause_end.html %}
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitonttrajapiste-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat tulevan tontin rajamerkkien numeroita tietojärjestelmissä tai rekistereissä.
+{% include clause_start.html type="req" id="prof-mkp/vaat-..-arvot" %}
+```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat .. tietojärjestelmissä tai rekistereissä.
 {% include clause_end.html %}
 
 ### Yleiskaavan toimenpiderajoitus
@@ -90,13 +90,13 @@ Ilmaisee, että esitonttikohde kuvaa sijainnin, johon on tarkoitus rakentaa kiin
 **Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/05
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitonttirajapiste" %}
-Ilmaisee, että esitonttikohde kuvaa sijainnin, johon on tarkoitus rakentaa kiinteistönmuodostustoimituksessa rajamerkki.
+{% include clause_start.html type="req" id="prof-mkp/vaat-" %}
+Ilmaisee, että ...
 {% include clause_end.html %}
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitonttrajapiste-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat tulevan tontin rajamerkkien numeroita tietojärjestelmissä tai rekistereissä.
+{% include clause_start.html type="req" id="prof-mkp/vaat-..-arvot" %}
+```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat .. tietojärjestelmissä tai rekistereissä.
 {% include clause_end.html %}
 
 ### Yleiskaavan erityisharkinta-alue
@@ -104,13 +104,13 @@ Ilmaisee, että esitonttikohde kuvaa sijainnin, johon on tarkoitus rakentaa kiin
 **Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/06
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitonttirajapiste" %}
-Ilmaisee, että esitonttikohde kuvaa sijainnin, johon on tarkoitus rakentaa kiinteistönmuodostustoimituksessa rajamerkki.
+{% include clause_start.html type="req" id="prof-mkp/vaat-" %}
+Ilmaisee, että ...
 {% include clause_end.html %}
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitonttrajapiste-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat tulevan tontin rajamerkkien numeroita tietojärjestelmissä tai rekistereissä.
+{% include clause_start.html type="req" id="prof-mkp/vaat-...-arvot" %}
+```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat .. tietojärjestelmissä tai rekistereissä.
 {% include clause_end.html %}
 
 ### Rakennusjärjestyksen erityisharkinta-alue
@@ -118,12 +118,12 @@ Ilmaisee, että esitonttikohde kuvaa sijainnin, johon on tarkoitus rakentaa kiin
 **Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/07
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitonttirajapiste" %}
-Ilmaisee, että esitonttikohde kuvaa sijainnin, johon on tarkoitus rakentaa kiinteistönmuodostustoimituksessa rajamerkki.
+{% include clause_start.html type="req" id="prof-mkp/vaat-" %}
+Ilmaisee, että ...
 {% include clause_end.html %}
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-tjs/vaat-esitonttrajapiste-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat tulevan tontin rajamerkkien numeroita tietojärjestelmissä tai rekistereissä.
+{% include clause_start.html type="req" id="prof--mkp/vaat...-arvot" %}
+```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat .. tietojärjestelmissä tai rekistereissä.
 {% include clause_end.html %}
 
