@@ -1,0 +1,16 @@
+tocTab[tocTab.length] = new Array("0.1:1", "", "Koodistot", "EARoot/EA1/EA4.htm", "175.png", "38741", "0", "", "Logical diagram0","{5AB3AB26-709B-46f8-BC37-0194CC63680D}");
+tocTab[tocTab.length] = new Array("0.1:2", "", "MPK-ydin", "EARoot/EA1/EA6.htm", "175.png", "38740", "0", "", "Logical diagram0","{1C3199A4-48E9-4400-BBB4-5357C96019BE}");
+tocTab[tocTab.length] = new Array("0.1:3", "", "«CodeList» AbstraktiKasittelytapahtumanLaji", "EARoot/EA1/EA9.htm", "5.png", "E80053", "0", "", "Class0","{28045CA2-AE60-4ad3-8E4F-EE34E461532F}");
+tocTab[tocTab.length] = new Array("0.1:4", "", "«FeatureType» AbstraktiMaankayttoasia", "EARoot/EA1/EA10.htm", "5.png", "E80049", "0", "", "Class0","{0394B80C-23C1-4ea1-A4AD-BD74AD2BDDDB}");
+tocTab[tocTab.length] = new Array("0.1:5", "", "«FeatureType» AbstraktiTapahtuma", "EARoot/EA1/EA11.htm", "5.png", "E80047", "0", "", "Class0","{C170D671-73A0-489f-B2C4-EFAC56C4FB0F}");
+tocTab[tocTab.length] = new Array("0.1:6", "", "«FeatureType» AbstraktiVersioituObjekti", "EARoot/EA1/EA12.htm", "5.png", "E80051", "0", "", "Class0","{C8904EFC-DC57-4739-96F9-4E86393E8BD1}");
+tocTab[tocTab.length] = new Array("0.1:7", "", "«CodeList» AbstraktiVuorovaikutustapahtumanLaji", "EARoot/EA1/EA13.htm", "5.png", "E80058", "0", "", "Class0","{47C01A23-3067-40b5-8F46-3F176290514A}");
+tocTab[tocTab.length] = new Array("0.1:8", "", "«FeatureType» Asiakirja", "EARoot/EA1/EA14.htm", "5.png", "E80046", "0", "", "Class0","{3D5465AB-BC09-4be8-8DC1-98A214A274B4}");
+tocTab[tocTab.length] = new Array("0.1:9", "", "HallinnollinenAlue", "EARoot/EA1/EA15.htm", "8.png", "E80052", "0", "", "Interface0","{E7527FFE-EB30-42b3-855C-C9B3F200B7E5}");
+tocTab[tocTab.length] = new Array("0.1:10", "", "«FeatureType» Kasittelytapahtuma", "EARoot/EA1/EA16.htm", "5.png", "E80050", "0", "", "Class0","{598124C3-6EB4-4303-AB65-AFD0E65C97B3}");
+tocTab[tocTab.length] = new Array("0.1:11", "", "«FeatureType» Lahtotietoaineisto", "EARoot/EA1/EA17.htm", "5.png", "E80056", "0", "", "Class0","{2BDDE2F4-A8EC-4966-8699-555FA092018D}");
+tocTab[tocTab.length] = new Array("0.1:12", "", "Organisaatio", "EARoot/EA1/EA18.htm", "8.png", "E80055", "0", "", "Interface0","{03C155E0-5FDC-4ad5-A01A-35CBC0BA8C41}");
+tocTab[tocTab.length] = new Array("0.1:13", "", "Paatoksentekija", "EARoot/EA1/EA19.htm", "8.png", "E80054", "0", "", "Interface0","{7B069F44-DFAC-4cfa-964C-B6AB960E6711}");
+tocTab[tocTab.length] = new Array("0.1:14", "", "«FeatureType» Tapahtumahistoria", "EARoot/EA1/EA20.htm", "5.png", "E80059", "0", "", "Class0","{9532CB39-2B9A-4db7-88EB-90E85BC3878B}");
+tocTab[tocTab.length] = new Array("0.1:15", "", "«CodeList» TonttijakosuunnitelmanAsiakirjanLaji", "EARoot/EA1/EA21.htm", "5.png", "E80057", "0", "", "Class0","{10659F90-6374-47f2-919C-D9CBBB5DED3A}");
+tocTab[tocTab.length] = new Array("0.1:16", "", "«FeatureType» Vuorovaikutustapahtuma", "EARoot/EA1/EA22.htm", "5.png", "E80048", "0", "", "Class0","{EB141D19-9877-42e2-B239-0248C660B41E}");
