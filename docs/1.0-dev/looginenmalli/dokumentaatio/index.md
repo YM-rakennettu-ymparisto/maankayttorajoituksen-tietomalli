@@ -248,7 +248,7 @@ Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
 arvo | [Abstraktiarvo](#Abstraktiarvo) | 0..1  | maankäyttörajoituksen kuvaava tekstiarvo
 elinkaarentila | [Codelist](#MaankayttorajoituksenElinkaarentila) | 1 | yleisimmät arvot hyväksytty, voimassa tai rauennut
-geometria | [geometry](#geometry) | 0..1  | maankäyttörajoituksen sijainti
+geometria | [Geometry](#geometry) | 0..1  | maankäyttörajoituksen sijainti
 hyvaksymisAika | [TM_Instant](#TM_Instant) | 0..1 | aika, jolloin maankäyttörajoitus on tullut virallisesti hyväksyttyä
 maankayttorajoituksenTunnus  | [CharacterString](#CharacterString) | 1 | yksilöivä ID
 rajoituksenLaji | [Codelist](#MaankayttorajoituksenLaji) | 1  | kertoo, millainen maankäyttörajoitus on laadittu
