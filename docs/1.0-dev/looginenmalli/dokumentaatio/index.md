@@ -255,6 +255,12 @@ maankayttorajoituksenTunnus  | [CharacterString](#CharacterString) | 1 | yksilö
 rajoituksenLaji | [Codelist](#MaankayttorajoituksenLaji) | 1  | kertoo, millainen maankäyttörajoitus on laadittu
 syntytapa | [Codelist](#MaankayttorajoituksenSyntytapa) | 1  | kertoo tavan tai menettelyn, jonka johdosta maankäyttörajoitus on syntynyt
 
+**Assosiaatiot**
+
+Roolin nimi        | Kohde | Kardinaliteetti | Kuvaus
+-----------------|--------------------|---------------------|-----------------
+liittyvaKohde | [Kaavakohde](#Kaavakohde) | 1 | viittaustunnus kaavan kohteeseen, johon kohdistuu maankäyttörajoituskaavamääräyksiä
+
 ### MaankayttorajoituksenKumoutumistieto
 
 Stereotyyppi: DataType (tietotyyppi)
