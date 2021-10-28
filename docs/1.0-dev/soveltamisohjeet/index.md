@@ -41,7 +41,7 @@ Ilmaisee, että kyseinen maankäyttörajoitus koskee Rakennusjärjestyksen erity
 {% include clause_end.html %}
 
 <!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof--mkp/vaat...-arvot" %}
+{% include clause_start.html type="req" id="prof--mkp/vaat-erityisharkinta-alue-arvot" %}
 ```arvo```-attribuutin arvona saa esiintyä nolla tai useampi TekstiArvo, jotka kuvaavat rakennusjärjestyksen erityisharkinta-alueen informatiivisen sisällön tietojärjestelmissä tai rekistereissä.
 {% include clause_end.html %}
 
