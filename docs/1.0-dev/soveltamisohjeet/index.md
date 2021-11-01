@@ -60,23 +60,10 @@ Ilmaisee, että kyseinen maankäyttörajoitus koskee asemakaavan toimenpiderajoi
 ```arvo```-attribuutin arvona saa esiintyä TekstiArvo, joka kuvaa asemakaavan toimenpiderajoituksen informatiivisen sisällön tietojärjestelmissä tai rekistereissä.
 {% include clause_end.html %}
 
-### Maakuntakaavan rakentamisrajoitus
-
-**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/03
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof-mkp/vaat-maakuntakaavan-rakentamisrajoitus" %}
-Ilmaisee, että kyseinen maankäyttörajoitus koskee maakuntakaavan rakentamisrajoitusta.
-{% include clause_end.html %}
-
-<!--Lisää sisäiset linkit vielä -->
-{% include clause_start.html type="req" id="prof--mkp/vaat-maakuntakaavan-rakentamisrajoitus-arvot" %}
-```arvo```-attribuutin arvona saa esiintyä TekstiArvo, joka kuvaa maakuntakaavan rakentamisrajoituksen informatiivisen sisällön tietojärjestelmissä tai rekistereissä.
-{% include clause_end.html %}
 
 ### Yleiskaavan rakennuskielto
 
-**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/04
+**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/03
 
 <!--Lisää sisäiset linkit vielä -->
 {% include clause_start.html type="req" id="prof-mkp/vaat-yleiskaavan-rakennuskielto" %}
@@ -90,7 +77,7 @@ Ilmaisee, että kyseinen maankäyttörajoitus koskee maakuntakaavan rakentamisra
 
 ### Yleiskaavan toimenpiderajoitus
 
-**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/05
+**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/04
 
 <!--Lisää sisäiset linkit vielä -->
 {% include clause_start.html type="req" id="prof-mkp/vaat-yleiskaavan-toimenpiderajoitus" %}
@@ -104,7 +91,7 @@ Ilmaisee, että kyseinen maankäyttörajoitus koskee yleiskaavan toimenpiderajoi
 
 ### Yleiskaavan eritysharkinta-alue
 
-**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/06
+**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/05
 
 <!--Lisää sisäiset linkit vielä -->
 {% include clause_start.html type="req" id="prof-mkp/vaat-yleiskaavan-erityisharkinta-alue" %}
@@ -114,6 +101,20 @@ Ilmaisee, että kyseinen maankäyttörajoitus koskee yleiskaavan erityisharkinta
 <!--Lisää sisäiset linkit vielä -->
 {% include clause_start.html type="req" id="prof--mkp/vaat-yleiskaavan-yleiskaavan-erityisharkinta-alue-arvot" %}
 ```arvo```-attribuutin arvona saa esiintyä TekstiArvo, joka kuvaa yleiskaavan erityisharkinta-alueen informatiivisen sisällön tietojärjestelmissä tai rekistereissä.
+{% include clause_end.html %}
+
+### Maakuntakaavan rakentamisrajoitus
+
+**Koodi:** http://uri.suomi.fi/codelist/rytj/RY_MaankayttorajoituksenLaji/code/06
+
+<!--Lisää sisäiset linkit vielä -->
+{% include clause_start.html type="req" id="prof-mkp/vaat-maakuntakaavan-rakentamisrajoitus" %}
+Ilmaisee, että kyseinen maankäyttörajoitus koskee maakuntakaavan rakentamisrajoitusta.
+{% include clause_end.html %}
+
+<!--Lisää sisäiset linkit vielä -->
+{% include clause_start.html type="req" id="prof--mkp/vaat-maakuntakaavan-rakentamisrajoitus-arvot" %}
+```arvo```-attribuutin arvona saa esiintyä TekstiArvo, joka kuvaa maakuntakaavan rakentamisrajoituksen informatiivisen sisällön tietojärjestelmissä tai rekistereissä.
 {% include clause_end.html %}
 
 ### Rakennusjärjestyksen erityisharkinta-alue
