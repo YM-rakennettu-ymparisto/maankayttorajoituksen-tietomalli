@@ -351,7 +351,7 @@ Maankäyttörajoitus, jonka elinkaaritila on Voimassa, Kumoutunut osittain, sis�
 
 ### Sallitut maankäyttörajoituksen voimaantulotavat maankäyttörajoituksen lajeille
 
-Maankäyttörajoituksen voimaantulotavan ollessa Automaattinen maankäyttörajoitus,  Päätöksellä annettu maankäyttörajoitus, Vanhentuneen asemakaavan maankäyttörajoitus tai Voimassa olevan maankäyttöpäätöksen rajoitus voi ```rajoituksenLaji``` -attribuutin arvo esiintyä vain tässä luvussa kuvatuilla tavoilla.
+Maankäyttörajoituksen voimaantulotavan ollessa Automaattinen maankäyttörajoitus, Päätöksellä annettu maankäyttörajoitus tai Voimassa olevan maankäyttöpäätöksen rajoitus voi ```rajoituksenLaji``` -attribuutin arvo esiintyä vain tässä luvussa kuvatuilla tavoilla.
 
 {% include clause_start.html type="req" id="elinkaari/vaat-ensimmainen-elinkaaritila" %}
 Maankäyttörajoituksen voimaantulotapaa tallennettaessa ensimmäistä kertaa maankäyttörajoitusten tietovarastoon voi elinkaarentila olla vain tilassa Voimassa.
@@ -362,8 +362,7 @@ Maankäyttörajoituksen ```voimaantuloTapa```-attribuutin arvo määrittelee ```
 
 - Arvolla ```Automaattinen maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Asemakaavan toimenpiderajoitus```.
 - Arvolla ```Päätöksellä annettu maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Asemakaavan toimenpiderajoitus```, ```Yleiskaavan rakennuskielto```, ```Yleiskaavan toimenpiderajoitus```, ```Maakuntakaavan rakentamisrajoitus```.
-- Arvolla ```Vanhentuneen asemakaavan maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```.
-- Arvolla ```Voimassa olevan maankäyttöpäätöksen rajoitus``` mahdolliset arvot  ```Yleiskaavan rakennuskielto```, ```Yleiskaavan toimenpiderajoitus```, ```Yleiskaavan rakentamisrajoitus```, ```Yleiskaavan erityisharkinta-alue```, ```Rakennusjärjestyksen erityisharkinta-alue```, ```Rakennusjärjestyksen erityisharkinta-alue```, ```Maakuntakaavan rakentamisrajoitus```.
+- Arvolla ```Voimassa olevan maankäyttöpäätöksen rajoitus``` mahdolliset arvot  ```Yleiskaavan rakennuskielto```, ```Yleiskaavan toimenpiderajoitus```, ```Yleiskaavan rakentamisrajoitus```, ```Yleiskaavan erityisharkinta-alue```, ```Rakennusjärjestyksen erityisharkinta-alue```, ```Maakuntakaavan rakentamisrajoitus```.
 
 {% include clause_end.html %}
 
