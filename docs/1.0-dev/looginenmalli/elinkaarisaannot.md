@@ -265,7 +265,6 @@ Maankäyttörajoituksen voimaantulotapa kuvataan Maankäyttörajoitus-luokan ```
 **Maankäyttörajoituksen voimaantulotapa**-koodisto kuvaa 4 mahdollista tilaa, joissa maankäyttörajoitus voi tulla voimaan:
 - Automaattinen maankäyttörajoitus
 - Päätöksellä määrätty maankäyttörajoitus
-- Vanhentuneen asemakaavan maankäyttörajoitus
 - Voimassa olevan maankäyttöpäätöksen rajoitus
 {% include clause_end.html %}
 
@@ -278,7 +277,7 @@ Ensimmäisen päätöksellä määrätyn maankäyttörajoituksen voimaantulemise
 - Maankayttorajoitus-luokan objektin elinkaaritila-attribuutin arvoksi on asetettu Voimassa,
 - Maankayttorajoitus-luokan objektin voimassaoloAika-attribuutin alkuajaksi on asetettu käsittelytapahtuman ajanhetki, jolloin maankäyttöpäätöksen määräys on annettu ja loppuaika on siitä kaksi vuotta eteenpäin.
 
-Maankäyttörajoituksen ```voimaantuloTapa```-attribuutin ollessa **Maankäyttörajoituksen voimaantulotapa**-koodiston arvo Automaattisen maankäyttörajoituksen, Vanhentuneen asemakaavan maankäyttörajoitus tai Voimassa olevan maankäyttöpäätöksen voimaantulemisen yhteydessä maankäyttörajoituksesta tallennetaan maankäyttörajoitusten tietovarastoon uusi versio, jossa sen:
+Maankäyttörajoituksen ```voimaantuloTapa```-attribuutin ollessa **Maankäyttörajoituksen voimaantulotapa**-koodiston arvo Automaattisen maankäyttörajoituksen tai Voimassa olevan maankäyttöpäätöksen voimaantulemisen kuuluttamisen yhteydessä maankäyttörajoituksesta tallennetaan maankäyttörajoitusten tietovarastoon uusi versio, jossa sen:
 - Maankayttorajoitus-luokan objektin elinkaaritila-attribuutin arvoksi on asetettu Voimassa,
 - Maankayttorajoitus-luokan objektin voimassaoloAika-attribuutin alkuajaksi on asetettu käsittelytapahtuman ajanhetki, jolloin maankäyttöpäätös on hyväksytty ja loppuajankohtaa ei olla annettu. Loppuajankohta määräytyy maankäyttöpäätöksen käsittelytapahtuman voimaantulon mukaan.
 
