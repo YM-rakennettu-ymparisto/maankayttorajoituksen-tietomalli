@@ -359,7 +359,7 @@ Maankäyttörajoituksen voimaantulotapaa tallennettaessa ensimmäistä kertaa ma
 {% include clause_start.html type="req" id="elinkaari/vaat-voimaantulotapa" %}
 Maankäyttörajoituksen ```voimaantuloTapa```-attribuutin arvo määrittelee ```rajoituksenLajin``` -attribuutin mahdolliset arvot seuraavilla tavoilla:
 
-- Arvolla ```Automaattinen maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Asemakaavan toimenpiderajoitus```.
+- Arvolla ```Automaattinen maankäyttörajoitus``` pakolliset arvot  ```Asemakaavan rakennuskielto``` ja ```Asemakaavan toimenpiderajoitus```.
 - Arvolla ```Päätöksellä annettu maankäyttörajoitus``` mahdolliset arvot  ```Asemakaavan rakennuskielto```, ```Asemakaavan toimenpiderajoitus```, ```Yleiskaavan rakennuskielto```, ```Yleiskaavan toimenpiderajoitus```, ```Maakuntakaavan rakentamisrajoitus```.
 - Arvolla ```Voimassa olevan maankäyttöpäätöksen rajoitus``` mahdolliset arvot  ```Yleiskaavan rakennuskielto```, ```Yleiskaavan toimenpiderajoitus```, ```Yleiskaavan rakentamisrajoitus```, ```Yleiskaavan erityisharkinta-alue```, ```Rakennusjärjestyksen erityisharkinta-alue```, ```Maakuntakaavan rakentamisrajoitus```.
 
