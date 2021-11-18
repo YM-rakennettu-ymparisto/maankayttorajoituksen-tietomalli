@@ -22,7 +22,7 @@ Tämä sivusto jakautuu seuraaviin osa-alueisiin:
 - Soveltamisohjeet
 - Kehitystyö
 
-Tietomallien ensisijainen sovelluskohde on [Rakennetun ympäristön tietojärjestelmä](https://ym.fi/fi/ryhti), johon tulevaisuudessa kootaan kuntien...Tietomallien mahdollisina sovelluskohteina ovat kuitenkin lisäksi kaikki tietojärjestelmät, joissa luodaan, käsitellään, analysoidaan ja siirretään niiden tietoja.
+Tietomallien ensisijainen sovelluskohde on [Rakennetun ympäristön tietojärjestelmä](https://ym.fi/fi/ryhti), johon tulevaisuudessa kootaan kuntien maankäyttörajoitukset. Tietomallien mahdollisina sovelluskohteina ovat kuitenkin lisäksi kaikki tietojärjestelmät, joissa luodaan, käsitellään, analysoidaan ja siirretään niiden tietoja.
 
 Tietomallista järjestetään kansallinen kommentointikierros 1.11.-12.11.2021 otakantaa-palvelussa. Tietomalleja on tarkoitus kehittää mallinnustyön aloittavan projektin päätyttyä, läpi koko Ryhti-hankkeen.
 
