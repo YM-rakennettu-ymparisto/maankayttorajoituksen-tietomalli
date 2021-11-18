@@ -14,7 +14,7 @@ Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan san
 {:toc}
 ## Graafinen käsitekaavio
 
-Maankäyttörajoitusten käsitteet sanastot.suomi.fi -käsitemallina (http://uri.suomi.fi/terminology/rytj-mkr/concept-0)
+Maankäyttörajoitusten käsitteet ![sanastot.suomi.fi -käsitemallina](http://uri.suomi.fi/terminology/rytj-mkr/concept-0)
 
 <!--
 ## Graafinen käsitekaavio
