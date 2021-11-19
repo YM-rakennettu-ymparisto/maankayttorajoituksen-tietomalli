@@ -52,7 +52,7 @@ Maankäyttörajoitusten käsitteet [sanastot.suomi.fi -käsitemallina](http://ur
 {% include defintionref_mrl.html id="concept-166" name="toimenpiderajoitus" def="kunnan antama, suoraan laista johtuva tai kaavassa määrätty maisemaa muuttavaa toimenpidettä koskeva rajoitus, jolla pyritään maisematyön luvanvaraisuuteen." %}
 
 ### Erityisharkinta-alue
-{% include defintionref_mkr.html id="concept-8" name="erityisharkinta-alue" def="kunnan määrittämä tai tapauskohtaisesti harkittava asemakaava-alueen ulkopuolella sijaitseva alue, jolla rakentamisen edellytysten turvaamiseksi tarvitaan alueiden käytön suunnittelua tai erityistä harkintaa uuden rakentamisen sijoittamisessa." %}
+{% include defintionref_mkr.html id="concept-8" name="erityisharkinta-alue" def="suoraan lain nojalla tapauskohtaisesti harkittava tai kunnan määrittämä asemakaava-alueen ulkopuolella sijaitseva alue, jolla rakentamisen edellytystenturvaamiseksi tarvitaan alueiden käytön suunnittelua tai erityistä harkintaa uuden rakentamisen sijoittamisessa." %}
 
 <!-- Tässä esimerkki määrittelystä
 {% include defintionref_mkr.html id="concept-0" name="maankäyttörajoitus" def="kaavoitus- ja rakennuslain mukainen rajoitus maankäytön suunnitelmien toteuttamisen turvaamiseksi." %}
