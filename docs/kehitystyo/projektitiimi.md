@@ -9,7 +9,9 @@ page: "projektitiimi"
 
 Ubigulta työhön osallistuvat:
 - Marko Kauppi
-- Ville Koivisto
+
+Plandisainilta työhön osallistui:
+- Markus Hytönen
 
 # Sidosryhmät
 
