@@ -4,7 +4,7 @@ title: "Soveltamisohjeet"
 description: ""
 page: "soveltamisohjeet"
 modelversion: "1.0-dev"
-status: "Keskeneräinen"
+status: "Luonnos"
 ---
 # Soveltamisprofiili
 

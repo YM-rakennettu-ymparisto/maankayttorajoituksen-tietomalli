@@ -4,7 +4,7 @@ title: "Käsitemalli"
 description: ""
 page: "kasitemalli"
 modelversion: "1.0-dev"
-status: "Keskeneräinen"
+status: "Luonnos"
 ---
 # Käsitemalli
 Tällä sivulla esitellyt käsitteet ovat luettavissa yhteentoimivuusalustan sanasto-työkalussa. Käsitemallin nimiavaruus on rytj-mkr. 

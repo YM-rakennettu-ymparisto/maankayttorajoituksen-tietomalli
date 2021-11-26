@@ -3,7 +3,7 @@ layout: "default"
 title: "Jatkokehitys"
 description: ""
 page: "jatkokehitys"
-status: "Keskeneräinen"
+status: "Luonnos"
 ---
 # Jatkokehitys
 
