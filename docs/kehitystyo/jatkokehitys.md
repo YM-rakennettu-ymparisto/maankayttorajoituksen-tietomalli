@@ -7,7 +7,7 @@ status: "Luonnos"
 ---
 # Jatkokehitys
 
-Projektissa tunnistettiin seuraavia jatkokehitysehdotuksia:
+Projektissa tunnistettiin seuraavia jatkokehitysehdotuksia ja havaintoja:
 
 1. Yhteentoimivuusalustan Tietomallit-työkalussa tulee tuottaa “yhteiset tietokomponentit” rakennetun ympäristön tietokomponenttikirjastoon. 
 2. Ranta-alueille ei tule luoda erikseen omaa maankäyttörajoituksen laji koodia, koska ei ole tarkoituksen mukaista määrittää n. 200 m laajuista bufferia suoraan rakentamista ohjaavien kaavojen ulkopuolisille alueille.
