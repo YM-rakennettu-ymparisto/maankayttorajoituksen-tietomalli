@@ -7,7 +7,7 @@ page: "projektitiimi"
 
 # Projektitiimi
 
-Ubigulta työhön osallistuvat:
+Ubigulta työhön osallistui:
 - Marko Kauppi
 
 Plandisainilta työhön osallistui:
